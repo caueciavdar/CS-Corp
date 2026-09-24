@@ -1,0 +1,65 @@
+/*
+ * Proposed design-system tokens.
+ * Color and typography values are neutral, temporary defaults until the
+ * CS Corp visual identity is approved. See docs/DESIGN_SYSTEM.md.
+ */
+:root {
+  color-scheme: light;
+
+  --color-neutral-0: #ffffff;
+  --color-neutral-50: #f7f8f8;
+  --color-neutral-100: #eceeee;
+  --color-neutral-300: #c7cccc;
+  --color-neutral-600: #505858;
+  --color-neutral-800: #242929;
+  --color-neutral-900: #151919;
+
+  --color-brand-primary: var(--color-neutral-900);
+  --color-brand-secondary: var(--color-neutral-600);
+  --color-background: var(--color-neutral-0);
+  --color-surface: var(--color-neutral-50);
+  --color-text: var(--color-neutral-900);
+  --color-text-muted: var(--color-neutral-600);
+  --color-border: var(--color-neutral-300);
+  --color-focus: #2457d6;
+
+  --font-family-primary: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: clamp(2rem, 5vw, 4.5rem);
+  --line-height-tight: 1.1;
+  --line-height-body: 1.6;
+  --font-weight-regular: 400;
+  --font-weight-medium: 600;
+  --font-weight-bold: 700;
+
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: clamp(4rem, 10vw, 8rem);
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-pill: 999px;
+
+  --shadow-sm: 0 1px 2px rgb(21 25 25 / 8%);
+  --shadow-md: 0 12px 32px rgb(21 25 25 / 10%);
+
+  --container-max-width: 75rem;
+  --container-content-width: 48rem;
+  --container-gutter: clamp(1rem, 4vw, 2rem);
+
+  /* Reference values; CSS variables cannot be used in media conditions. */
+  --breakpoint-tablet: 48rem;
+  --breakpoint-laptop: 64rem;
+  --breakpoint-desktop: 80rem;
+
+  --transition-fast: 150ms ease;
+  --transition-medium: 250ms ease;
+}

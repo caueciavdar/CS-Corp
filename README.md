@@ -1,6 +1,6 @@
 # CS-Corp
 
-Novo website da empresa CS Corp, reconstruído com React + TypeScript + HTML5 + CSS e Vite. Esta etapa estabelece somente a base técnica e uma página temporária; design e páginas definitivas ainda serão aprovados.
+Novo website da empresa CS Corp, reconstruído com React + TypeScript + HTML5 + CSS e Vite. O projeto possui fundação técnica e visual inicial, com tokens e primitives reutilizáveis; identidade, conteúdo, navegação e páginas definitivas ainda serão aprovados.
 
 ## Requisitos
 
@@ -50,8 +50,10 @@ ESLint usa configuração flat em eslint.config.js. TypeScript está na linha 6.
 - src/main.tsx: entrada React e CSS global.
 - src/App.tsx: composição da aplicação.
 - src/pages/: componentes de página; contém somente HomePage temporária.
-- src/styles/: CSS global básico.
-- src/components/ e src/assets/: reservados para componentes compartilhados e assets quando necessários.
+- src/styles/: tokens propostos e CSS global da fundação visual.
+- src/components/layout/: primitives de estrutura Container e Section.
+- src/components/ui/: primitives de interface; contém o Button inicial.
+- src/assets/: reservado para assets importados quando necessários.
 - public/: reservado para arquivos servidos sem transformação.
 - docs/: documentação oficial do projeto.
 - AGENTS.md: instruções permanentes para futuras sessões do Codex.

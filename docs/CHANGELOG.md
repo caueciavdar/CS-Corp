@@ -1,5 +1,28 @@
 # Changelog
 
+## 2026-09-21 — Regra de servidor local único
+
+- Adicionada ao `AGENTS.md` a regra permanente de verificar e controlar instâncias Vite/Node antes de executar `npm run dev`.
+- Documentado que somente uma instância de desenvolvimento deste projeto pode permanecer ativa, evitando o acúmulo de portas 5173, 5174, 5175 e seguintes.
+- Servidores iniciados apenas para validação devem ser encerrados ao final; a resposta final deve informar `running` com a porta atual ou `stopped after validation`.
+- Orientação operacional alinhada em `docs/DEPLOYMENT.md` e registrada na decisão 009.
+
+## 2026-09-21 — Fundação visual e proposta de navegação
+
+- Estruturado o design system inicial com status Confirmed, Proposed e TBD para brand, cores, tipografia, espaçamento, formas, componentes, responsividade, acessibilidade e motion.
+- Adicionados tokens CSS neutros e temporários, separados dos estilos globais e sem declarar identidade de marca aprovada.
+- Criadas as primitives reutilizáveis `Container`, `Section` e `Button`; o placeholder técnico passou a demonstrar a fundação sem se tornar uma Home definitiva.
+- Proposta arquitetura de informação para Home, Services, About, Projects / Gallery e Contact, incluindo padrões desktop e mobile; páginas, rotas, CTA e conteúdo continuam sem aprovação.
+- Documentados componentes futuros, estratégia mobile-first, breakpoints propostos, requisitos de acessibilidade e decisão técnica 008.
+- Nenhuma dependência, router, backend, integração ou configuração de deploy adicionada.
+
+### Validação desta etapa
+
+- Node 24.21.0; `npm.cmd run lint`: aprovado sem avisos; `npm.cmd run typecheck`: aprovado.
+- `npm.cmd run build`: aprovado; Vite 8.3.0 gerou o build de produção. A primeira tentativa no sandbox falhou com `spawn EPERM`; a repetição com permissão para subprocessos foi concluída.
+- `npm.cmd run dev -- --host 127.0.0.1 --port 5175 --strictPort`: servidor iniciado; HTTP 200 confirmado para a raiz, `main.tsx`, `HomePage.tsx`, `tokens.css` e `global.css`; servidor encerrado após a verificação.
+- `git diff --check`: aprovado, somente avisos locais de conversão LF/CRLF. Verificação visual em navegador não realizada.
+
 ## 2026-09-21 — Revisão da fundação técnica
 
 - Configurado ESLint flat com presets recomendados JavaScript, TypeScript e React Hooks; npm run lint verifica sem alterar arquivos e rejeita avisos.

@@ -9,6 +9,12 @@
 - npm run preview permite conferir o build, sem servir como servidor de produção.
 - Parar o servidor com Ctrl+C.
 
+### Ciclo de vida do servidor local
+
+Antes de executar `npm run dev`, verificar se já existe uma instância Vite/Node deste projeto em execução. Se houver, manter somente a instância que o usuário estiver utilizando ativamente ou encerrá-la e reiniciá-la de forma controlada; nunca iniciar uma duplicata. Não acumular servidores em portas sucessivas como 5173, 5174 e 5175.
+
+Quando o servidor for iniciado somente para validação, encerrá-lo ao concluir. A resposta final da tarefa deve registrar um destes estados: `running`, acompanhado da porta atual, ou `stopped after validation`.
+
 ### Ambiente inicial Windows
 
 O Node global encontrado era 18.16.0, incompatível com o Vite atual.

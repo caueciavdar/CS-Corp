@@ -7,8 +7,8 @@
 - Novo website: experiência completa, profissional, moderna, limpa, fácil de usar e navegar, preparada para crescimento e múltiplas páginas.
 - Stack: React, TypeScript, HTML5, CSS, Vite e npm. Sem PHP.
 - Princípios: simplicidade, reutilização, organização, responsividade, acessibilidade e documentação versionada como source of truth.
-- Status: fundação técnica e página temporária; identidade visual, conteúdo comercial e páginas definitivas pendentes (TBD).
-- Escopo desta etapa: ambiente local, build, documentação e regras permanentes. Sem backend, integrações ou deploy automático.
+- Status: fundação técnica e visual inicial com tokens e primitives reutilizáveis; identidade visual final, conteúdo comercial, navegação e páginas definitivas pendentes (TBD).
+- Escopo atual: design system e arquitetura de navegação propostos, sem construir páginas completas. Sem backend, integrações ou deploy automático.
 
 ## Documentos
 

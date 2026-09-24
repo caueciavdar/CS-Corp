@@ -17,6 +17,16 @@
 - Usar Node 24 LTS e npm; versionar package-lock.json ao alterar dependências.
 - Não configurar deploy automático nesta etapa.
 
+## Local Development Server Rules
+
+- Antes de executar `npm run dev`, verificar se já existe uma instância anterior do servidor Vite/Node deste projeto em execução.
+- Se existir, encerrar essa instância antes de iniciar uma nova.
+- Não deixar múltiplos servidores de desenvolvimento do mesmo projeto rodando simultaneamente.
+- Evitar acumular portas como `5173`, `5174`, `5175`, etc.
+- Sempre que o servidor for iniciado apenas para validação, encerrá-lo ao terminar a validação.
+- Se houver uma instância que o usuário esteja utilizando ativamente no navegador, preservar apenas essa instância ou reiniciá-la de forma controlada, evitando duplicatas.
+- Na resposta final, informar se o servidor ficou `running`, com a porta atual, ou `stopped after validation`.
+
 ## Documentation Rules
 
 - /docs é a fonte principal de documentação do projeto e source of truth.

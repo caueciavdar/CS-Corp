@@ -9,8 +9,11 @@ React compõe a interface; TypeScript verifica tipos; HTML5 define a entrada sem
 - index.html: documento de entrada, idioma inglês somente para o placeholder atual.
 - src/main.tsx: inicialização React em StrictMode e importação do CSS.
 - src/App.tsx: composição principal.
-- src/pages/HomePage.tsx: página temporária de verificação.
-- src/styles/global.css: reset mínimo e estilos neutros provisórios.
+- src/pages/HomePage.tsx: placeholder temporário que demonstra somente a fundação visual.
+- src/components/layout/: primitives reutilizáveis de estrutura (`Container` e `Section`).
+- src/components/ui/: primitives reutilizáveis de interface; contém o `Button` inicial.
+- src/styles/tokens.css: custom properties propostas e temporárias do design system.
+- src/styles/global.css: reset, fundamentos globais, estilos das primitives e placeholder.
 - src/components/: reservada para componentes compartilhados quando houver reutilização real.
 - src/assets/: reservada para assets importados pelo código e processados pelo Vite.
 - public/: reservada para arquivos que precisam preservar nome e caminho, sem transformação.
@@ -24,11 +27,13 @@ Pastas reservadas podem estar vazias localmente; Git não versiona diretórios v
 
 ## Componentes e páginas
 
-Manter componentes pequenos, reutilizáveis e sem duplicação. Separar conteúdo, lógica e apresentação quando apropriado. Páginas ficam em src/pages; elementos compartilhados em src/components. Apenas o placeholder raiz existe. Roteamento e URLs definitivas: TBD, após aprovação da estrutura. Nenhuma biblioteca de roteamento é necessária agora.
+Manter componentes pequenos, reutilizáveis e sem duplicação. Separar conteúdo, lógica e apresentação quando apropriado. Páginas ficam em `src/pages`; layout compartilhado em `src/components/layout`; elementos de UI em `src/components/ui`. `Container`, `Section` e `Button` formam a base mínima atual. Os componentes futuros estão propostos em SITE_STRUCTURE.md e só devem ser criados conforme requisitos reais. Apenas o placeholder raiz existe. Roteamento e URLs definitivas: TBD, após aprovação da estrutura. Nenhuma biblioteca de roteamento é necessária agora.
 
 ## CSS e assets
 
-CSS global nativo para reset e fundamentos; estilos específicos próximos aos componentes quando surgirem. Fonte de sistema, imagens responsivas e links preservando sublinhado padrão. Valores do placeholder não constituem identidade visual aprovada. Não adicionar assets de marca não confirmados.
+CSS nativo organizado em duas camadas: `tokens.css` é importado primeiro e concentra valores compartilhados; `global.css` contém reset, defaults acessíveis, primitives e o placeholder. Estilos específicos devem ficar próximos aos componentes quando a base crescer. A estratégia é mobile-first, com breakpoints propostos em DESIGN_SYSTEM.md. Fonte de sistema, escala neutra, espaçamentos, raios, sombras e larguras atuais são temporários e não constituem identidade visual aprovada. Não adicionar assets de marca não confirmados.
+
+Componentes devem preferir tokens semânticos a valores visuais soltos. Breakpoints são documentados como tokens de referência, mas precisam ser literais em `@media`. O fallback global de `prefers-reduced-motion` deve permanecer; animações futuras precisam justificar função.
 
 ## Integrações e qualidade
 
