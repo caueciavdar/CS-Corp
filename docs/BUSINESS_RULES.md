@@ -11,7 +11,7 @@
 ## TBD
 
 - Serviços, preços, áreas atendidas e demais regras comerciais.
-- Conteúdo, idiomas definitivos, dados de contato e formulários.
-- Páginas, navegação e integrações aprovadas.
+- Conteúdo, dados de contato e formulários.
+- URLs/rotas, integrações e detalhes comerciais das páginas aprovadas.
 
 Não inferir aprovação comercial a partir do website atual. Não inventar serviços, preços, áreas atendidas ou outras regras. Registrar o que for confirmado pelo usuário e atualizar os documentos relacionados na mesma tarefa.

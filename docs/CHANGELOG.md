@@ -1,5 +1,36 @@
 # Changelog
 
+## 2026-09-23 — Aprovação da direção visual, navegação e estrutura planejada
+
+- Confirmada a direção visual clean, profissional, moderna e premium, com espaço em branco, fotografia real preferencial, texto escuro sobre fundos claros, animação mínima, sombras sutis, cantos levemente arredondados e prioridade de acessibilidade/legibilidade.
+- Aprovada a Option C — Black / White / Premium Blue — e atualizados os tokens semânticos em `src/styles/tokens.css`.
+- Aprovada a tipografia Manrope para headings e Source Sans 3 para body/interface text, com fallbacks e pesos recomendados documentados.
+- Confirmados inglês como idioma principal, sem multilíngue nesta etapa, e `Get a Free Estimate` como CTA primário.
+- Aprovada a navegação inicial desktop/mobile e a estrutura de alto nível da Home, sem implementar Header, Hero ou Home.
+- Mantidos como TBD o conteúdo comercial, nome, logo, tagline, serviços, áreas, contatos, redes, descrição, diferenciais, reviews e fotos autorizadas.
+- Registradas as decisões 010–013.
+
+### Validação desta etapa
+
+- Alterações restritas à documentação e tokens/CSS globais da fundação; Vite não foi iniciado.
+- Build, typecheck e lint executados após as alterações.
+- `git diff --check` executado após as alterações.
+
+## 2026-09-23 — Preparação de identidade visual e navegação para aprovação
+
+- Organizadas em Confirmed, Proposed e TBD as decisões de branding e direção visual.
+- Registradas três opções de paleta com HEX provisórios, três combinações tipográficas e cinco labels de CTA para futura escolha.
+- Documentada a proposta de navegação desktop/mobile sem implementar Header definitivo.
+- Documentada a composição futura da Home por seção, sem conteúdo comercial inventado e sem construir a página.
+- Adicionada lista de conteúdo, assets e dados reais necessários antes da implementação visual.
+- Registrada a decisão 010; nenhum token final, dependência, componente definitivo ou página foi alterado nesta etapa.
+
+### Validação desta etapa
+
+- Alterações restritas à documentação; lint, typecheck e build não foram necessários e não foram executados.
+- Servidor local não foi iniciado; `stopped after validation`.
+- Revisão de `git diff --check` executada após as alterações.
+
 ## 2026-09-21 — Regra de servidor local único
 
 - Adicionada ao `AGENTS.md` a regra permanente de verificar e controlar instâncias Vite/Node antes de executar `npm run dev`.

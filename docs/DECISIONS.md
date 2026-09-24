@@ -44,3 +44,19 @@ Os valores atuais são defaults neutros temporários, não identidade CS Corp ap
 ## Decision 009: Instância única do servidor local de desenvolvimento.
 Data: 2026-09-21. Status: aceita.
 Antes de iniciar o Vite com `npm run dev`, verificar e encerrar qualquer instância anterior deste projeto, exceto quando uma única instância estiver em uso ativo pelo usuário e puder ser preservada. Servidores iniciados somente para validação devem ser encerrados ao final. Não acumular instâncias ou portas sucessivas; informar o estado final e a porta, quando aplicável, em cada resposta final.
+
+## Decision 010: Direção visual inicial aprovada.
+Data: 2026-09-23. Status: aceita.
+Adotar direção clean, profissional, moderna e premium, com espaço em branco, fotografia real preferencialmente, texto escuro sobre fundos claros, animação mínima e intencional, sombras sutis, cantos levemente arredondados e acessibilidade/legibilidade como prioridades. Selecionar Option C — Black / White / Premium Blue — com os tokens documentados em DESIGN_SYSTEM.md. Componentes devem consumir tokens semânticos, não HEXs soltos.
+
+## Decision 011: Tipografia e idioma inicial.
+Data: 2026-09-23. Status: aceita.
+Usar Manrope em headings e Source Sans 3 em body/interface text, com fallbacks documentados e apenas os pesos necessários. O idioma principal do website é inglês; não implementar multilíngue nesta etapa. Web fonts, licenciamento e estratégia de carregamento permanecem TBD.
+
+## Decision 012: CTA primário aprovado.
+Data: 2026-09-23. Status: aceita.
+Usar `Get a Free Estimate` como CTA primário em todo o website, até que uma decisão posterior documentada o altere. Destino e fluxo permanecem TBD.
+
+## Decision 013: Navegação e estrutura de Home aprovadas.
+Data: 2026-09-23. Status: aceita para planejamento.
+Navegação inicial: Home, Services, About, Projects, Contact e Get a Free Estimate. Desktop exibe logo e itens; mobile exibe logo e botão de menu, com os mesmos itens dentro do menu. A Home terá Header, Hero, Trust / Credibility, Services, Why Choose Us, Featured Projects, Our Process, Reviews / Testimonials, Final CTA e Footer. URLs exatas, conteúdo, assets e componentes permanecem propostos/TBD; Header, Hero e Home não serão implementados nesta etapa.

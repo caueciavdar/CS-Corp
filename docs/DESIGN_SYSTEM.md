@@ -1,6 +1,8 @@
 # Design system
 
-Sistema visual inicial para o novo website. A fundação técnica está implementada, mas a identidade de marca continua pendente de aprovação. Os termos abaixo têm significado específico:
+Sistema visual inicial aprovado para o novo website. A direção visual, a paleta inicial, a tipografia, o idioma primário e o CTA principal abaixo estão confirmados. Isso não aprova conteúdo comercial, assets de marca, rotas finais ou a implementação das páginas.
+
+Os termos abaixo têm significado específico:
 
 - **Confirmed:** requisito já estabelecido pelo projeto.
 - **Proposed:** direção recomendada e preparada para avaliação; pode mudar.
@@ -8,23 +10,64 @@ Sistema visual inicial para o novo website. A fundação técnica está implemen
 
 ## Brand
 
-- **Confirmed:** a experiência deve transmitir profissionalismo, confiança, organização, qualidade, simplicidade e modernidade, com navegação fácil e sem aparência carregada ou genérica.
-- **Proposed:** usar composição limpa, hierarquia tipográfica clara, espaço em branco e poucos elementos decorativos.
-- **TBD:** logotipo oficial, versões e área de proteção; cores institucionais; tipografia de marca; tom visual; tagline e manual de marca.
+- **Confirmed:** a experiência deve ser clean, profissional, moderna e premium, com bastante espaço em branco, textos escuros sobre fundos claros, sombras sutis, cantos levemente arredondados, animação mínima e intencional, acessibilidade e legibilidade como prioridades.
+- **Confirmed:** fotografias reais da empresa/projetos devem ser preferidas a stock photography genérica quando estiverem disponíveis e autorizadas.
+- **TBD:** nome comercial definitivo; logotipo oficial, versões, área de proteção e arquivos; tagline; manual de marca; aplicações da identidade em fundos claros e escuros.
 
 ## Color palette
 
-- **Confirmed:** evitar excesso de cores e validar contraste antes de aprovar a paleta.
-- **Proposed:** escala neutra temporária em `src/styles/tokens.css`, com papéis semânticos para fundo, superfície, texto, texto secundário, borda e foco. `--color-brand-primary` e `--color-brand-secondary` são aliases provisórios neutros, não cores oficiais.
-- **TBD:** paleta de marca final, cores de apoio e estados de feedback (success, warning e error).
+- **Confirmed:** Option C — Black / White / Premium Blue — é a direção de cor selecionada.
+- **Confirmed:** `src/styles/tokens.css` usa tokens semânticos; componentes não devem espalhar valores HEX diretamente.
+- **Confirmed:** a paleta inicial aprovada é:
 
-Nenhuma cor temporária deve ser apresentada como identidade aprovada. Componentes devem consumir tokens semânticos, não hexadecimais soltos.
+| Token semântico | HEX | Uso inicial |
+| --- | --- | --- |
+| `--color-background` | `#FFFFFF` | Fundo principal |
+| `--color-surface` | `#F1F5F9` | Superfícies e áreas neutras |
+| `--color-brand-primary` | `#2F80ED` | Azul premium para marca, links e CTA |
+| `--color-brand-dark` | `#0B1220` | Preto quase absoluto para contraste e superfícies escuras |
+| `--color-brand-secondary` | `#334155` | Azul/cinza escuro secundário e estados de interação |
+| `--color-text` | `#111827` | Texto principal |
+| `--color-text-muted` | `#475569` | Texto secundário |
+| `--color-border` | `#CBD5E1` | Bordas e divisores |
+| `--color-focus` | `#2F80ED` | Indicador de foco |
+
+- **TBD:** cores específicas de feedback (success, warning e error) e validação de contraste de cada combinação final em componentes reais.
+
+### Palette options previously considered
+
+Os HEX são referências iniciais para discussão, não valores implementados.
+
+| Token | Option A — Blue / White / Dark Gray | Option B — Navy / White / Light Blue | Option C — Black / White / Premium Blue |
+| --- | --- | --- | --- |
+| primary | `#1D4ED8` | `#0F2747` | `#0B1220` |
+| secondary | `#2563EB` | `#315B87` | `#334155` |
+| accent | `#60A5FA` | `#8CC8F5` | `#2F80ED` |
+| background | `#FFFFFF` | `#F8FAFC` | `#FFFFFF` |
+| surface | `#F8FAFC` | `#FFFFFF` | `#F1F5F9` |
+| text | `#111827` | `#102033` | `#111827` |
+| muted text | `#4B5563` | `#526274` | `#475569` |
+| border | `#D1D5DB` | `#D9E2EC` | `#CBD5E1` |
+
+Option C foi aprovada; as opções A e B permanecem apenas como histórico de alternativas consideradas. A paleta deve ser validada em header, botões, links, cards, imagens, estados de foco e contraste AA antes da implementação final de páginas.
 
 ## Typography
 
-- **Confirmed:** legibilidade, hierarquia consistente e carregamento responsável.
-- **Proposed:** stack nativa `system-ui` enquanto a fonte oficial é TBD; escala inicial `sm`, `md`, `lg` e `xl`, line-height de corpo 1.6 e títulos compactos. O título fluido usa `clamp()`.
-- **TBD:** famílias, pesos e arquivos de fonte oficiais; escala tipográfica final.
+- **Confirmed:** `Manrope` para headings e `Source Sans 3` para body/interface text.
+- **Confirmed:** tokens separados `--font-family-heading` e `--font-family-body` devem ser usados na apresentação.
+- **Confirmed:** fallback stacks iniciais: `"Manrope", "Segoe UI", Arial, sans-serif` e `"Source Sans 3", "Segoe UI", Arial, sans-serif`.
+- **Confirmed:** pesos recomendados: 400 para corpo, 500/600 para controles e 700 para headings; usar somente pesos necessários.
+- **TBD:** implementação de web fonts, incluindo fonte de distribuição, licenciamento, subset, preload, `font-display` e impacto de desempenho. Não adicionar fontes externas nesta etapa.
+
+### Typography options previously considered
+
+| Option | Headings | Body | Rationale |
+| --- | --- | --- | --- |
+| A | `Inter` | `Inter` | Sistema neutro, legível e consistente em todos os tamanhos. |
+| B | `Manrope` | `Source Sans 3` | Contraste moderado entre títulos e corpo, mantendo leitura confortável. |
+| C | `system-ui` | `system-ui` | Zero download adicional e comportamento previsível; opção mais conservadora. |
+
+Pesos, arquivos, estratégia de preload e fallback de web fonts permanecem TBD; os fallbacks CSS e pesos recomendados acima já estão aprovados.
 
 ## Spacing
 
@@ -44,7 +87,11 @@ Nenhuma cor temporária deve ser apresentada como identidade aprovada. Component
 ## Buttons
 
 - **Proposed:** componente base `Button` com variantes `primary` e `secondary`, altura mínima de 44px, foco visível, hover apenas em dispositivos compatíveis e estado disabled. O tipo padrão é `button` para evitar submissão acidental.
-- **TBD:** texto, destinos, hierarquia e cores finais de CTAs; necessidade de tamanhos adicionais.
+- **TBD:** destino, raio e necessidade de tamanhos adicionais; o texto do CTA primário está aprovado como `Get a Free Estimate`.
+
+### Primary CTA
+
+O CTA primário aprovado é `Get a Free Estimate`. Usá-lo em todo o website, salvo decisão posterior registrada. O destino exato permanece TBD até o roteamento e o fluxo real serem definidos.
 
 Links de navegação não devem ser renderizados como `button`, nem ações como links. Uma futura variante de link com aparência de botão deve preservar semântica de âncora.
 
@@ -67,9 +114,9 @@ Links de navegação não devem ser renderizados como `button`, nem ações como
 
 ## Navigation
 
-- **Proposed:** desktop com logo, navegação principal e CTA primário; mobile com logo, botão de menu, navegação móvel e CTA. O item atual deve ser indicado visualmente e por `aria-current="page"`.
-- **Confirmed:** navegação completa não faz parte desta etapa.
-- **TBD:** páginas aprovadas, labels, URLs, CTA, comportamento do menu, idioma e recursos de logo.
+- **Confirmed:** desktop com logo, navegação principal e CTA primário; mobile com logo, botão de menu, navegação móvel e CTA. O item atual deve ser indicado visualmente e por `aria-current="page"`.
+- **Confirmed:** labels iniciais, idioma inglês e CTA `Get a Free Estimate` estão aprovados; URLs, comportamento do menu e recursos de logo permanecem TBD.
+- **Confirmed:** navegação completa não faz parte desta etapa de implementação.
 
 ## Section layout
 
@@ -112,4 +159,4 @@ Links de navegação não devem ser renderizados como `button`, nem ações como
 
 ## Token implementation
 
-Tokens vivem em `src/styles/tokens.css` e são importados antes de `src/styles/global.css`. A separação permite trocar valores de identidade sem reescrever componentes. Valores atuais são **Proposed** e temporários; nenhum token de branding representa aprovação final.
+Tokens vivem em `src/styles/tokens.css` e são importados antes de `src/styles/global.css`. A separação permite trocar valores de identidade sem reescrever componentes. Os tokens de cor, tipografia e papéis semânticos documentados nesta página são **Confirmed** como paleta inicial; ajustes de contraste e tokens ainda não definidos permanecem TBD.

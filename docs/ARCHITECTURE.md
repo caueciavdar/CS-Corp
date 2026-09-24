@@ -12,7 +12,7 @@ React compõe a interface; TypeScript verifica tipos; HTML5 define a entrada sem
 - src/pages/HomePage.tsx: placeholder temporário que demonstra somente a fundação visual.
 - src/components/layout/: primitives reutilizáveis de estrutura (`Container` e `Section`).
 - src/components/ui/: primitives reutilizáveis de interface; contém o `Button` inicial.
-- src/styles/tokens.css: custom properties propostas e temporárias do design system.
+- src/styles/tokens.css: custom properties semânticas do design system, com a paleta inicial e tipografia aprovadas documentadas em DESIGN_SYSTEM.md.
 - src/styles/global.css: reset, fundamentos globais, estilos das primitives e placeholder.
 - src/components/: reservada para componentes compartilhados quando houver reutilização real.
 - src/assets/: reservada para assets importados pelo código e processados pelo Vite.
@@ -31,7 +31,7 @@ Manter componentes pequenos, reutilizáveis e sem duplicação. Separar conteúd
 
 ## CSS e assets
 
-CSS nativo organizado em duas camadas: `tokens.css` é importado primeiro e concentra valores compartilhados; `global.css` contém reset, defaults acessíveis, primitives e o placeholder. Estilos específicos devem ficar próximos aos componentes quando a base crescer. A estratégia é mobile-first, com breakpoints propostos em DESIGN_SYSTEM.md. Fonte de sistema, escala neutra, espaçamentos, raios, sombras e larguras atuais são temporários e não constituem identidade visual aprovada. Não adicionar assets de marca não confirmados.
+CSS nativo organizado em duas camadas: `tokens.css` é importado primeiro e concentra valores compartilhados; `global.css` contém reset, defaults acessíveis, primitives e o placeholder. Estilos específicos devem ficar próximos aos componentes quando a base crescer. A estratégia é mobile-first, com breakpoints propostos em DESIGN_SYSTEM.md. A paleta e as famílias tipográficas iniciais estão aprovadas; web fonts, assets de marca, conteúdo e ajustes de layout permanecem TBD. Não adicionar assets de marca não confirmados.
 
 Componentes devem preferir tokens semânticos a valores visuais soltos. Breakpoints são documentados como tokens de referência, mas precisam ser literais em `@media`. O fallback global de `prefers-reduced-motion` deve permanecer; animações futuras precisam justificar função.
 
