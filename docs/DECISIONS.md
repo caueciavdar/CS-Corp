@@ -1,5 +1,9 @@
 # Architecture Decision Log
 
+## Decision 016: Porta fixa para o servidor Vite
+Data: 2026-09-24. Status: aceita.
+Configurar o servidor de desenvolvimento do Vite para usar a porta 5173 com `strictPort: true`. Isso mantém a URL local previsível e evita que uma instância duplicada seja deslocada silenciosamente para outra porta; a instância existente deve ser verificada e encerrada conforme a decisão 009.
+
 ## Decision 014: Conteúdo comercial confirmado e Home aprovada para implementação
 Data: 2026-09-24. Status: aceita.
 Confirmados CS Conexion Services Corp, as duas divisões, telefone, email temporário, Instagram, Facebook, serviços de flooring e cleaning e Jacksonville como área adicional. A Home segue a referência visual enviada pelo usuário e inclui Header, Hero, Two Divisions, Why Choose CS, Our Work, reviews placeholder, CTA e Footer. Reviews reais e fotos reais permanecem pendentes; nenhum conteúdo fictício deve ser apresentado.

@@ -19,7 +19,7 @@ React compõe a interface; TypeScript verifica tipos; HTML5 define a entrada sem
 - src/assets/: reservada para assets importados pelo código e processados pelo Vite.
 - public/: reservada para arquivos que precisam preservar nome e caminho, sem transformação.
 - docs/: fonte principal da documentação.
-- vite.config.ts: integração oficial React/Vite.
+- vite.config.ts: integração oficial React/Vite e servidor de desenvolvimento fixado na porta 5173 com `strictPort` habilitado.
 - tsconfig.json: TypeScript estrito, sem emissão; build feito pelo Vite.
 - eslint.config.js: configuração flat do ESLint para JavaScript, TypeScript e React Hooks; dist ignorado e node_modules excluído por padrão.
 - dist/: saída gerada e ignorada pelo Git.

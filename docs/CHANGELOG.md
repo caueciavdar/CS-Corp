@@ -1,5 +1,27 @@
 # Changelog
 
+## 2026-09-24 — Porta fixa do servidor Vite
+
+- Configurado o Vite para servir o desenvolvimento na porta 5173 com `strictPort: true`.
+- Atualizadas as instruções de desenvolvimento e o registro de decisões.
+
+### Validação desta etapa
+
+- Lint, typecheck e build executados após a alteração.
+- Servidor Vite iniciado em instância única na porta 5173 e encerrado após a validação.
+
+## 2026-09-24 — Revisão visual de Header e Hero
+
+- Ajustado o Header para integrar-se ao Hero, com navegação compacta, CTA, telefone e comportamento mobile preservado.
+- Substituída a identidade provisória circular por uma área explicitamente temporária para receber o logo oficial.
+- Atualizado o Hero com a copy aprovada, composição predominantemente à esquerda, overlay escuro, placeholder arquitetônico em CSS e itens de valor.
+- As demais seções da Home não foram redesenhadas; fotografia arquitetônica e logo oficial continuam pendentes.
+
+### Validação desta etapa
+
+- Lint, typecheck e build executados após as alterações.
+- Servidor Vite iniciado em instância única para validação visual e encerrado ao final.
+
 ## 2026-09-24 — Implementação estrutural da Home
 
 - Implementada a Home inspirada na referência visual aprovada: Header, Hero, duas divisões, Why Choose CS, Our Work, reviews placeholder, CTA e Footer.

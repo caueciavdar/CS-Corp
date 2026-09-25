@@ -2,9 +2,10 @@ import { useState } from 'react'
 
 const navigation = [
   ['Home', '#home'],
-  ['Services', '#divisions'],
   ['About', '#why-choose'],
-  ['Projects', '#our-work'],
+  ['Flooring & Interiors', '#divisions'],
+  ['Cleaning Services', '#divisions'],
+  ['Our Work', '#our-work'],
   ['Contact', '#contact'],
 ]
 
@@ -15,8 +16,8 @@ export default function Header() {
     <header className="site-header">
       <div className="container site-header__inner">
         <a className="site-logo" href="#home" aria-label="CS Conexion Services Corp home">
-          <span className="site-logo__mark">CS</span>
-          <span className="site-logo__name">CS Conexion<br />Services Corp</span>
+          <span className="site-logo__mark" aria-hidden="true">CS</span>
+          <span className="site-logo__name">CS Conexion<br />Services Corp <small>temporary logo area</small></span>
         </a>
         <button
           className="menu-toggle"
@@ -32,7 +33,10 @@ export default function Header() {
           {navigation.map(([label, href]) => (
             <a key={label} href={href} onClick={() => setMenuOpen(false)}>{label}</a>
           ))}
-          <a className="button button--primary site-nav__cta" href="#contact" onClick={() => setMenuOpen(false)}>Get a Free Estimate</a>
+          <div className="site-nav__contact">
+            <a className="button button--primary site-nav__cta" href="#contact" onClick={() => setMenuOpen(false)}>Get a Free Estimate</a>
+            <a className="site-nav__phone" href="tel:+19049555850">(904) 955-5850</a>
+          </div>
         </nav>
       </div>
     </header>

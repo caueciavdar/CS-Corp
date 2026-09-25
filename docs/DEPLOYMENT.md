@@ -2,9 +2,11 @@
 
 ## Development
 
+- `vite.config.ts` fixa o servidor de desenvolvimento em `http://localhost:5173` com `strictPort` habilitado. Se a porta estiver ocupada, o Vite encerra com erro em vez de selecionar outra porta.
+
 - Node 24 LTS e npm.
 - npm install para instalar; npm ci para reproduzir package-lock.json.
-- npm run dev executa localmente com Vite; URL padrão http://localhost:5173, podendo mudar se a porta estiver ocupada.
+- npm run dev executa localmente com Vite em http://localhost:5173; a porta é fixa e `strictPort` está habilitado.
 - npm run build verifica tipos e gera dist/.
 - npm run preview permite conferir o build, sem servir como servidor de produção.
 - Parar o servidor com Ctrl+C.
