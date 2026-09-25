@@ -1,5 +1,31 @@
 # Changelog
 
+## 2026-09-24 — Ajustes finais de Header e Hero
+
+- Ajustada a headline do Hero para manter `ONE COMMITMENT.` junto em desktop, com escala e largura responsivas; no mobile a quebra permanece natural.
+- Removido o CTA duplicado do conteúdo do Hero e o label `Service divisions`, mantendo o CTA principal no Header e o conteúdo institucional lateral.
+- Tornada a separação do Header mais sutil, refinada a altura/centralização e ampliada discretamente a área do logo temporário.
+- Reforçados os três value items com tipografia mais presente, espaçamento melhor e ícones SVG inline leves.
+- Mantidos o background arquitetônico CSS temporário, a estrutura preparada para fotografia real e todas as demais seções da Home sem alteração.
+
+### Validação desta etapa
+
+- Lint, typecheck e build executados após as alterações.
+- Nenhuma instância de desenvolvimento estava ativa em `5173`; validação local não iniciou uma nova instância.
+
+## 2026-09-24 — Segunda rodada visual de Header e Hero
+
+- Refinada a distribuição do Header desktop, com navegação mais compacta, separação visual sutil e CTA/telefone melhor alinhados.
+- Tornada a área de logo provisória mais discreta, mantendo explícito que o asset oficial ainda não foi entregue.
+- Reduzida e neutralizada a headline do Hero, mantendo `TWO SERVICES. ONE COMMITMENT.` em branco e reservando azul/dourado para acentos.
+- Reestruturado o placeholder arquitetônico do Hero com overlays, linhas e composição mais equilibrada; nenhuma fotografia externa foi adicionada.
+- Reorganizados o bloco institucional à direita, o CTA e os três itens de valor, preservando responsividade e as demais seções da Home.
+
+### Validação desta etapa
+
+- Lint, typecheck e build executados após as alterações.
+- Instância de desenvolvimento em `5173` verificada antes da validação; nenhuma nova instância foi iniciada.
+
 ## 2026-09-24 — Porta fixa do servidor Vite
 
 - Configurado o Vite para servir o desenvolvimento na porta 5173 com `strictPort: true`.
