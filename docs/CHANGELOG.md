@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-09-24 — Implementação estrutural da Home
+
+- Implementada a Home inspirada na referência visual aprovada: Header, Hero, duas divisões, Why Choose CS, Our Work, reviews placeholder, CTA e Footer.
+- Confirmados e publicados os serviços de flooring e cleaning, Jacksonville na área atendida, contatos e redes sociais aprovadas.
+- Criado `BeforeAfterSlider` reutilizável para mouse e touch, com placeholders neutros claramente temporários e pronto para fotos reais.
+- Reviews exibem somente `Client reviews coming soon.`; nenhuma avaliação, estrela, nome ou imagem de portfólio foi inventada.
+- Fotos reais dos trabalhos, reviews reais e logo oficial permanecem pendentes.
+
 ## 2026-09-23 — Aprovação da direção visual, navegação e estrutura planejada
 
 - Confirmada a direção visual clean, profissional, moderna e premium, com espaço em branco, fotografia real preferencial, texto escuro sobre fundos claros, animação mínima, sombras sutis, cantos levemente arredondados e prioridade de acessibilidade/legibilidade.

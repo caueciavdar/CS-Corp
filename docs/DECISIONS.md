@@ -1,5 +1,13 @@
 # Architecture Decision Log
 
+## Decision 014: Conteúdo comercial confirmado e Home aprovada para implementação
+Data: 2026-09-24. Status: aceita.
+Confirmados CS Conexion Services Corp, as duas divisões, telefone, email temporário, Instagram, Facebook, serviços de flooring e cleaning e Jacksonville como área adicional. A Home segue a referência visual enviada pelo usuário e inclui Header, Hero, Two Divisions, Why Choose CS, Our Work, reviews placeholder, CTA e Footer. Reviews reais e fotos reais permanecem pendentes; nenhum conteúdo fictício deve ser apresentado.
+
+## Decision 015: Comparação before/after reutilizável
+Data: 2026-09-24. Status: implementada.
+`BeforeAfterSlider` usa Pointer Events para mouse e touch, mantém barra central arrastável, labels Before/After e placeholders neutros até o recebimento das fotos reais. O componente está preparado para múltiplos projetos.
+
 ## Decision 001: Use React + TypeScript + Vite.
 Data: 2026-09-21. Status: aceita.
 Usar HTML5, CSS nativo e npm para uma base frontend simples e preparada para crescer.

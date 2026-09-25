@@ -49,7 +49,8 @@ ESLint usa configuração flat em eslint.config.js. TypeScript está na linha 6.
 
 - src/main.tsx: entrada React e CSS global.
 - src/App.tsx: composição da aplicação.
-- src/pages/: componentes de página; contém somente HomePage temporária.
+- src/pages/: componentes de página; contém a Home implementada.
+- src/components/site/: componentes reutilizáveis da Home, incluindo Header, Hero, divisões, Why Choose, Our Work, slider before/after, reviews placeholder, CTA e Footer.
 - src/styles/: tokens propostos e CSS global da fundação visual.
 - src/components/layout/: primitives de estrutura Container e Section.
 - src/components/ui/: primitives de interface; contém o Button inicial.

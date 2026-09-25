@@ -1,5 +1,10 @@
 # Design system
 
+## Home reference and implementation — 2026-09-24
+
+- **Confirmed:** a imagem fornecida pelo usuário é a referência visual aprovada da Home para layout, composição, ordem das seções, atmosfera, contraste dark/light, dois blocos de divisões, Why Choose CS, Our Work, CTA e footer.
+- **Confirmed:** a implementação inicial usa CSS nativo e placeholders neutros onde as fotos reais ainda não foram entregues.
+
 Sistema visual inicial aprovado para o novo website. A direção visual, a paleta inicial, a tipografia, o idioma primário e o CTA principal abaixo estão confirmados. Isso não aprova conteúdo comercial, assets de marca, rotas finais ou a implementação das páginas.
 
 Os termos abaixo têm significado específico:

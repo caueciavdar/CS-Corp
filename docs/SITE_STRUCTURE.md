@@ -1,5 +1,11 @@
 # Site structure
 
+## Implemented Home status — 2026-09-24
+
+- `/` now composes Header, Hero, two divisions, Why Choose CS, Our Work, reviews placeholder, Final CTA and Footer.
+- Navigation uses responsive anchor links; secondary page routes remain TBD.
+- Our Work includes a reusable before/after comparison prepared for real photos.
+
 ## Status
 
 - **Confirmed:** a raiz `/` continua sendo um placeholder técnico; nenhuma página definitiva foi implementada.

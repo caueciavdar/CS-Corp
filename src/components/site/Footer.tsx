@@ -1,0 +1,5 @@
+import Container from '../layout/Container'
+
+export default function Footer() {
+  return <footer className="site-footer"><Container><div className="site-footer__top"><div><a className="site-logo site-logo--footer" href="#home"><span className="site-logo__mark">CS</span><span className="site-logo__name">CS Conexion<br />Services Corp</span></a><p>Serving Greater Tampa Bay, Sarasota, Jacksonville and surrounding communities.</p></div><div className="footer-contact"><a href="tel:+19049555850">(904) 955-5850</a><a href="mailto:caue@conexionservicesfl.com">caue@conexionservicesfl.com</a><span>Temporary email — pending replacement</span></div><div className="footer-social"><a href="https://www.instagram.com/conexionservices_fl/" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://www.facebook.com/profile.php?id=61573727235297&amp;locale=pt_BR" target="_blank" rel="noreferrer">Facebook ↗</a></div></div><div className="site-footer__bottom"><span>© {new Date().getFullYear()} CS Conexion Services Corp</span><span>Flooring &amp; Interiors · Home &amp; Commercial Cleaning</span></div></Container></footer>
+}
