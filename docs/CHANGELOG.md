@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-09-27 — Refinamento de Our Services em Flooring & Interiors
+
+- Refinada somente a seção `OUR SERVICES`, preservando Header, Hero, Before/After, Recent Work, Why Choose, CTA, Footer e Home.
+- Mantidos os cinco serviços confirmados, com copy factual revisada, ícones SVG inline e cards claros com numeração e acentos discretos.
+- Substituída a grade rígida por composição 3+2 no desktop, duas colunas no tablet e uma coluna no mobile, com hover sutil e suporte a `prefers-reduced-motion`.
+- Ajustado o dimensionamento final para manter os cards inferiores com a mesma proporção visual dos superiores e centralizá-los explicitamente.
+- Preservada a quebra natural de `Bathroom Remodeling` e `Kitchen Remodeling`, sem quebra de palavras e com largura confortável para as descrições.
+
+### Validação desta etapa
+
+- Lint, typecheck e build executados após as alterações.
+
 ## 2026-09-27 — Refinamento do Header e Hero de Flooring & Interiors
 
 - Corrigida a composição da headline para preservar `TRANSFORM` e `YOUR SPACE.` como palavras inteiras, com escala, largura, line-height e wrapping responsivos.

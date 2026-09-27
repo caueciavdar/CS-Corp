@@ -14,11 +14,11 @@ import kitchenBacksplashCorner from '../assets/projects/gallery/kitchen-backspla
 import showerAfter from '../assets/projects/before-after/shower-remodel/shower-after.webp'
 
 const services = [
-  { title: 'Vinyl Plank Flooring', text: 'Installation of vinyl plank flooring for updated, practical interiors.', icon: 'floor' },
-  { title: 'Laminate Flooring', text: 'Laminate flooring installation for a clean and refreshed finish.', icon: 'layers' },
-  { title: 'Hardwood Flooring', text: 'Hardwood flooring work that brings a natural character to the space.', icon: 'wood' },
-  { title: 'Bathroom Remodeling', text: 'Interior remodeling solutions for bathroom spaces.', icon: 'bath' },
-  { title: 'Kitchen Remodeling', text: 'Interior remodeling solutions for kitchen spaces.', icon: 'kitchen' },
+  { title: 'Vinyl Plank Flooring', text: 'Professional installation of vinyl plank flooring for residential interior spaces.', icon: 'floor' },
+  { title: 'Laminate Flooring', text: 'Laminate flooring installation with a clean, durable finish.', icon: 'layers' },
+  { title: 'Hardwood Flooring', text: 'Hardwood flooring installation and interior flooring improvements.', icon: 'wood' },
+  { title: 'Bathroom Remodeling', text: 'Interior remodeling solutions for bathrooms and related finishes.', icon: 'bath' },
+  { title: 'Kitchen Remodeling', text: 'Interior remodeling solutions for kitchens and surrounding spaces.', icon: 'kitchen' },
 ] as const
 
 const projects = [
@@ -77,9 +77,9 @@ export default function FlooringInteriorsPage() {
 
       <Section className="flooring-services" id="services" aria-labelledby="services-title">
         <Container>
-          <div className="flooring-section-heading"><div><p className="eyebrow">What we do</p><h2 id="services-title">OUR SERVICES</h2></div><p>Focused solutions for flooring and interior spaces.</p></div>
+          <div className="flooring-section-heading"><div><p className="eyebrow">WHAT WE DO</p><h2 id="services-title">OUR SERVICES</h2></div><p>Focused solutions for flooring and interior spaces.</p></div>
           <div className="service-grid">
-            {services.map((service, index) => <article className="service-card" key={service.title}><span className="service-card__number">0{index + 1}</span><ServiceIcon type={service.icon} /><h3>{service.title}</h3><p>{service.text}</p></article>)}
+            {services.map((service, index) => <article className="service-card" key={service.title}><div className="service-card__meta"><span className="service-card__number">0{index + 1}</span><span className="service-card__rule" aria-hidden="true" /></div><ServiceIcon type={service.icon} /><h3>{service.title}</h3><p>{service.text}</p></article>)}
           </div>
         </Container>
       </Section>
