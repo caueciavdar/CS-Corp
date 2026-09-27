@@ -1,5 +1,20 @@
 # Changelog
 
+## 2026-09-27 — Implemented Projects portfolio page
+
+- Implemented `/projects` with a compact portfolio hero, real flooring/interior-remodeling photography and responsive editorial grid.
+- Added local keyboard-accessible filters for All, Flooring, Hardwood, Kitchen, Bathroom and Stairs; Cleaning remains pending until real photography is available.
+- Added one selected-project detail area with the shared Before/After slider for Hallway LVP, Bedroom LVP, Stairs Restoration, Kitchen Backsplash and Shower Remodel pairs.
+- Updated `Our Work` navigation to `/projects`; Home, `/flooring-interiors` and `/cleaning-services` remain preserved.
+- Detailed project metadata, confirmed locations and Cleaning photography remain TBD.
+
+### Validação desta etapa
+
+- `npm.cmd run lint`: aprovado.
+- `npm.cmd run typecheck`: aprovado.
+- `npm.cmd run build`: aprovado com Node 24.21.0; a primeira tentativa foi bloqueada pelo sandbox (`spawn EPERM`) e repetida com a permissão necessária.
+- Validação local da porta 5173: `/`, `/flooring-interiors`, `/cleaning-services` e `/projects` retornaram HTTP 200; servidor encerrado após a validação.
+
 ## 2026-09-27 — Refinement of Cleaning closing sections
 
 - Refined only `WHY CHOOSE CS CLEANING?`, `OUR PROCESS`, Cleaning work teaser, `SERVICE AREA` and the final CTA; the approved Cleaning Header, Hero, service cards, Home and Flooring page were preserved.

@@ -1,5 +1,12 @@
 # Architecture
 
+## Projects portfolio page — 2026-09-27
+
+- `src/App.tsx` now includes `/projects` in the existing dependency-free pathname switch.
+- `ProjectsPage` owns a typed local project data structure, filter state and one selected-project detail view. It reuses `Header`, `Footer`, `Container`, `Section` and `BeforeAfterSlider` without adding dependencies.
+- The page imports only real WebP assets listed in `src/assets/projects/PHOTO_INDEX.md`; cards use lazy loading and responsive aspect ratios. Cleaning portfolio items are not rendered.
+- Route metadata is set with `document.title` and a factual description meta tag. Exact project metadata and locations remain TBD.
+
 ## Internal page routing and metadata — 2026-09-27
 
 - `src/App.tsx` keeps the dependency-free pathname switch for `/`, `/flooring-interiors` and `/cleaning-services`; Vite's history fallback supports direct local refreshes.

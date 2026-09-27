@@ -1,5 +1,12 @@
 # Site structure
 
+## Implemented Projects portfolio page — 2026-09-27
+
+- `/projects` is implemented as a real-work portfolio page using the supplied flooring and interior-remodeling photos from `src/assets/projects/`.
+- The page provides local, keyboard-accessible filters for All, Flooring, Hardwood, Kitchen, Bathroom and Stairs. Cleaning filters are intentionally not shown until sufficient real Cleaning photography is available.
+- Project cards use a lightweight editorial grid and open one selected project detail area. Confirmed Before/After pairs use the shared interactive `BeforeAfterSlider`; gallery-only projects show their real image.
+- Only safe category/title labels and factual alt text are displayed. Client names, locations and detailed metadata remain TBD. Cleaning portfolio photography remains pending.
+
 ## Implemented Cleaning Services page — 2026-09-27
 
 - `/cleaning-services` is implemented as the second complete internal division page and reuses the global Header, Footer, Container and Section components.

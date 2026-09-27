@@ -1,5 +1,10 @@
 # Architecture Decision Log
 
+## Decision 025: Implement Projects as a local filtered real-photo portfolio
+
+Data: 2026-09-27. Status: aceita.
+Implement `/projects` with a small typed local dataset, front-end category filters and one expanded project detail area. Use only the supplied real WebP photos and the five documented Before/After pairs. Do not show Cleaning filters or invent client, location, price, duration or other detailed metadata; Cleaning photography and confirmed project metadata remain TBD.
+
 ## Decision 024: Refine Cleaning closing sections without adding unconfirmed content
 
 Data: 2026-09-27. Status: aceita.

@@ -5,7 +5,7 @@ const navigation = [
   ['About', '#why-choose'],
   ['Flooring & Interiors', '#divisions'],
   ['Cleaning Services', '#divisions'],
-  ['Our Work', '#our-work'],
+  ['Our Work', '/projects'],
   ['Contact', '#contact'],
 ]
 
