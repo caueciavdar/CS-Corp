@@ -39,6 +39,11 @@ Os termos abaixo têm significado específico:
 
 - **TBD:** cores específicas de feedback (success, warning e error) e validação de contraste de cada combinação final em componentes reais.
 
+### Division panel accents
+
+- **Confirmed for the approved Home reference:** the Flooring & Interiors panel uses a navy architectural surface (`--color-division-flooring`); the Cleaning panel uses dark charcoal (`--color-division-cleaning`) with a restrained warm accent (`--color-accent-warm`).
+- Division-specific logo assets and photography remain **TBD**; CSS backgrounds and the visible `LOGO PENDING` placeholders are temporary implementation scaffolding.
+
 ### Palette options previously considered
 
 Os HEX são referências iniciais para discussão, não valores implementados.

@@ -16,6 +16,11 @@
   --color-brand-primary: #2f80ed;
   --color-brand-secondary: var(--color-neutral-800);
   --color-brand-dark: var(--color-neutral-900);
+  --color-division-flooring: #122c4d;
+  --color-division-cleaning: #171717;
+  --color-accent-warm: #c59a5d;
+  --color-accent-warm-light: #f2d19b;
+  --color-accent-warm-muted: #e1ba7d;
   --color-background: var(--color-neutral-0);
   --color-surface: var(--color-neutral-50);
   --color-text: #111827;

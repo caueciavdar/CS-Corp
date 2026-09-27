@@ -34,7 +34,7 @@ Manter componentes pequenos, reutilizáveis e sem duplicação. Separar conteúd
 
 CSS nativo organizado em duas camadas: `tokens.css` é importado primeiro e concentra valores compartilhados; `global.css` contém reset, defaults acessíveis, primitives e o placeholder. Estilos específicos devem ficar próximos aos componentes quando a base crescer. A estratégia é mobile-first, com breakpoints propostos em DESIGN_SYSTEM.md. A paleta e as famílias tipográficas iniciais estão aprovadas; web fonts, assets de marca, conteúdo e ajustes de layout permanecem TBD. Não adicionar assets de marca não confirmados.
 
-Componentes devem preferir tokens semânticos a valores visuais soltos. Breakpoints são documentados como tokens de referência, mas precisam ser literais em `@media`. O fallback global de `prefers-reduced-motion` deve permanecer; animações futuras precisam justificar função. `BeforeAfterSlider` usa Pointer Events para mouse e touch, com barra móvel e labels; recebe fotos reais em futura substituição dos placeholders.
+Componentes devem preferir tokens semânticos a valores visuais soltos. Breakpoints são documentados como tokens de referência, mas precisam ser literais em `@media`. O fallback global de `prefers-reduced-motion` deve permanecer; animações futuras precisam justificar função. `BeforeAfterSlider` é reutilizável, recebe opcionalmente `beforeSrc`/`afterSrc` e textos alternativos, usa Pointer Events para mouse e touch, oferece `role="slider"`, valores ARIA e ajuste por ArrowLeft/ArrowRight. Sem fontes de imagem, renderiza apenas placeholders explicitamente temporários; nenhuma imagem de stock ou projeto inventado é incluída. `ProjectsSection` mantém o slider em destaque e slots neutros para futuros projetos.
 
 ## Integrações e qualidade
 

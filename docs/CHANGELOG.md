@@ -1,5 +1,53 @@
 # Changelog
 
+## 2026-09-26 — Refinamento visual final de Our Work
+
+- Removidos da interface os textos técnicos de desenvolvimento dos placeholders do comparador e da galeria.
+- Mantida a estrutura preparada para fotos reais, com placeholders arquitetônicos neutros, proporção consistente e composição mais compacta no desktop.
+- Preservados o slider Before/After, interação por mouse/touch/teclado, ARIA, faixa de 0–100% e CTA `VIEW MORE PROJECTS`.
+- Fotografias reais, `beforeSrc`, `afterSrc`, imagens de projetos, alt text e metadados continuam TBD; nenhuma imagem externa ou projeto inventado foi incluído.
+
+## 2026-09-25 — Refinamento de Our Work e BeforeAfterSlider
+
+- Atualizada a seção `Our Work` para o cabeçalho `OUR WORK` / `REAL PROJECTS. REAL RESULTS.`, composição centralizada, slider em destaque e três slots neutros para projetos futuros.
+- Refinado `BeforeAfterSlider` para aceitar fontes opcionais de imagens e alt text, manter posição inicial em 50%, revelar de 0% a 100%, suportar mouse/touch e ajuste por ArrowLeft/ArrowRight.
+- Adicionados `role="slider"`, valores ARIA, label acessível, handle com alvo confortável e comportamento responsivo sem overflow horizontal.
+- Placeholders permanecem explicitamente temporários; nenhuma foto externa, projeto, metadata ou before/after real foi inventado.
+- Fotos reais, créditos, autorizações, metadados e rotas de Projects continuam pendentes.
+
+### Validação desta etapa
+
+- Lint, typecheck, build e validação HTTP local em `5173` executados com sucesso; servidor encerrado após a validação.
+
+## 2026-09-25 — Ajustes finais da seção Why Choose CS
+
+- Corrigida a quebra do título `Responsive communication` para respeitar palavras inteiras e favorecer duas linhas naturais no desktop.
+- Reduzido moderadamente o espaçamento vertical da seção e tornado o eyebrow `The CS difference` mais discreto, mantendo o heading `Why choose CS?` como foco visual.
+- Preservados textos, ícones, divisores e os layouts responsivos 4 colunas, 2×2 e uma coluna das demais áreas.
+
+## 2026-09-25 — Refinamento da seção Why Choose CS
+
+- Substituída a estrutura anterior por quatro pilares horizontais: `Quality-focused`, `Responsive communication`, `Residential & commercial` e `Two specialized divisions`.
+- Adicionados ícones SVG inline, heading centralizado, descrições curtas e divisores discretos alinhados à referência visual aprovada.
+- Implementado comportamento responsivo em coluna no mobile, grid 2×2 no tablet e quatro colunas no desktop; Header, Hero, Our Divisions e demais seções foram preservados.
+- Mantidas somente afirmações de valor fornecidas, sem awards, licenças, garantias, certificações, métricas ou outros claims não comprovados.
+
+### Validação desta etapa
+
+- Lint, typecheck e build executados após as alterações.
+
+## 2026-09-24 — Refinamento da seção Our Divisions
+
+- Transformados os dois cards em painéis grandes e equilibrados para Flooring & Interiors e Home & Commercial Cleaning, com identidades visuais distintas e composição responsiva lado a lado/empilhada.
+- Mantidos exclusivamente os serviços confirmados; adicionadas as taglines aprovadas, CTAs específicos e ícones SVG inline leves.
+- Preparado espaço explícito para os logos oficiais e mantidos backgrounds arquitetônicos CSS temporários, sem stock photography.
+- Centralizados os novos tons dos painéis em tokens de design; Header, Hero e as demais seções da Home não foram alterados.
+
+### Validação desta etapa
+
+- Lint e typecheck aprovados.
+- Build repetido com permissão de subprocessos após bloqueio `spawn EPERM` do sandbox; aprovado com Vite 8.3.0.
+
 ## 2026-09-24 — Ajustes finais de Header e Hero
 
 - Ajustada a headline do Hero para manter `ONE COMMITMENT.` junto em desktop, com escala e largura responsivas; no mobile a quebra permanece natural.

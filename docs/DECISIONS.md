@@ -10,7 +10,11 @@ Confirmados CS Conexion Services Corp, as duas divisões, telefone, email tempor
 
 ## Decision 015: Comparação before/after reutilizável
 Data: 2026-09-24. Status: implementada.
-`BeforeAfterSlider` usa Pointer Events para mouse e touch, mantém barra central arrastável, labels Before/After e placeholders neutros até o recebimento das fotos reais. O componente está preparado para múltiplos projetos.
+`BeforeAfterSlider` usa Pointer Events para mouse e touch, mantém barra central arrastável, labels Before/After, semântica `role="slider"`, valores ARIA e controle por ArrowLeft/ArrowRight. Recebe fontes e alt text opcionais para fotos reais; sem essas propriedades, mostra placeholders neutros explicitamente temporários. O componente está preparado para múltiplos projetos.
+
+## Decision 017: Our Work sem fotos reais
+Data: 2026-09-25. Status: aceita.
+Manter `Our Work` com cabeçalho aprovado, um slider de destaque e slots neutros para projetos futuros. Não incluir stock photography, nomes, metadados ou comparações inventadas. Fotos reais, créditos, autorizações, legendas, metadados e rota definitiva de Projects permanecem TBD.
 
 ## Decision 001: Use React + TypeScript + Vite.
 Data: 2026-09-21. Status: aceita.

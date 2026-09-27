@@ -4,7 +4,8 @@
 
 - `/` now composes Header, Hero, two divisions, Why Choose CS, Our Work, reviews placeholder, Final CTA and Footer.
 - Navigation uses responsive anchor links; secondary page routes remain TBD.
-- Our Work includes a reusable before/after comparison prepared for real photos.
+- Our Work includes a reusable before/after comparison prepared for real photos, plus neutral future-project slots.
+- The comparison accepts optional Before/After image sources, supports mouse, touch and keyboard adjustment, and currently renders temporary placeholders because real project photos, metadata and authorizations are pending.
 
 ## Status
 
