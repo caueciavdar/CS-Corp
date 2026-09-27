@@ -12,9 +12,9 @@ const navigation = [
 export default function Header({ currentPath = '/' }: { currentPath?: string }) {
   const [menuOpen, setMenuOpen] = useState(false)
 
-  const links = navigation.map(([label, href]) => label === 'Flooring & Interiors' ? [label, '/flooring-interiors'] : label === 'Home' ? [label, '/'] : [label, href])
+  const links = navigation.map(([label, href]) => label === 'Flooring & Interiors' ? [label, '/flooring-interiors'] : label === 'Cleaning Services' ? [label, '/cleaning-services'] : label === 'Home' ? [label, '/'] : [label, href])
   return (
-    <header className={`site-header${currentPath === '/flooring-interiors' ? ' site-header--flooring' : ''}`}>
+    <header className={`site-header${currentPath === '/flooring-interiors' ? ' site-header--flooring' : ''}${currentPath === '/cleaning-services' ? ' site-header--cleaning' : ''}`}>
       <div className="container site-header__inner">
         <a className="site-logo" href="/" aria-label="CS Conexion Services Corp home">
           <span className="site-logo__mark" aria-hidden="true">CS</span>

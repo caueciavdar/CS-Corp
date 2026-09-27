@@ -1,5 +1,15 @@
 # Architecture Decision Log
 
+## Decision 024: Refine Cleaning closing sections without adding unconfirmed content
+
+Data: 2026-09-27. Status: aceita.
+Keep the approved Cleaning Header, Hero and service cards unchanged while refining only the lower sections. Use the confirmed four differentiators, three process steps, service-area sentence and final CTA copy. Present future Cleaning work as an intentional abstract teaser with category structure, never as real photography. Preserve the temporary published email as the mailto destination until a definitive CTA flow exists.
+
+## Decision 023: Implement the Cleaning Services division page with temporary abstract visuals
+
+Data: 2026-09-27. Status: aceita.
+Implement `/cleaning-services` with the four confirmed cleaning services, black/charcoal surfaces, restrained gold/bronze accents and small premium-blue accents. Reuse the shared Header and Footer, mark the route active, and keep the hero/work visuals abstract until real Cleaning photography and the official division logo are supplied. The temporary published email remains the CTA destination; the permanent email and definitive CTA destination remain TBD.
+
 ## Decision 022: Complete the Flooring & Interiors closing blocks with safe copy
 
 Data: 2026-09-27. Status: aceita.

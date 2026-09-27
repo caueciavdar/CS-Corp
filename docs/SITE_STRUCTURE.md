@@ -1,5 +1,13 @@
 # Site structure
 
+## Implemented Cleaning Services page — 2026-09-27
+
+- `/cleaning-services` is implemented as the second complete internal division page and reuses the global Header, Footer, Container and Section components.
+- The page includes a cleaning hero, the four confirmed cleaning services, four factual differentiators, a simple three-step process, an abstract future-work teaser, the confirmed service area and a final estimate CTA.
+- No cleaning photography, stock imagery, reviews or invented commercial claims were added. The work section is prepared for future real photography categories: Residential, Commercial, Post-Construction and Move-In / Move-Out.
+- The lower sections use a clear four-column differentiator layout, a horizontal-to-vertical process flow, compact service-area treatment and a dark closing CTA with the temporary published email.
+- Navigation marks `Cleaning Services` with `aria-current="page"`; the official Cleaning logo, real Cleaning photography, permanent email and definitive CTA destination remain TBD.
+
 ## Implemented Flooring & Interiors page — 2026-09-27
 
 - `/flooring-interiors` is implemented as the first complete internal division page and reuses the global Header, Footer, Container, Section and BeforeAfterSlider components.

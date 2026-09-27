@@ -1,5 +1,34 @@
 # Changelog
 
+## 2026-09-27 — Refinement of Cleaning closing sections
+
+- Refined only `WHY CHOOSE CS CLEANING?`, `OUR PROCESS`, Cleaning work teaser, `SERVICE AREA` and the final CTA; the approved Cleaning Header, Hero, service cards, Home and Flooring page were preserved.
+- Applied the requested factual copy, four-column differentiators, horizontal-to-vertical process flow, compact service-area layout and dark Cleaning closing treatment.
+- Reworked the future-work section into an intentional abstract teaser with Residential, Commercial, Post-Construction and Move-In / Move-Out category structure, without using stock, Flooring or nonexistent Cleaning photography.
+- Official logo, real Cleaning photography, permanent email and definitive CTA destination remain TBD.
+
+### Validação desta etapa
+
+- `npm.cmd run lint`: aprovado.
+- `npm.cmd run typecheck`: aprovado.
+- `npm.cmd run build`: aprovado com Node 24.21.0.
+- Validação local da porta 5173: `/`, `/flooring-interiors` e `/cleaning-services` retornaram HTTP 200; servidor encerrado após a validação.
+
+## 2026-09-27 — Implemented Cleaning Services page
+
+- Implemented `/cleaning-services` for CS Home & Commercial Cleaning while preserving Home and `/flooring-interiors`.
+- Added the approved four cleaning services, factual `WHY CHOOSE CS CLEANING?` pillars, a three-step process, service area and final estimate CTA.
+- Added a black/charcoal/gold/blue division treatment with abstract CSS/SVG hero and future-work visuals; no stock images, Flooring photos or fabricated reviews were used.
+- Reused Header and Footer, added active route state, and configured the Cleaning page title and factual meta description.
+- Official Cleaning logo, real Cleaning photography, permanent email and definitive CTA destination remain TBD; the published email remains temporary.
+
+### Validação desta etapa
+
+- `npm.cmd run lint`: aprovado.
+- `npm.cmd run typecheck`: aprovado.
+- `npm.cmd run build`: aprovado com Node 24.21.0.
+- Validação local da porta 5173: `/`, `/flooring-interiors` e `/cleaning-services` retornaram HTTP 200; servidor encerrado após a validação.
+
 ## 2026-09-27 — Ajustes visuais finais dos blocos inferiores
 
 - Refinado somente o `SERVICE AREA`, com texto ligeiramente maior, mais legível e menor espaçamento vertical.

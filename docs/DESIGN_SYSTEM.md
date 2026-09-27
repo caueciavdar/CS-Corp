@@ -1,5 +1,12 @@
 # Design system
 
+## Cleaning division visual rules — 2026-09-27
+
+- **Confirmed for `/cleaning-services`:** black/near-black and charcoal surfaces, warm white text, restrained gold/bronze accents and small premium-blue accents express the Cleaning division while remaining related to the approved site direction.
+- CSS/SVG abstract compositions are temporary scaffolding for the hero and future-work section. No stock or Flooring photography is used as Cleaning imagery.
+- Cleaning service cards use a 2×2 desktop/tablet grid and one column on mobile, with subtle warm borders, inline SVG icons, restrained motion and visible keyboard focus.
+- **TBD:** official Cleaning logo, real Cleaning photography, permanent email and final CTA destination.
+
 ## Home reference and implementation — 2026-09-24
 
 - **Confirmed:** a imagem fornecida pelo usuário é a referência visual aprovada da Home para layout, composição, ordem das seções, atmosfera, contraste dark/light, dois blocos de divisões, Why Choose CS, Our Work, CTA e footer.

@@ -12,8 +12,9 @@ const footerNavigation = [
 export default function Footer({ currentPath = '/' }: { currentPath?: string }) {
   const links = footerNavigation.map(([label, href]) => {
     if (label === 'Flooring & Interiors') return [label, '/flooring-interiors']
+    if (label === 'Cleaning Services') return [label, '/cleaning-services']
     if (label === 'Home') return [label, '/']
-    return [label, currentPath === '/flooring-interiors' ? `/#${href.slice(1)}` : href]
+    return [label, currentPath !== '/' ? `/#${href.slice(1)}` : href]
   })
   return (
     <footer className="site-footer">

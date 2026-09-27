@@ -2,6 +2,14 @@
 
 ## Internal page routing and metadata — 2026-09-27
 
+- `src/App.tsx` keeps the dependency-free pathname switch for `/`, `/flooring-interiors` and `/cleaning-services`; Vite's history fallback supports direct local refreshes.
+- `CleaningServicesPage` owns the Cleaning division composition, uses only confirmed services and copy-safe claims, and reuses the global Header, Footer, Container and Section components.
+- Cleaning visuals are CSS/SVG compositions only. The future-work section is intentionally structured for real photography without presenting technical placeholder text or unconfirmed images.
+- The page updates `document.title` and the description meta tag on mount and restores the base title on unmount.
+- The lower Cleaning sections remain page-owned and use CSS-only visual scaffolding: no gallery asset is rendered until real Cleaning photography is supplied. The process layout changes from horizontal on larger screens to vertical on mobile.
+
+## Internal page routing and metadata — 2026-09-27
+
 - `src/App.tsx` provides a minimal pathname-based route switch for `/` and `/flooring-interiors`. A routing dependency was not added because the current two-page scope only needs deterministic static entry selection, while Vite's history fallback supports direct local refreshes.
 - `FlooringInteriorsPage` owns the division page composition and imports only the confirmed project assets needed above and below the fold. It reuses the existing Header, Footer, layout primitives and accessible `BeforeAfterSlider`.
 - The page keeps the Hallway LVP pair in the reusable interactive slider and presents the Bedroom LVP pair as a lighter static side-by-side transformation; this preserves one dominant comparison while showing another confirmed real result.
