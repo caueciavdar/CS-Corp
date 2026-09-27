@@ -1,5 +1,12 @@
 # Site structure
 
+## Implemented Flooring & Interiors page — 2026-09-27
+
+- `/flooring-interiors` is implemented as the first complete internal division page and reuses the global Header, Footer, Container, Section and BeforeAfterSlider components.
+- The page includes a division-specific hero, the five confirmed flooring/remodeling services, real Hallway LVP before/after photography, a five-image real-work gallery, safe division differentiators, service area copy and a final estimate CTA.
+- Navigation marks `Flooring & Interiors` with `aria-current="page"` on the internal page; the Home remains at `/`.
+- Project labels and exact metadata remain TBD. The hero uses a refined architectural CSS composition because a definitive horizontal hero photograph is not confirmed.
+
 ## Implemented Home status — 2026-09-24
 
 - `/` now composes Header, Hero, two divisions, Why Choose CS, Our Work, reviews placeholder, Final CTA and Footer.

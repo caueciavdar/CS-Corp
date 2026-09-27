@@ -1,5 +1,11 @@
 # Architecture
 
+## Internal page routing and metadata — 2026-09-27
+
+- `src/App.tsx` provides a minimal pathname-based route switch for `/` and `/flooring-interiors`. A routing dependency was not added because the current two-page scope only needs deterministic static entry selection, while Vite's history fallback supports direct local refreshes.
+- `FlooringInteriorsPage` owns the division page composition and imports only the confirmed project assets needed above and below the fold. It reuses the existing Header, Footer, layout primitives and accessible `BeforeAfterSlider`.
+- The page updates `document.title` and the description meta tag on mount and restores the base title on unmount. Route metadata is intentionally kept dependency-free.
+
 ## Stack e execução
 
 React compõe a interface; TypeScript verifica tipos; HTML5 define a entrada semântica; CSS nativo controla apresentação; Vite serve desenvolvimento e gera build estático. npm gerencia dependências e package-lock.json fixa a resolução. Node 24 LTS é o runtime de desenvolvimento.

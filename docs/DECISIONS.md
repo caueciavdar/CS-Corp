@@ -1,5 +1,13 @@
 # Architecture Decision Log
 
+## Decision 019: Minimal pathname routing for the first internal page
+
+For the first real secondary page, the application uses a small pathname switch in `App.tsx` instead of adding `react-router-dom`. The current scope is limited to `/` and `/flooring-interiors`; this keeps dependencies unchanged while preserving a clear place to evolve routing when more pages require nested navigation or route state. Direct refreshes are supported by Vite's local fallback.
+
+## Decision 020: Flooring & Interiors page uses confirmed assets and safe copy
+
+`/flooring-interiors` uses only the five confirmed services, the approved Hallway LVP before/after pair and real gallery assets listed in `PHOTO_INDEX.md`. The hero remains an architectural CSS composition until a definitive horizontal photograph is confirmed. No project location, client, price, duration, certification, license, insurance or performance claim is presented.
+
 ## Decision 016: Porta fixa para o servidor Vite
 Data: 2026-09-24. Status: aceita.
 Configurar o servidor de desenvolvimento do Vite para usar a porta 5173 com `strictPort: true`. Isso mantém a URL local previsível e evita que uma instância duplicada seja deslocada silenciosamente para outra porta; a instância existente deve ser verificada e encerrada conforme a decisão 009.

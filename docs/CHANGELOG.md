@@ -1,5 +1,22 @@
 # Changelog
 
+## 2026-09-27 — Refinamento do Header e Hero de Flooring & Interiors
+
+- Corrigida a composição da headline para preservar `TRANSFORM` e `YOUR SPACE.` como palavras inteiras, com escala, largura, line-height e wrapping responsivos.
+- Refinados apenas no contexto de `/flooring-interiors` o peso visual do Header, os CTAs, o espaçamento da primeira dobra e o detalhe arquitetônico lateral.
+- Preparada uma área visual isolada para futura fotografia horizontal real; nenhuma stock photo foi adicionada. Services, demais seções da página e Home foram preservados.
+
+## 2026-09-27 — Flooring & Interiors internal page
+
+- Implemented `/flooring-interiors` as the first complete internal division page while preserving the approved Home composition.
+- Reused Header, Footer, Container, Section and `BeforeAfterSlider`; navigation now supports the internal route and marks the active division with `aria-current`.
+- Added the five confirmed Flooring & Interiors services, real project gallery photography, the Hallway LVP comparison, safe differentiators, service area and final estimate CTA.
+- Added route-specific title and meta description without a metadata dependency. The hero remains a temporary architectural CSS composition; definitive hero photography and detailed project metadata remain TBD.
+
+### Validação desta etapa
+
+- Lint, typecheck e build executados após as alterações.
+
 ## 2026-09-26 — Integração das fotos reais em Our Work
 
 - Substituído o placeholder do `BeforeAfterSlider` pelo par real Hallway LVP, mantendo mouse, touch, teclado, ARIA, labels Before/After, faixa 0–100% e posição inicial em 50%.

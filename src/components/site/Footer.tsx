@@ -9,7 +9,8 @@ const footerNavigation = [
   ['Contact', '#contact'],
 ]
 
-export default function Footer() {
+export default function Footer({ currentPath = '/' }: { currentPath?: string }) {
+  const links = footerNavigation.map(([label, href]) => label === 'Flooring & Interiors' ? [label, '/flooring-interiors'] : label === 'Home' ? [label, '/'] : [label, href])
   return (
     <footer className="site-footer">
       <Container>
@@ -21,7 +22,7 @@ export default function Footer() {
           </div>
           <nav className="footer-navigation" aria-label="Footer navigation">
             <h2>Explore</h2>
-            {footerNavigation.map(([label, href]) => <a key={label} href={href}>{label}</a>)}
+            {links.map(([label, href]) => <a key={label} href={href} aria-current={href === currentPath ? 'page' : undefined}>{label}</a>)}
           </nav>
           <div className="footer-contact">
             <h2>Contact</h2>

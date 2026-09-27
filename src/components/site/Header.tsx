@@ -9,13 +9,14 @@ const navigation = [
   ['Contact', '#contact'],
 ]
 
-export default function Header() {
+export default function Header({ currentPath = '/' }: { currentPath?: string }) {
   const [menuOpen, setMenuOpen] = useState(false)
 
+  const links = navigation.map(([label, href]) => label === 'Flooring & Interiors' ? [label, '/flooring-interiors'] : label === 'Home' ? [label, '/'] : [label, href])
   return (
-    <header className="site-header">
+    <header className={`site-header${currentPath === '/flooring-interiors' ? ' site-header--flooring' : ''}`}>
       <div className="container site-header__inner">
-        <a className="site-logo" href="#home" aria-label="CS Conexion Services Corp home">
+        <a className="site-logo" href="/" aria-label="CS Conexion Services Corp home">
           <span className="site-logo__mark" aria-hidden="true">CS</span>
           <span className="site-logo__name">CS Conexion<br />Services Corp <small>temporary brand area</small></span>
         </a>
@@ -30,8 +31,8 @@ export default function Header() {
           <span aria-hidden="true">{menuOpen ? '×' : '☰'}</span>
         </button>
         <nav id="primary-navigation" className={`site-nav${menuOpen ? ' site-nav--open' : ''}`} aria-label="Primary navigation">
-          {navigation.map(([label, href]) => (
-            <a key={label} href={href} onClick={() => setMenuOpen(false)}>{label}</a>
+          {links.map(([label, href]) => (
+            <a key={label} href={href} aria-current={href === currentPath ? 'page' : undefined} onClick={() => setMenuOpen(false)}>{label}</a>
           ))}
           <div className="site-nav__contact">
             <a className="button button--primary site-nav__cta" href="#contact" onClick={() => setMenuOpen(false)}>Get a Free Estimate</a>
