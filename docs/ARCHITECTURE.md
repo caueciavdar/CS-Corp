@@ -10,7 +10,7 @@ React compõe a interface; TypeScript verifica tipos; HTML5 define a entrada sem
 - src/main.tsx: inicialização React em StrictMode e importação do CSS.
 - src/App.tsx: composição principal.
 - src/pages/HomePage.tsx: composição da Home implementada.
-- src/components/site/: componentes da Home (`Header`, `Hero`, `DivisionCard`, `WhyChoose`, `ProjectsSection`, `BeforeAfterSlider`, `ReviewsPlaceholder`, `FinalCTA` e `Footer`).
+- src/components/site/: componentes da Home (`Header`, `Hero`, `DivisionCard`, `WhyChoose`, `ProjectsSection`, `BeforeAfterSlider`, `ReviewsPlaceholder`, `FinalCTA` e `Footer`). `ProjectsSection` usa o par real Hallway LVP no slider principal e três fotografias reais na galeria; os demais pares permanecem disponíveis nos assets para uma futura página Projects. `ReviewsPlaceholder` aceita uma lista futura tipada com `customerName`, `reviewText`, `rating`, `source` e `date`, mas renderiza apenas o estado vazio enquanto reviews reais não forem fornecidos.
 - src/components/layout/: primitives reutilizáveis de estrutura (`Container` e `Section`).
 - src/components/ui/: primitives reutilizáveis de interface; contém o `Button` inicial.
 - src/styles/tokens.css: custom properties semânticas do design system, com a paleta inicial e tipografia aprovadas documentadas em DESIGN_SYSTEM.md.
@@ -34,7 +34,7 @@ Manter componentes pequenos, reutilizáveis e sem duplicação. Separar conteúd
 
 CSS nativo organizado em duas camadas: `tokens.css` é importado primeiro e concentra valores compartilhados; `global.css` contém reset, defaults acessíveis, primitives e o placeholder. Estilos específicos devem ficar próximos aos componentes quando a base crescer. A estratégia é mobile-first, com breakpoints propostos em DESIGN_SYSTEM.md. A paleta e as famílias tipográficas iniciais estão aprovadas; web fonts, assets de marca, conteúdo e ajustes de layout permanecem TBD. Não adicionar assets de marca não confirmados.
 
-Componentes devem preferir tokens semânticos a valores visuais soltos. Breakpoints são documentados como tokens de referência, mas precisam ser literais em `@media`. O fallback global de `prefers-reduced-motion` deve permanecer; animações futuras precisam justificar função. `BeforeAfterSlider` é reutilizável, recebe opcionalmente `beforeSrc`/`afterSrc` e textos alternativos, usa Pointer Events para mouse e touch, oferece `role="slider"`, valores ARIA e ajuste por ArrowLeft/ArrowRight. Sem fontes de imagem, renderiza apenas placeholders explicitamente temporários; nenhuma imagem de stock ou projeto inventado é incluída. `ProjectsSection` mantém o slider em destaque e slots neutros para futuros projetos.
+Componentes devem preferir tokens semânticos a valores visuais soltos. Breakpoints são documentados como tokens de referência, mas precisam ser literais em `@media`. O fallback global de `prefers-reduced-motion` deve permanecer; animações futuras precisam justificar função. `BeforeAfterSlider` é reutilizável, recebe opcionalmente `beforeSrc`/`afterSrc` e textos alternativos, usa Pointer Events para mouse e touch, oferece `role="slider"`, valores ARIA e ajuste por ArrowLeft/ArrowRight. Sem fontes de imagem, renderiza apenas placeholders explicitamente temporários; com as fontes oficiais atuais, usa `object-fit: cover`, alt text factual e carregamento prioritário para o destaque. `ProjectsSection` mantém o slider em destaque e uma galeria compacta com fotos reais; metadados específicos permanecem TBD.
 
 ## Integrações e qualidade
 

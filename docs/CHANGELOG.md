@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-09-26 — Integração das fotos reais em Our Work
+
+- Substituído o placeholder do `BeforeAfterSlider` pelo par real Hallway LVP, mantendo mouse, touch, teclado, ARIA, labels Before/After, faixa 0–100% e posição inicial em 50%.
+- Substituídos os três slots inferiores por fotos reais de hardwood fireplace, kitchen backsplash corner e light LVP room, com `object-fit: cover`, alt text factual e carregamento lazy para a galeria.
+- Mantidos nos assets, sem renderização adicional na Home, os pares Bedroom LVP, Stairs Restoration, Kitchen Backsplash e Shower Remodel para uso futuro na página Projects.
+- Nenhuma stock photo foi usada; títulos específicos, localizações, créditos, autorizações e demais metadados continuam TBD.
+
+### Validação desta etapa
+
+- Lint, typecheck, build e validação local em `5173` executados após as alterações; servidor encerrado ao final da validação.
+
 ## 2026-09-26 — Refinamento visual final de Our Work
 
 - Removidos da interface os textos técnicos de desenvolvimento dos placeholders do comparador e da galeria.
@@ -35,7 +46,6 @@
 ### Validação desta etapa
 
 - Lint, typecheck e build executados após as alterações.
-
 ## 2026-09-24 — Refinamento da seção Our Divisions
 
 - Transformados os dois cards em painéis grandes e equilibrados para Flooring & Interiors e Home & Commercial Cleaning, com identidades visuais distintas e composição responsiva lado a lado/empilhada.
@@ -200,3 +210,13 @@
 - Lint não configurado. Verificação visual em navegador não realizada.
 - Ambiente: Node 24.21.0 portátil e npm 11.19.0. Uso de npm.cmd contornou bloqueio de npm.ps1 sem alterar política do PowerShell.
 - Versões diretas iniciais: React/React DOM 19.3.0, tipos React/React DOM 19.3.0, Vite 8.3.0, plugin React 6.1.1 e TypeScript 7.0.2. Manifesto usa intervalos compatíveis; package-lock.json registra resolução exata.
+## 2026-09-26 — Reviews placeholder, Final CTA e Footer
+
+- Refinada a seção `WHAT OUR CLIENTS SAY` com estado vazio honesto, fundo dark arquitetônico sutil e estrutura tipada preparada para reviews reais (`customerName`, `reviewText`, `rating`, `source` e `date`), sem conteúdo fictício.
+- Atualizado o CTA final para `LET'S WORK TOGETHER`, com supporting text aprovado, composição horizontal no desktop e empilhada no mobile; o destino definitivo continua TBD e o email publicado atual segue temporário.
+- Refinado o Footer com marca textual provisória, navegação, telefone, email temporário, redes sociais com SVG inline acessível, área de atendimento, tagline e copyright dinâmico.
+- Logo oficial, reviews reais, email permanente e destino definitivo do CTA continuam pendentes. Header, Hero, Our Divisions, Why Choose CS, Our Work e BeforeAfterSlider foram preservados.
+
+### Validação desta etapa
+
+- Lint, typecheck e build executados após as alterações.

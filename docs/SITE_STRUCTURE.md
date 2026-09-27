@@ -3,9 +3,12 @@
 ## Implemented Home status — 2026-09-24
 
 - `/` now composes Header, Hero, two divisions, Why Choose CS, Our Work, reviews placeholder, Final CTA and Footer.
+- The reviews block intentionally contains no fabricated testimonials and currently shows `Client reviews coming soon.` over a dark architectural placeholder.
+- Final CTA uses `Let's work together` and `Get a Free Estimate`; its destination/flow remains TBD and currently uses the temporary published email as a mailto destination.
+- Footer includes the approved phone, temporary email, social URLs, service area, navigation anchors and a discreet pending-logo placeholder. The official logo and permanent email remain TBD.
 - Navigation uses responsive anchor links; secondary page routes remain TBD.
-- Our Work includes a reusable before/after comparison prepared for real photos, plus neutral future-project slots.
-- The comparison accepts optional Before/After image sources, supports mouse, touch and keyboard adjustment, and currently renders temporary placeholders because real project photos, metadata and authorizations are pending.
+- Our Work includes the real Hallway LVP before/after comparison and a compact gallery using real hardwood, kitchen backsplash and light LVP project photos. The Bedroom LVP, Stairs Restoration, Kitchen Backsplash and Shower Remodel pairs remain available in `src/assets/projects/` for a future Projects page; exact project metadata remains TBD.
+- The comparison accepts optional Before/After image sources, supports mouse, touch and keyboard adjustment, and currently uses the approved Hallway LVP photo pair. Gallery images use consistent crops, factual alt text and lazy loading; project metadata and the future Projects route remain TBD.
 
 ## Status
 
@@ -80,9 +83,9 @@ Cada página deve usar um único `main`, título principal claro, `Container` pa
 | Why Choose Us | Approved structure; not implemented | Diferenciais reais ainda precisam ser recebidos. |
 | Featured Projects | Approved structure; not implemented | Exige fotos, descrições e autorização de uso. |
 | Our Process | Approved structure; not implemented | Etapas reais do atendimento ainda são TBD. |
-| Reviews / Testimonials | Approved structure; not implemented | Só incluir avaliações reais, com autorização. |
-| Final CTA | Approved structure; not implemented | Usar `Get a Free Estimate`; destino e conteúdo permanecem TBD. |
-| Footer | Approved structure; not implemented | Dados de contato, redes e links ainda são TBD. |
+| Reviews / Testimonials | Implemented placeholder | Só incluir avaliações reais, com autorização; dados futuros: customerName, reviewText, rating, source e date. |
+| Final CTA | Implemented | Usa `Let's work together` e `Get a Free Estimate`; destino definitivo permanece TBD. |
+| Footer | Implemented | Logo oficial e email permanente permanecem TBD; contatos, redes, área e links aprovados foram incluídos. |
 
 A estrutura é aprovada para planejamento, não autoriza conteúdo comercial inventado nem a implementação da Home nesta etapa.
 

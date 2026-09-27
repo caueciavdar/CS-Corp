@@ -16,6 +16,10 @@ Data: 2026-09-24. Status: implementada.
 Data: 2026-09-25. Status: aceita.
 Manter `Our Work` com cabeçalho aprovado, um slider de destaque e slots neutros para projetos futuros. Não incluir stock photography, nomes, metadados ou comparações inventadas. Fotos reais, créditos, autorizações, legendas, metadados e rota definitiva de Projects permanecem TBD.
 
+## Decision 018: Fotos reais oficiais em Our Work
+Data: 2026-09-26. Status: implementada.
+Usar o par Hallway LVP como comparação principal da Home e três fotos reais — hardwood fireplace, kitchen backsplash corner e light LVP room — na galeria compacta existente. Os pares Bedroom LVP, Stairs Restoration, Kitchen Backsplash e Shower Remodel permanecem reservados para a futura página Projects. Não foram usadas stock photos; localizações, títulos específicos e demais metadados continuam TBD.
+
 ## Decision 001: Use React + TypeScript + Vite.
 Data: 2026-09-21. Status: aceita.
 Usar HTML5, CSS nativo e npm para uma base frontend simples e preparada para crescer.
