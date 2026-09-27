@@ -1,5 +1,62 @@
 # Changelog
 
+## 2026-09-27 — Ajustes visuais finais dos blocos inferiores
+
+- Refinado somente o `SERVICE AREA`, com texto ligeiramente maior, mais legível e menor espaçamento vertical.
+- Refinado somente o CTA final de `/flooring-interiors`, melhorando discretamente a legibilidade da supporting copy, telefone e botão, sem ampliar significativamente a seção.
+- Preservadas todas as demais seções, o Footer, a Home e a copy aprovada.
+
+## 2026-09-27 — Fechamento estrutural de Flooring & Interiors
+
+- Refinada somente a seção final `WHY CHOOSE CS FLOORING & INTERIORS?` com quatro pilares factuais: Attention to Detail, Clear Communication, Multiple Interior Solutions e Residential Focus.
+- Adicionado bloco compacto `SERVICE AREA` com a área confirmada: Greater Tampa Bay, Sarasota, Jacksonville e comunidades próximas.
+- Atualizado o CTA final para `READY TO TRANSFORM YOUR SPACE?` e `GET A FREE ESTIMATE`, preservando o email temporário como destino mailto até a definição do fluxo definitivo.
+- Reutilizado o Footer existente; na rota interna, links que pertencem à Home agora apontam para âncoras reais da Home e `Flooring & Interiors` permanece com `aria-current="page"`.
+- Header, Hero, Our Services, Before/After, transformação secundária, Recent Work e Home foram preservados.
+
+### Validação desta etapa
+
+- Lint, typecheck e build executados após as alterações.
+- Rotas `/` e `/flooring-interiors` verificadas via servidor Vite único na porta 5173; servidor encerrado após a validação.
+
+## 2026-09-27 — Ajustes finais de Recent Work em Flooring & Interiors
+
+- Removidos da interface pública o supporting copy técnico e o texto interno sobre a rota de Projects.
+- Mantida a composição aprovada das cinco fotografias, labels, proporções, hover e responsividade.
+- Ajustado discretamente o CTA `VIEW MORE PROJECTS` com mais área interna, alvo de toque adequado e tipografia mais legível, sem criar link quebrado.
+
+## 2026-09-27 — Refinamento visual de Our Work em Flooring & Interiors
+
+- Reforçada a largura desktop das composições Before/After e `RECENT WORK`, reduzindo o espaço lateral vazio.
+- Mantido o Hallway LVP como transformação interativa principal, com a mesma interação mouse, touch, teclado, ARIA e faixa de 0–100%.
+- Tornada mais evidente a transformação estática Bedroom LVP em duas imagens lado a lado, mantendo peso secundário.
+- Reorganizada a galeria com cinco fotos reais em composição editorial responsiva e CTA `VIEW MORE PROJECTS` com presença visual maior, sem criar rota quebrada.
+- Preservadas as demais seções de `/flooring-interiors`, a Home e os assets existentes.
+
+## 2026-09-27 — Ampliação visual de Our Work em Flooring & Interiors
+
+- Ampliada a largura visual apenas das áreas Before/After e `RECENT WORK`, com mais presença para o slider principal.
+- Mantida a transformação secundária Bedroom LVP em comparação estática lado a lado.
+- Ajustada a galeria para cinco fotos reais em composição editorial: uma imagem principal maior e quatro imagens secundárias, incluindo Stairs e Shower.
+- Transformado `VIEW MORE PROJECTS` em CTA visual desabilitado até a rota `/projects` existir; nenhuma rota quebrada foi criada.
+- Header, Hero, Services, Why Choose, Reviews, Final CTA, Footer e Home não foram alterados.
+
+### Validação desta etapa
+
+- Lint, typecheck, build e validação HTTP local em `5173` executados após as alterações.
+
+## 2026-09-27 — Before/After e Recent Work de Flooring & Interiors
+
+- Preservado o Hallway LVP como Before/After principal com o `BeforeAfterSlider` e a copy factual `A closer look at one of our real flooring transformations.`.
+- Adicionada a transformação real Bedroom LVP em tratamento estático menor, sem criar um segundo bloco dominante interativo.
+- Mantida a galeria `RECENT WORK` com cinco fotos reais fornecidas, labels factuais, alt text sem localização e carregamento lazy abaixo da dobra.
+- Adicionado o prompt `VIEW MORE PROJECTS` sem link quebrado; a rota/página Projects continua TBD.
+- Header, Hero, Our Services, Why Choose, Final CTA, Footer e Home foram preservados.
+
+### Validação desta etapa
+
+- Lint, typecheck e build executados após as alterações.
+
 ## 2026-09-27 — Refinamento de Our Services em Flooring & Interiors
 
 - Refinada somente a seção `OUR SERVICES`, preservando Header, Hero, Before/After, Recent Work, Why Choose, CTA, Footer e Home.

@@ -3,9 +3,11 @@
 ## Implemented Flooring & Interiors page — 2026-09-27
 
 - `/flooring-interiors` is implemented as the first complete internal division page and reuses the global Header, Footer, Container, Section and BeforeAfterSlider components.
-- The page includes a division-specific hero, the five confirmed flooring/remodeling services, real Hallway LVP before/after photography, a five-image real-work gallery, safe division differentiators, service area copy and a final estimate CTA.
+- The page includes a division-specific hero, the five confirmed flooring/remodeling services, a primary interactive Hallway LVP before/after comparison, a smaller static Bedroom LVP before/after transformation, a five-image real-work gallery, four safe division differentiators, a compact service area block and a final estimate CTA.
+- The `RECENT WORK` gallery uses only real supplied photos with factual category labels; the `VIEW MORE PROJECTS` prompt remains non-navigational while the Projects route is TBD.
 - Navigation marks `Flooring & Interiors` with `aria-current="page"` on the internal page; the Home remains at `/`.
 - Project labels and exact metadata remain TBD. The hero uses a refined architectural CSS composition because a definitive horizontal hero photograph is not confirmed.
+- The final CTA currently uses the temporary published email as a mailto destination; the official logo and permanent email remain TBD.
 
 ## Implemented Home status — 2026-09-24
 

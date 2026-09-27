@@ -10,13 +10,17 @@ const footerNavigation = [
 ]
 
 export default function Footer({ currentPath = '/' }: { currentPath?: string }) {
-  const links = footerNavigation.map(([label, href]) => label === 'Flooring & Interiors' ? [label, '/flooring-interiors'] : label === 'Home' ? [label, '/'] : [label, href])
+  const links = footerNavigation.map(([label, href]) => {
+    if (label === 'Flooring & Interiors') return [label, '/flooring-interiors']
+    if (label === 'Home') return [label, '/']
+    return [label, currentPath === '/flooring-interiors' ? `/#${href.slice(1)}` : href]
+  })
   return (
     <footer className="site-footer">
       <Container>
         <div className="site-footer__top">
           <div className="site-footer__brand">
-            <a className="site-footer__brand-name" href="#home">CS Conexion Services Corp.</a>
+            <a className="site-footer__brand-name" href="/">CS Conexion Services Corp.</a>
             <span className="site-footer__logo-note">Official logo pending</span>
             <p className="site-footer__tagline">Better spaces. Brighter lives.</p>
           </div>

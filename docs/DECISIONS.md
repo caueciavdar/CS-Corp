@@ -1,5 +1,10 @@
 # Architecture Decision Log
 
+## Decision 022: Complete the Flooring & Interiors closing blocks with safe copy
+
+Data: 2026-09-27. Status: aceita.
+`/flooring-interiors` uses the approved four-pillar `WHY CHOOSE CS FLOORING & INTERIORS?` section, the confirmed service-area sentence, and the final CTA `READY TO TRANSFORM YOUR SPACE?`. The CTA keeps the temporary published email as a mailto destination until a definitive flow exists. The official logo and permanent email remain TBD. The existing Footer is reused, with internal-page links directed back to Home anchors where no internal destination exists.
+
 ## Decision 019: Minimal pathname routing for the first internal page
 
 For the first real secondary page, the application uses a small pathname switch in `App.tsx` instead of adding `react-router-dom`. The current scope is limited to `/` and `/flooring-interiors`; this keeps dependencies unchanged while preserving a clear place to evolve routing when more pages require nested navigation or route state. Direct refreshes are supported by Vite's local fallback.
@@ -7,6 +12,10 @@ For the first real secondary page, the application uses a small pathname switch 
 ## Decision 020: Flooring & Interiors page uses confirmed assets and safe copy
 
 `/flooring-interiors` uses only the five confirmed services, the approved Hallway LVP before/after pair and real gallery assets listed in `PHOTO_INDEX.md`. The hero remains an architectural CSS composition until a definitive horizontal photograph is confirmed. No project location, client, price, duration, certification, license, insurance or performance claim is presented.
+
+## Decision 021: Secondary transformation is static and lightweight
+
+`/flooring-interiors` keeps Hallway LVP as the single dominant interactive comparison and adds the confirmed Bedroom LVP pair as a smaller static side-by-side treatment. This gives the page a second real transformation without turning the section into multiple equally weighted sliders. Exact project metadata remains TBD.
 
 ## Decision 016: Porta fixa para o servidor Vite
 Data: 2026-09-24. Status: aceita.
