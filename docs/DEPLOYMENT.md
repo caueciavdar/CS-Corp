@@ -39,7 +39,7 @@ Git e GitHub. Repositório Git original preservado; não inicializar Git aninhad
 
 ## Environment variables
 
-- `VITE_WEB3FORMS_ACCESS_KEY`: public access key for the `/contact` estimate form (see `.env.example`). It must be set at build time for the production build. Without it, the form falls back to opening an email.
+- `VITE_WEB3FORMS_ACCESS_KEY`: optional override for the `/contact` estimate form key (see `.env.example`). The company's public Web3Forms key (form "CS Website", account caue@conexionservicesfl.com) is the default in `EstimateForm.tsx`, so no variable is needed for production. Web3Forms access keys are public by design.
 
 ## Production
 

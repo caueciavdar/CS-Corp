@@ -3,8 +3,10 @@ import Button from '../ui/Button'
 
 const ESTIMATE_EMAIL = 'caue@conexionservicesfl.com'
 const WEB3FORMS_ENDPOINT = 'https://api.web3forms.com/submit'
-// Public Web3Forms access key (safe to ship in the browser). Without it, the form opens a pre-filled email instead.
-const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY as string | undefined
+// Public Web3Forms access key (Web3Forms documents it as safe for client-side code).
+// VITE_WEB3FORMS_ACCESS_KEY overrides it. Without a key, the form opens a pre-filled email instead.
+const DEFAULT_ACCESS_KEY = '8fb897e5-595a-49cf-85c5-741742d4b5dd'
+const accessKey = (import.meta.env.VITE_WEB3FORMS_ACCESS_KEY as string | undefined) || DEFAULT_ACCESS_KEY
 
 const serviceGroups = [
   { label: 'Flooring & Interiors', services: ['Vinyl Plank Flooring', 'Laminate Flooring', 'Hardwood Flooring', 'Bathroom Remodeling', 'Kitchen Remodeling'] },

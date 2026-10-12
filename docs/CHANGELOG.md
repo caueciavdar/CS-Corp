@@ -3,7 +3,7 @@
 ## 2026-10-12 — Free estimate form and `/contact` page
 
 - Added `/contact` with an estimate request form (name, phone, email, city/ZIP, service, project details, preferred contact method) and a side panel with phone, email and service area.
-- The form posts to Web3Forms when `VITE_WEB3FORMS_ACCESS_KEY` is set; without it, submitting opens a pre-filled email to the business address. Includes required-field validation, a spam honeypot, a success message and an error message with phone/email fallback.
+- The form posts to Web3Forms using the company's public access key (form "CS Website", delivering to caue@conexionservicesfl.com); `VITE_WEB3FORMS_ACCESS_KEY` can override it. Includes required-field validation, a spam honeypot, a success message and an error message with phone/email fallback.
 - Every `Get a Free Estimate` button, the Header/Footer `Contact` links and the Cleaning page CTAs now go to `/contact` instead of `#contact` anchors or `mailto:`.
 - Home division cards now link to `/flooring-interiors` and `/cleaning-services`; Home `VIEW MORE PROJECTS` now links to `/projects` (previously `#contact`).
 
@@ -11,7 +11,7 @@
 
 - `npm run lint`, `npm run typecheck`, `npm run build`: aprovados.
 - Preview local: `/contact` em desktop 1440px e mobile 390px; envio testado com a API do Web3Forms simulada (campos obrigatórios bloqueiam o envio; envio válido mostra a mensagem de sucesso). Links da Home e do Footer conferidos. Servidor encerrado após a validação.
-- Envio real pelo Web3Forms: pendente até a chave de acesso ser criada.
+- Envio real pelo Web3Forms: pendente; testar após a publicação ou com o preview local.
 
 ## 2026-10-12 — Customer-facing polish for launch readiness
 
