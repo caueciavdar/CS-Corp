@@ -23,7 +23,6 @@ export default function Footer({ currentPath = '/' }: { currentPath?: string }) 
         <div className="site-footer__top">
           <div className="site-footer__brand">
             <a className="site-footer__brand-name" href="/">CS Conexion Services Corp.</a>
-            <span className="site-footer__logo-note">Official logo pending</span>
             <p className="site-footer__tagline">Better spaces. Brighter lives.</p>
           </div>
           <nav className="footer-navigation" aria-label="Footer navigation">

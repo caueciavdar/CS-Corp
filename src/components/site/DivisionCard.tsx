@@ -24,7 +24,7 @@ export default function DivisionCard({ number, title, tagline, description, serv
   return (
     <article className={`division-card division-card--${tone}`}>
       <div className="division-card__top"><span>{number}</span><span className="division-card__line" aria-hidden="true" /></div>
-      <div className="division-card__brand" aria-label="Official division logo placeholder">CS <span>LOGO<br />PENDING</span></div>
+      <div className="division-card__brand" aria-hidden="true">CS</div>
       <div className="division-card__intro">
         <p className="division-card__tagline">{tagline}</p>
         <h3>{title}</h3>

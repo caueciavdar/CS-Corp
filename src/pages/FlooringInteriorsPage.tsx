@@ -106,7 +106,7 @@ export default function FlooringInteriorsPage() {
         <Container>
           <div className="flooring-section-heading"><div><p className="eyebrow">Selected work</p><h2 id="recent-work-title">RECENT WORK</h2></div></div>
           <div className="flooring-project-grid">{projects.map((project) => <figure key={project.alt} className="flooring-project"><img src={project.src} alt={project.alt} loading="lazy" decoding="async" /><figcaption>{project.label}</figcaption></figure>)}</div>
-          <div className="projects__footer projects__footer--flooring"><button className="button button--secondary projects__cta" type="button" disabled>VIEW MORE PROJECTS</button></div>
+          <div className="projects__footer projects__footer--flooring"><a className="button button--secondary projects__cta" href="/projects">VIEW MORE PROJECTS</a></div>
         </Container>
       </Section>
 

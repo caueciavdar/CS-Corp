@@ -1,5 +1,10 @@
 # Architecture Decision Log
 
+## Decision 026: Keep internal placeholder notes out of the public UI
+
+Data: 2026-10-12. Status: aceita.
+Pending items (official logo, hero photography) stay tracked in /docs as TBD, not as visible text on the website. Visitors see the neutral current treatment without labels such as "logo pending" or "placeholder". Default SEO metadata and LocalBusiness structured data live in `index.html` and may only contain confirmed business data from BUSINESS_RULES.md.
+
 ## Decision 025: Implement Projects as a local filtered real-photo portfolio
 
 Data: 2026-09-27. Status: aceita.

@@ -18,7 +18,7 @@ export default function Header({ currentPath = '/' }: { currentPath?: string }) 
       <div className="container site-header__inner">
         <a className="site-logo" href="/" aria-label="CS Conexion Services Corp home">
           <span className="site-logo__mark" aria-hidden="true">CS</span>
-          <span className="site-logo__name">CS Conexion<br />Services Corp <small>temporary brand area</small></span>
+          <span className="site-logo__name">CS Conexion<br />Services Corp</span>
         </a>
         <button
           className="menu-toggle"

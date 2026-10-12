@@ -1,5 +1,20 @@
 # Changelog
 
+## 2026-10-12 — Customer-facing polish for launch readiness
+
+- Removed internal production notes that were visible to visitors: `temporary brand area` in the Header, `LOGO PENDING` in the division cards, `Official logo pending` in the Footer and the hero note about placeholder photography. The official logo and hero photography remain TBD; the layout is unchanged.
+- Added the approved `Get a Free Estimate` CTA and a click-to-call button to the Home hero, so visitors can act without scrolling.
+- Fixed the desktop `OUR SERVICES` grid on `/flooring-interiors`: Bathroom Remodeling and Kitchen Remodeling now span two columns like the top row instead of collapsing to one narrow column.
+- `VIEW MORE PROJECTS` on `/flooring-interiors` now links to the existing `/projects` page instead of being a disabled button.
+- Added a descriptive default page title, meta description, Open Graph tags and `HomeAndConstructionBusiness` structured data in `index.html`, using only confirmed business data (name, phone, temporary email, service area, social links, confirmed services).
+
+### Validação desta etapa
+
+- `npm run lint`: aprovado.
+- `npm run typecheck`: aprovado.
+- `npm run build`: aprovado.
+- Preview local (`vite preview`) com screenshots desktop 1440px e mobile 390px de `/`, `/flooring-interiors`, `/cleaning-services` e `/projects`; servidor encerrado após a validação.
+
 ## 2026-09-27 — Implemented Projects portfolio page
 
 - Implemented `/projects` with a compact portfolio hero, real flooring/interior-remodeling photography and responsive editorial grid.
