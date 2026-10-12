@@ -71,7 +71,7 @@ export default function ProjectsPage() {
           <div className="projects-page__grid">{visibleProjects.map((project) => <button className={`projects-page__card${selectedProject?.id === project.id ? ' is-selected' : ''}`} key={project.id} type="button" onClick={() => setSelectedProject(project)} aria-label={`View ${project.title}, ${project.category}${project.beforeSrc ? ', before and after' : ''}`}><img src={project.image} alt={project.alt} loading="lazy" decoding="async" /><span className="projects-page__card-overlay"><small>{project.category}{project.beforeSrc ? ' · Before / After' : ''}</small><strong>{project.title}</strong></span></button>)}</div>
         </Container>
       </Section>
-      <section className="projects-page__cta" id="contact" aria-labelledby="projects-cta-title"><Container><div><p className="eyebrow">Start your project</p><h2 id="projects-cta-title">HAVE A PROJECT IN MIND?</h2><p>Tell us what you're planning and request a free estimate.</p></div><div><a className="button button--primary" href="mailto:caue@conexionservicesfl.com">GET A FREE ESTIMATE</a><a className="projects-page__phone" href="tel:+19049555850">(904) 955-5850</a></div></Container></section>
+      <section className="projects-page__cta" id="contact" aria-labelledby="projects-cta-title"><Container><div><p className="eyebrow">Start your project</p><h2 id="projects-cta-title">HAVE A PROJECT IN MIND?</h2><p>Tell us what you're planning and request a free estimate.</p></div><div><a className="button button--primary" href="/contact">GET A FREE ESTIMATE</a><a className="projects-page__phone" href="tel:+19049555850">(904) 955-5850</a></div></Container></section>
     </main>
     <Footer currentPath="/projects" />
   </>

@@ -34,7 +34,7 @@ export default function DivisionCard({ number, title, tagline, description, serv
         <p className="division-card__label">Services</p>
         <ul>{services.map((service, index) => <li key={service}><ServiceIcon index={index} /><span>{service}</span></li>)}</ul>
       </div>
-      <a className="division-card__cta" href="#contact">{cta}<span aria-hidden="true">↗</span></a>
+      <a className="division-card__cta" href={tone === 'flooring' ? '/flooring-interiors' : '/cleaning-services'}>{cta}<span aria-hidden="true">↗</span></a>
     </article>
   )
 }

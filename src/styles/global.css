@@ -677,3 +677,39 @@ textarea {
   .flooring-hero__actions .button { padding-inline: 1.1rem; }
   .flooring-hero__visual { top: 15rem; right: -18rem; width: 31rem; opacity: .4; }
 }
+
+/* Contact / free estimate page */
+.contact-page__body { background: var(--color-surface); }
+.contact-page__layout { display: grid; gap: var(--space-2xl); align-items: start; }
+.contact-page__aside { display: grid; gap: var(--space-xl); }
+.contact-page__aside .eyebrow { margin-bottom: var(--space-xs); }
+.contact-page__aside a { color: var(--color-brand-dark); font-weight: var(--font-weight-medium); overflow-wrap: anywhere; }
+.contact-page__aside p:not(.eyebrow) { color: var(--color-text-muted); }
+.contact-page__phone { font-family: var(--font-family-heading); font-size: clamp(1.4rem, 3vw, 1.8rem); font-weight: var(--font-weight-bold); text-decoration: none; }
+.estimate-form, .estimate-form__done { border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: clamp(1.5rem, 4vw, 2.5rem); background: var(--color-background); box-shadow: var(--shadow-md); }
+.estimate-form h2, .estimate-form__done h2 { font-family: var(--font-family-heading); font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -.03em; }
+.estimate-form__intro { margin-top: var(--space-xs); color: var(--color-text-muted); font-size: var(--font-size-sm); }
+.estimate-form__done p { margin-top: var(--space-md); color: var(--color-text-muted); }
+.estimate-form__grid { display: grid; gap: var(--space-lg); margin-block: var(--space-xl); }
+.estimate-form label { display: grid; gap: var(--space-xs); color: var(--color-text); font-size: .95rem; font-weight: var(--font-weight-medium); }
+.estimate-form input:not([type="radio"]), .estimate-form select, .estimate-form textarea { width: 100%; min-height: 3rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: .65rem .85rem; background: var(--color-background); color: var(--color-text); font: inherit; font-weight: var(--font-weight-regular); }
+.estimate-form textarea { resize: vertical; }
+.estimate-form input:focus-visible, .estimate-form select:focus-visible, .estimate-form textarea:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 1px; border-color: var(--color-focus); }
+.estimate-form__methods { display: flex; flex-wrap: wrap; gap: var(--space-lg); margin: 0; border: 0; padding: 0; }
+.estimate-form__methods legend { margin-bottom: var(--space-xs); padding: 0; font-size: .95rem; font-weight: var(--font-weight-medium); }
+.estimate-form__methods label { display: inline-flex; align-items: center; gap: var(--space-xs); font-weight: var(--font-weight-regular); }
+.estimate-form__methods input { width: 1.1rem; height: 1.1rem; accent-color: var(--color-brand-primary); }
+.estimate-form__trap { position: absolute; left: -9999px; }
+.estimate-form__error { margin-bottom: var(--space-md); color: #b42318; }
+.estimate-form .button { width: 100%; min-height: 3.25rem; font-size: 1.05rem; }
+
+@media (min-width: 48rem) {
+  .estimate-form__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .estimate-form__wide { grid-column: 1 / -1; }
+  .estimate-form .button { width: auto; }
+}
+
+@media (min-width: 64rem) {
+  .contact-page__layout { grid-template-columns: minmax(0, 1.8fr) minmax(16rem, 1fr); gap: var(--space-3xl); }
+  .contact-page__aside { padding-top: var(--space-xl); }
+}

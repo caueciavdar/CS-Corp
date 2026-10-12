@@ -1,5 +1,10 @@
 # Site structure
 
+## Implemented Contact / free estimate page — 2026-10-12
+
+- `/contact` hosts the estimate request form and the phone, email and service-area details. It is the destination of every `Get a Free Estimate` CTA and of the `Contact` navigation item.
+- Form fields: name*, phone*, email, city/ZIP*, service* (the confirmed flooring and cleaning services, plus "Other / Not sure yet"), project details, and preferred contact method (Call, Text or Email). Photo upload is TBD.
+
 ## Implemented Projects portfolio page — 2026-09-27
 
 - `/projects` is implemented as a real-work portfolio page using the supplied flooring and interior-remodeling photos from `src/assets/projects/`.

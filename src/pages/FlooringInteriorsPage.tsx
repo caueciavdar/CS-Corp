@@ -68,7 +68,7 @@ export default function FlooringInteriorsPage() {
             <h1 id="flooring-title">Transform<br /><span>your space.</span></h1>
             <p>Professional flooring and interior remodeling solutions designed to improve the way your space looks and feels.</p>
             <div className="flooring-hero__actions">
-              <a className="button button--primary" href="#contact">Get a Free Estimate</a>
+              <a className="button button--primary" href="/contact">Get a Free Estimate</a>
               <a className="button button--secondary button--on-dark" href="#recent-work">View Our Work</a>
             </div>
           </div>
@@ -124,7 +124,7 @@ export default function FlooringInteriorsPage() {
 
       <section className="flooring-service-area" aria-labelledby="service-area-title"><Container><p className="eyebrow">WHERE WE WORK</p><h2 id="service-area-title">SERVICE AREA</h2><p>Serving Greater Tampa Bay, Sarasota, Jacksonville and surrounding communities.</p></Container></section>
 
-      <section className="flooring-contact" id="contact" aria-labelledby="flooring-contact-title"><Container><p className="eyebrow">Start your project</p><h2 id="flooring-contact-title">READY TO TRANSFORM<br />YOUR SPACE?</h2><p>Tell us about your flooring or remodeling project and request a free estimate.</p><div><a className="button button--primary" href="mailto:caue@conexionservicesfl.com">GET A FREE ESTIMATE</a><a className="flooring-contact__phone" href="tel:+19049555850">(904) 955-5850</a></div></Container></section>
+      <section className="flooring-contact" id="contact" aria-labelledby="flooring-contact-title"><Container><p className="eyebrow">Start your project</p><h2 id="flooring-contact-title">READY TO TRANSFORM<br />YOUR SPACE?</h2><p>Tell us about your flooring or remodeling project and request a free estimate.</p><div><a className="button button--primary" href="/contact">GET A FREE ESTIMATE</a><a className="flooring-contact__phone" href="tel:+19049555850">(904) 955-5850</a></div></Container></section>
     </main>
     <Footer currentPath="/flooring-interiors" />
   </>

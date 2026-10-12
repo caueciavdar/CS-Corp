@@ -1,5 +1,10 @@
 # Architecture Decision Log
 
+## Decision 027: Estimate form via Web3Forms, no backend
+
+Data: 2026-10-12. Status: aceita.
+O usuário pediu um formulário de orçamento. Como o projeto não usa backend nem PHP, o formulário em `/contact` envia para o Web3Forms, um serviço gratuito que encaminha cada pedido para o e-mail da empresa. A chave pública fica em `VITE_WEB3FORMS_ACCESS_KEY` e a lista de serviços vem só de BUSINESS_RULES.md. Sem a chave, o envio abre um e-mail pré-preenchido para o endereço publicado, então o formulário nunca perde um pedido em silêncio. Envio de fotos não foi incluído porque exige plano pago; fica TBD.
+
 ## Decision 026: Keep internal placeholder notes out of the public UI
 
 Data: 2026-10-12. Status: aceita.

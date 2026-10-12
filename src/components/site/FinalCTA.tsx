@@ -9,7 +9,7 @@ export default function FinalCTA() {
           <h2 id="cta-title">Let&apos;s work together</h2>
           <p className="final-cta__text">Tell us about your project and get a free, no-obligation estimate.</p>
         </div>
-        <a className="button button--primary" href="mailto:caue@conexionservicesfl.com">Get a Free Estimate <span aria-hidden="true">↗</span></a>
+        <a className="button button--primary" href="/contact">Get a Free Estimate <span aria-hidden="true">↗</span></a>
       </Container>
     </section>
   )

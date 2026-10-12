@@ -44,7 +44,7 @@ export default function ProjectsSection() {
           <ProjectCard src={kitchenBacksplashCorner} alt="Kitchen backsplash installation project" />
           <ProjectCard src={lightLvpRoom} alt="Finished light LVP flooring installation" />
         </div>
-        <div className="projects__footer"><span aria-hidden="true" /><a className="text-link" href="#contact">VIEW MORE PROJECTS <span aria-hidden="true">↗</span></a></div>
+        <div className="projects__footer"><span aria-hidden="true" /><a className="text-link" href="/projects">VIEW MORE PROJECTS <span aria-hidden="true">↗</span></a></div>
       </Container>
     </Section>
   )

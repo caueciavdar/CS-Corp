@@ -6,7 +6,7 @@ const footerNavigation = [
   ['Flooring & Interiors', '#divisions'],
   ['Cleaning Services', '#divisions'],
   ['Our Work', '/projects'],
-  ['Contact', '#contact'],
+  ['Contact', '/contact'],
 ]
 
 export default function Footer({ currentPath = '/' }: { currentPath?: string }) {
@@ -15,6 +15,7 @@ export default function Footer({ currentPath = '/' }: { currentPath?: string }) 
     if (label === 'Cleaning Services') return [label, '/cleaning-services']
     if (label === 'Home') return [label, '/']
     if (label === 'Our Work') return [label, '/projects']
+    if (label === 'Contact') return [label, '/contact']
     return [label, currentPath !== '/' ? `/#${href.slice(1)}` : href]
   })
   return (

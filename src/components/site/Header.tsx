@@ -6,7 +6,7 @@ const navigation = [
   ['Flooring & Interiors', '#divisions'],
   ['Cleaning Services', '#divisions'],
   ['Our Work', '/projects'],
-  ['Contact', '#contact'],
+  ['Contact', '/contact'],
 ]
 
 export default function Header({ currentPath = '/' }: { currentPath?: string }) {
@@ -35,7 +35,7 @@ export default function Header({ currentPath = '/' }: { currentPath?: string }) 
             <a key={label} href={href} aria-current={href === currentPath ? 'page' : undefined} onClick={() => setMenuOpen(false)}>{label}</a>
           ))}
           <div className="site-nav__contact">
-            <a className="button button--primary site-nav__cta" href="#contact" onClick={() => setMenuOpen(false)}>Get a Free Estimate</a>
+            <a className="button button--primary site-nav__cta" href="/contact" onClick={() => setMenuOpen(false)}>Get a Free Estimate</a>
             <a className="site-nav__phone" href="tel:+19049555850">(904) 955-5850</a>
           </div>
         </nav>
