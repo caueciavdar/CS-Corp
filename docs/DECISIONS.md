@@ -1,5 +1,10 @@
 # Architecture Decision Log
 
+## Decision 028: Provisional logos extracted from the user's screenshot
+
+Data: 2026-10-13. Status: aceita (provisória).
+O usuário enviou os logos das divisões feitos no ChatGPT, mas como print de tela. Usamos só a marca "CS" de cada divisão, recortada e sem fundo, e deixamos os nomes como texto real para ficarem nítidos e legíveis pelo Google. Quando chegarem os arquivos originais (ou um logo refeito), basta substituir os arquivos em `src/assets/brand/` mantendo os mesmos nomes. O logo da empresa-mãe continua TBD; por enquanto o Header usa a marca de Flooring em branco.
+
 ## Decision 027: Estimate form via Web3Forms, no backend
 
 Data: 2026-10-12. Status: aceita.

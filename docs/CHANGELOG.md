@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-13 — Provisional division logos
+
+- Added the division logos the user supplied (made with ChatGPT, received as a screenshot): the navy "CS" with a house roof for Flooring & Interiors and the gold "CS" with a water drop for Home & Commercial Cleaning. Only the "CS" marks were extracted, with the background removed; division names stay as real text.
+- Header and Footer use a white version of the Flooring mark, with "Conexion Services Corp." and the tagline. Each Home division card shows its own mark. Added a favicon and Apple touch icon.
+- Assets: `src/assets/brand/` (WebP) and `public/favicon.png`, `public/apple-touch-icon.png`. Source reference: the user's screenshot, kept outside the repo.
+
+### Validação desta etapa
+
+- `npm run lint`, `npm run typecheck`, `npm run build`: aprovados. Header, cards e Footer conferidos em 1440px e 390px via preview; servidor encerrado após a validação.
+
 ## 2026-10-12 — Free estimate form and `/contact` page
 
 - Added `/contact` with an estimate request form (name, phone, email, city/ZIP, service, project details, preferred contact method) and a side panel with phone, email and service area.
