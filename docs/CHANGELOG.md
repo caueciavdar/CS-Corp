@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-13 — Home Our Work becomes a carousel
+
+- Following the user's mockup, the Home `OUR WORK` section is now a horizontal carousel of nine real project photos, with arrow buttons that loop at the ends, swipe or scroll on touch, and scroll-snap. It shows 4 cards on desktop, 3 on tablet and about 1¼ on mobile. The Hallway LVP before/after photos are side by side with `Before` and `After` tags, and the other photos carry service labels.
+- The interactive Before/After slider stays on `/flooring-interiors` and `/projects`. `View more projects` is now a button that links to `/projects`.
+- Removed the unused `.project-grid`, `.project-card` and `.projects__feature` styles.
+
+### Validação desta etapa
+
+- `npm run lint`, `npm run typecheck`, `npm run build`: aprovados. Carrossel conferido em 1440px e 390px via preview; a seta "next" rolou o carrossel nos dois tamanhos e a página não ganhou rolagem lateral. Servidor encerrado após a validação.
+
 ## 2026-10-13 — Photo backgrounds for the Home hero and division cards
 
 - The Home hero now shows a Florida living-room photo behind a dark gradient, so the text stays readable. The Flooring card shows a bright room, and the Cleaning card shows a clean interior with cleaning supplies. Each card photo fades into the card color.
