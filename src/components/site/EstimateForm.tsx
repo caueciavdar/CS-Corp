@@ -9,7 +9,7 @@ const DEFAULT_ACCESS_KEY = '8fb897e5-595a-49cf-85c5-741742d4b5dd'
 const accessKey = (import.meta.env.VITE_WEB3FORMS_ACCESS_KEY as string | undefined) || DEFAULT_ACCESS_KEY
 
 const serviceGroups = [
-  { label: 'Flooring & Interiors', services: ['Vinyl Plank Flooring', 'Laminate Flooring', 'Hardwood Flooring', 'Bathroom Remodeling', 'Kitchen Remodeling'] },
+  { label: 'Flooring & Interiors', services: ['Vinyl Plank Flooring', 'Laminate Flooring', 'Hardwood Flooring', 'Bathroom Remodeling', 'Kitchen Remodeling', 'Baseboards & Trim', 'Interior Painting'] },
   { label: 'Home & Commercial Cleaning', services: ['Residential Cleaning', 'Commercial / Office Cleaning', 'Post-Construction Cleaning', 'Move-In / Move-Out Cleaning'] },
 ]
 

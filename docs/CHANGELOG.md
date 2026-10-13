@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-13 — Baseboards & Trim and Interior Painting
+
+- Added the two services the user confirmed to `/flooring-interiors` (now seven service cards, laid out 4 + 3 on desktop), the Home Flooring division card, the estimate form service list, the meta description and the structured data.
+- Recorded in BUSINESS_RULES.md that AI-generated photos are approved for backgrounds only, and that the license is not required for this trade.
+
 ## 2026-10-13 — Provisional division logos
 
 - Added the division logos the user supplied (made with ChatGPT, received as a screenshot): the navy "CS" with a house roof for Flooring & Interiors and the gold "CS" with a water drop for Home & Commercial Cleaning. Only the "CS" marks were extracted, with the background removed; division names stay as real text.

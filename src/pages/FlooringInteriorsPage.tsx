@@ -21,6 +21,8 @@ const services = [
   { title: 'Hardwood Flooring', text: 'Hardwood flooring installation and interior flooring improvements.', icon: 'wood' },
   { title: 'Bathroom Remodeling', text: 'Interior remodeling solutions for bathrooms and related finishes.', icon: 'bath' },
   { title: 'Kitchen Remodeling', text: 'Interior remodeling solutions for kitchens and surrounding spaces.', icon: 'kitchen' },
+  { title: 'Baseboards & Trim', text: 'Baseboard and trim installation for a clean, finished edge in every room.', icon: 'trim' },
+  { title: 'Interior Painting', text: 'Interior painting to refresh walls, trim and finished spaces.', icon: 'paint' },
 ] as const
 
 const projects = [
@@ -32,7 +34,11 @@ const projects = [
 ]
 
 function ServiceIcon({ type }: { type: (typeof services)[number]['icon'] }) {
-  const paths = type === 'bath'
+  const paths = type === 'trim'
+    ? <><path d="M4 20h16" /><path d="M4 16h16v4" /><path d="M4 4v12M20 4v12" /></>
+    : type === 'paint'
+    ? <><path d="M5 4h12v5H5z" /><path d="M17 6h2v5h-7v3" /><path d="M11 14h2v6h-2z" /></>
+    : type === 'bath'
     ? <><path d="M4 13h16" /><path d="M6 13V8a3 3 0 0 1 5.5-1.6" /><path d="M4 17h16" /><path d="M7 17v2M17 17v2" /></>
     : type === 'kitchen'
       ? <><path d="M5 20V4h14v16" /><path d="M8 8h8M8 12h8M8 16h3" /><path d="M15 15h1" /></>
