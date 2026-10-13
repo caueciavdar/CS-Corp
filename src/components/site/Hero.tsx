@@ -1,4 +1,5 @@
 import Container from '../layout/Container'
+import heroPhoto from '../../assets/backgrounds/hero-living-room.webp'
 
 const valueItems = [
   { label: 'Quality Work', icon: 'quality' },
@@ -21,11 +22,16 @@ function ValueIcon({ type }: { type: (typeof valueItems)[number]['icon'] }) {
 export default function Hero() {
   return (
     <section className="hero" id="home" aria-labelledby="hero-title">
+      <img className="hero__photo" src={heroPhoto} alt="" fetchPriority="high" decoding="async" />
       <Container className="hero__inner">
         <div className="hero__content">
           <p className="eyebrow">Professional property services</p>
           <h1 id="hero-title">Two services.<br /><span>One commitment.</span></h1>
           <p className="hero__text">Better spaces. Brighter lives.</p>
+          <div className="hero__actions">
+            <a className="button button--primary" href="/contact">Get a Free Estimate</a>
+            <a className="button button--secondary button--on-dark" href="tel:+19049555850">Call (904) 955-5850</a>
+          </div>
           <span className="hero__accent" aria-hidden="true" />
         </div>
         <div className="hero__aside" aria-label="Our property service divisions">
@@ -41,7 +47,6 @@ export default function Hero() {
           <div className="hero__values" aria-label="Our service values">
             {valueItems.map((item, index) => <span key={item.label}><i aria-hidden="true">0{index + 1}</i><ValueIcon type={item.icon} />{item.label}</span>)}
           </div>
-          <p className="hero__temporary">Architectural background placeholder · approved photography coming soon</p>
         </div>
       </Container>
     </section>

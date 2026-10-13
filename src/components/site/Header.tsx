@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import csMarkWhite from '../../assets/brand/cs-mark-white.webp'
 
 const navigation = [
   ['Home', '#home'],
@@ -6,7 +7,7 @@ const navigation = [
   ['Flooring & Interiors', '#divisions'],
   ['Cleaning Services', '#divisions'],
   ['Our Work', '/projects'],
-  ['Contact', '#contact'],
+  ['Contact', '/contact'],
 ]
 
 export default function Header({ currentPath = '/' }: { currentPath?: string }) {
@@ -17,8 +18,8 @@ export default function Header({ currentPath = '/' }: { currentPath?: string }) 
     <header className={`site-header${currentPath === '/flooring-interiors' ? ' site-header--flooring' : ''}${currentPath === '/cleaning-services' ? ' site-header--cleaning' : ''}`}>
       <div className="container site-header__inner">
         <a className="site-logo" href="/" aria-label="CS Conexion Services Corp home">
-          <span className="site-logo__mark" aria-hidden="true">CS</span>
-          <span className="site-logo__name">CS Conexion<br />Services Corp <small>temporary brand area</small></span>
+          <img className="site-logo__mark" src={csMarkWhite} alt="" width="86" height="40" />
+          <span className="site-logo__name">Conexion<br />Services Corp.<small>Better spaces. Brighter lives.</small></span>
         </a>
         <button
           className="menu-toggle"
@@ -35,7 +36,7 @@ export default function Header({ currentPath = '/' }: { currentPath?: string }) 
             <a key={label} href={href} aria-current={href === currentPath ? 'page' : undefined} onClick={() => setMenuOpen(false)}>{label}</a>
           ))}
           <div className="site-nav__contact">
-            <a className="button button--primary site-nav__cta" href="#contact" onClick={() => setMenuOpen(false)}>Get a Free Estimate</a>
+            <a className="button button--primary site-nav__cta" href="/contact" onClick={() => setMenuOpen(false)}>Get a Free Estimate</a>
             <a className="site-nav__phone" href="tel:+19049555850">(904) 955-5850</a>
           </div>
         </nav>

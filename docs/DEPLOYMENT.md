@@ -37,6 +37,10 @@ Em outras máquinas, instalar/ativar Node 24 LTS normalmente. O runtime portáti
 
 Git e GitHub. Repositório Git original preservado; não inicializar Git aninhado. Versionar fontes, documentação e lockfile; não versionar node_modules, dist ou .env privados. .env.example pode ser versionado sem secrets.
 
+## Environment variables
+
+- `VITE_WEB3FORMS_ACCESS_KEY`: optional override for the `/contact` estimate form key (see `.env.example`). The company's public Web3Forms key (form "CS Website", account caue@conexionservicesfl.com) is the default in `EstimateForm.tsx`, so no variable is needed for production. Web3Forms access keys are public by design.
+
 ## Production
 
 Hostinger é o destino previsto. Processo definitivo de deploy: TBD; será definido e documentado posteriormente. Nenhuma integração automática de deploy criada.

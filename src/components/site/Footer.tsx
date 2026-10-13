@@ -1,3 +1,4 @@
+import csMarkWhite from '../../assets/brand/cs-mark-white.webp'
 import Container from '../layout/Container'
 
 const footerNavigation = [
@@ -6,7 +7,7 @@ const footerNavigation = [
   ['Flooring & Interiors', '#divisions'],
   ['Cleaning Services', '#divisions'],
   ['Our Work', '/projects'],
-  ['Contact', '#contact'],
+  ['Contact', '/contact'],
 ]
 
 export default function Footer({ currentPath = '/' }: { currentPath?: string }) {
@@ -15,6 +16,7 @@ export default function Footer({ currentPath = '/' }: { currentPath?: string }) 
     if (label === 'Cleaning Services') return [label, '/cleaning-services']
     if (label === 'Home') return [label, '/']
     if (label === 'Our Work') return [label, '/projects']
+    if (label === 'Contact') return [label, '/contact']
     return [label, currentPath !== '/' ? `/#${href.slice(1)}` : href]
   })
   return (
@@ -22,8 +24,7 @@ export default function Footer({ currentPath = '/' }: { currentPath?: string }) 
       <Container>
         <div className="site-footer__top">
           <div className="site-footer__brand">
-            <a className="site-footer__brand-name" href="/">CS Conexion Services Corp.</a>
-            <span className="site-footer__logo-note">Official logo pending</span>
+            <a className="site-footer__brand-name" href="/"><img src={csMarkWhite} alt="" width="86" height="40" />CS Conexion Services Corp.</a>
             <p className="site-footer__tagline">Better spaces. Brighter lives.</p>
           </div>
           <nav className="footer-navigation" aria-label="Footer navigation">

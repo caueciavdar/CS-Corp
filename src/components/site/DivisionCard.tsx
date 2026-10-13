@@ -1,3 +1,8 @@
+import flooringMark from '../../assets/brand/flooring-mark.webp'
+import cleaningMark from '../../assets/brand/cleaning-mark.webp'
+import flooringPhoto from '../../assets/backgrounds/flooring-room.webp'
+import cleaningPhoto from '../../assets/backgrounds/cleaning-room.webp'
+
 type DivisionCardProps = {
   number: string
   title: string
@@ -23,8 +28,9 @@ function ServiceIcon({ index }: { index: number }) {
 export default function DivisionCard({ number, title, tagline, description, services, tone, cta }: DivisionCardProps) {
   return (
     <article className={`division-card division-card--${tone}`}>
+      <img className="division-card__photo" src={tone === 'flooring' ? flooringPhoto : cleaningPhoto} alt="" loading="lazy" decoding="async" />
       <div className="division-card__top"><span>{number}</span><span className="division-card__line" aria-hidden="true" /></div>
-      <div className="division-card__brand" aria-label="Official division logo placeholder">CS <span>LOGO<br />PENDING</span></div>
+      <div className="division-card__brand"><img src={tone === 'flooring' ? flooringMark : cleaningMark} alt="" width="160" height="75" /></div>
       <div className="division-card__intro">
         <p className="division-card__tagline">{tagline}</p>
         <h3>{title}</h3>
@@ -34,7 +40,7 @@ export default function DivisionCard({ number, title, tagline, description, serv
         <p className="division-card__label">Services</p>
         <ul>{services.map((service, index) => <li key={service}><ServiceIcon index={index} /><span>{service}</span></li>)}</ul>
       </div>
-      <a className="division-card__cta" href="#contact">{cta}<span aria-hidden="true">↗</span></a>
+      <a className="division-card__cta" href={tone === 'flooring' ? '/flooring-interiors' : '/cleaning-services'}>{cta}<span aria-hidden="true">↗</span></a>
     </article>
   )
 }

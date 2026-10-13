@@ -1,5 +1,77 @@
 # Changelog
 
+## 2026-10-13 — Reviews section ready for real Google reviews
+
+- Following the user's mockup, `WHAT OUR CLIENTS SAY` now sits over a darkened interior photo and shows one review at a time with gold stars, the client's name and the source (e.g. "Google review"). Two or more reviews get round prev/next arrows that loop.
+- Reviews moved to `src/content/reviews.ts`, separate from the component (`ReviewsPlaceholder` was renamed `ReviewsSection`). The list ships empty, so the site still shows `Client reviews coming soon.` until a real review is added.
+- Removed the unused `.reviews__backdrop` and `.reviews__list` styles.
+
+### Validação desta etapa
+
+- `npm run lint`, `npm run typecheck`, `npm run build`: aprovados. With two temporary example reviews (not committed), the section was checked at 1440px and 390px: the arrow moved to the second review and the page did not scroll sideways. The example screenshots are in `/mnt/project-files/site/screenshots/avaliacoes-exemplo-*.png`. Servidor encerrado após a validação.
+
+## 2026-10-13 — Home Our Work becomes a carousel
+
+- Following the user's mockup, the Home `OUR WORK` section is now a horizontal carousel of nine real project photos, with arrow buttons that loop at the ends, swipe or scroll on touch, and scroll-snap. It shows 4 cards on desktop, 3 on tablet and about 1¼ on mobile. The Hallway LVP before/after photos are side by side with `Before` and `After` tags, and the other photos carry service labels.
+- The interactive Before/After slider stays on `/flooring-interiors` and `/projects`. `View more projects` is now a button that links to `/projects`.
+- Removed the unused `.project-grid`, `.project-card` and `.projects__feature` styles.
+
+### Validação desta etapa
+
+- `npm run lint`, `npm run typecheck`, `npm run build`: aprovados. Carrossel conferido em 1440px e 390px via preview; a seta "next" rolou o carrossel nos dois tamanhos e a página não ganhou rolagem lateral. Servidor encerrado após a validação.
+
+## 2026-10-13 — Photo backgrounds for the Home hero and division cards
+
+- The Home hero now shows a Florida living-room photo behind a dark gradient, so the text stays readable. The Flooring card shows a bright room, and the Cleaning card shows a clean interior with cleaning supplies. Each card photo fades into the card color.
+- The photos were generated with AI by the user (approved for backgrounds only, see BUSINESS_RULES.md) and stored in `src/assets/backgrounds/` as WebP. Portfolio sections still use only real project photos.
+
+### Validação desta etapa
+
+- `npm run lint`, `npm run typecheck`, `npm run build`: aprovados. Hero e cards conferidos em 1440px e 390px via preview; servidor encerrado após a validação.
+
+## 2026-10-13 — Baseboards & Trim and Interior Painting
+
+- Added the two services the user confirmed to `/flooring-interiors` (now seven service cards, laid out 4 + 3 on desktop), the Home Flooring division card, the estimate form service list, the meta description and the structured data.
+- Recorded in BUSINESS_RULES.md that AI-generated photos are approved for backgrounds only, and that the license is not required for this trade.
+
+## 2026-10-13 — Provisional division logos
+
+- Added the division logos the user supplied (made with ChatGPT, received as a screenshot): the navy "CS" with a house roof for Flooring & Interiors and the gold "CS" with a water drop for Home & Commercial Cleaning. Only the "CS" marks were extracted, with the background removed; division names stay as real text.
+- Header and Footer use a white version of the Flooring mark, with "Conexion Services Corp." and the tagline. Each Home division card shows its own mark. Added a favicon and Apple touch icon.
+- Assets: `src/assets/brand/` (WebP) and `public/favicon.png`, `public/apple-touch-icon.png`. Source reference: the user's screenshot, kept outside the repo.
+
+### Validação desta etapa
+
+- `npm run lint`, `npm run typecheck`, `npm run build`: aprovados. Header, cards e Footer conferidos em 1440px e 390px via preview; servidor encerrado após a validação.
+
+## 2026-10-12 — Free estimate form and `/contact` page
+
+- Added `/contact` with an estimate request form (name, phone, email, city/ZIP, service, project details, preferred contact method) and a side panel with phone, email and service area.
+- The form posts to Web3Forms using the company's public access key (form "CS Website", delivering to caue@conexionservicesfl.com); `VITE_WEB3FORMS_ACCESS_KEY` can override it. Includes required-field validation, a spam honeypot, a success message and an error message with phone/email fallback.
+- Every `Get a Free Estimate` button, the Header/Footer `Contact` links and the Cleaning page CTAs now go to `/contact` instead of `#contact` anchors or `mailto:`.
+- Home division cards now link to `/flooring-interiors` and `/cleaning-services`; Home `VIEW MORE PROJECTS` now links to `/projects` (previously `#contact`).
+
+### Validação desta etapa
+
+- `npm run lint`, `npm run typecheck`, `npm run build`: aprovados.
+- Preview local: `/contact` em desktop 1440px e mobile 390px; envio testado com a API do Web3Forms simulada (campos obrigatórios bloqueiam o envio; envio válido mostra a mensagem de sucesso). Links da Home e do Footer conferidos. Servidor encerrado após a validação.
+- Envio real pelo Web3Forms: pendente; testar após a publicação ou com o preview local.
+
+## 2026-10-12 — Customer-facing polish for launch readiness
+
+- Removed internal production notes that were visible to visitors: `temporary brand area` in the Header, `LOGO PENDING` in the division cards, `Official logo pending` in the Footer and the hero note about placeholder photography. The official logo and hero photography remain TBD; the layout is unchanged.
+- Added the approved `Get a Free Estimate` CTA and a click-to-call button to the Home hero, so visitors can act without scrolling.
+- Fixed the desktop `OUR SERVICES` grid on `/flooring-interiors`: Bathroom Remodeling and Kitchen Remodeling now span two columns like the top row instead of collapsing to one narrow column.
+- `VIEW MORE PROJECTS` on `/flooring-interiors` now links to the existing `/projects` page instead of being a disabled button.
+- Added a descriptive default page title, meta description, Open Graph tags and `HomeAndConstructionBusiness` structured data in `index.html`, using only confirmed business data (name, phone, temporary email, service area, social links, confirmed services).
+
+### Validação desta etapa
+
+- `npm run lint`: aprovado.
+- `npm run typecheck`: aprovado.
+- `npm run build`: aprovado.
+- Preview local (`vite preview`) com screenshots desktop 1440px e mobile 390px de `/`, `/flooring-interiors`, `/cleaning-services` e `/projects`; servidor encerrado após a validação.
+
 ## 2026-09-27 — Implemented Projects portfolio page
 
 - Implemented `/projects` with a compact portfolio hero, real flooring/interior-remodeling photography and responsive editorial grid.

@@ -21,6 +21,8 @@ const services = [
   { title: 'Hardwood Flooring', text: 'Hardwood flooring installation and interior flooring improvements.', icon: 'wood' },
   { title: 'Bathroom Remodeling', text: 'Interior remodeling solutions for bathrooms and related finishes.', icon: 'bath' },
   { title: 'Kitchen Remodeling', text: 'Interior remodeling solutions for kitchens and surrounding spaces.', icon: 'kitchen' },
+  { title: 'Baseboards & Trim', text: 'Baseboard and trim installation for a clean, finished edge in every room.', icon: 'trim' },
+  { title: 'Interior Painting', text: 'Interior painting to refresh walls, trim and finished spaces.', icon: 'paint' },
 ] as const
 
 const projects = [
@@ -32,7 +34,11 @@ const projects = [
 ]
 
 function ServiceIcon({ type }: { type: (typeof services)[number]['icon'] }) {
-  const paths = type === 'bath'
+  const paths = type === 'trim'
+    ? <><path d="M4 20h16" /><path d="M4 16h16v4" /><path d="M4 4v12M20 4v12" /></>
+    : type === 'paint'
+    ? <><path d="M5 4h12v5H5z" /><path d="M17 6h2v5h-7v3" /><path d="M11 14h2v6h-2z" /></>
+    : type === 'bath'
     ? <><path d="M4 13h16" /><path d="M6 13V8a3 3 0 0 1 5.5-1.6" /><path d="M4 17h16" /><path d="M7 17v2M17 17v2" /></>
     : type === 'kitchen'
       ? <><path d="M5 20V4h14v16" /><path d="M8 8h8M8 12h8M8 16h3" /><path d="M15 15h1" /></>
@@ -68,7 +74,7 @@ export default function FlooringInteriorsPage() {
             <h1 id="flooring-title">Transform<br /><span>your space.</span></h1>
             <p>Professional flooring and interior remodeling solutions designed to improve the way your space looks and feels.</p>
             <div className="flooring-hero__actions">
-              <a className="button button--primary" href="#contact">Get a Free Estimate</a>
+              <a className="button button--primary" href="/contact">Get a Free Estimate</a>
               <a className="button button--secondary button--on-dark" href="#recent-work">View Our Work</a>
             </div>
           </div>
@@ -106,7 +112,7 @@ export default function FlooringInteriorsPage() {
         <Container>
           <div className="flooring-section-heading"><div><p className="eyebrow">Selected work</p><h2 id="recent-work-title">RECENT WORK</h2></div></div>
           <div className="flooring-project-grid">{projects.map((project) => <figure key={project.alt} className="flooring-project"><img src={project.src} alt={project.alt} loading="lazy" decoding="async" /><figcaption>{project.label}</figcaption></figure>)}</div>
-          <div className="projects__footer projects__footer--flooring"><button className="button button--secondary projects__cta" type="button" disabled>VIEW MORE PROJECTS</button></div>
+          <div className="projects__footer projects__footer--flooring"><a className="button button--secondary projects__cta" href="/projects">VIEW MORE PROJECTS</a></div>
         </Container>
       </Section>
 
@@ -124,7 +130,7 @@ export default function FlooringInteriorsPage() {
 
       <section className="flooring-service-area" aria-labelledby="service-area-title"><Container><p className="eyebrow">WHERE WE WORK</p><h2 id="service-area-title">SERVICE AREA</h2><p>Serving Greater Tampa Bay, Sarasota, Jacksonville and surrounding communities.</p></Container></section>
 
-      <section className="flooring-contact" id="contact" aria-labelledby="flooring-contact-title"><Container><p className="eyebrow">Start your project</p><h2 id="flooring-contact-title">READY TO TRANSFORM<br />YOUR SPACE?</h2><p>Tell us about your flooring or remodeling project and request a free estimate.</p><div><a className="button button--primary" href="mailto:caue@conexionservicesfl.com">GET A FREE ESTIMATE</a><a className="flooring-contact__phone" href="tel:+19049555850">(904) 955-5850</a></div></Container></section>
+      <section className="flooring-contact" id="contact" aria-labelledby="flooring-contact-title"><Container><p className="eyebrow">Start your project</p><h2 id="flooring-contact-title">READY TO TRANSFORM<br />YOUR SPACE?</h2><p>Tell us about your flooring or remodeling project and request a free estimate.</p><div><a className="button button--primary" href="/contact">GET A FREE ESTIMATE</a><a className="flooring-contact__phone" href="tel:+19049555850">(904) 955-5850</a></div></Container></section>
     </main>
     <Footer currentPath="/flooring-interiors" />
   </>

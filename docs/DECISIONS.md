@@ -1,5 +1,30 @@
 # Architecture Decision Log
 
+## Decision 030: Reviews section ready, fed only by real reviews
+
+Data: 2026-10-13. Status: aceita.
+O usuário pediu o visual da seção de avaliações do modelo pronto, porque a primeira avaliação real chega em breve. A seção usa uma foto de fundo gerada por IA (permitida pela Decision 029) escurecida, mostra uma avaliação por vez com estrelas, nome e origem, e setas quando houver mais de uma. As avaliações ficam numa lista em `src/content/reviews.ts`, separada do componente; enquanto a lista estiver vazia aparece `Client reviews coming soon.` A avaliação de teste do modelo ("Sarah M.") é inventada e nunca entra no site.
+
+## Decision 029: AI-generated photos as ambient backgrounds only
+
+Data: 2026-10-13. Status: aceita.
+O usuário aprovou fotos geradas por IA para o fundo do hero e dos cards das divisões, seguindo o modelo visual que ele enviou. Elas nunca aparecem como trabalho da empresa: Our Work, Projects e os antes/depois continuam só com fotos reais. As fotos ficam como `<img>` decorativas (`alt=""`) atrás de gradientes que garantem o contraste do texto.
+
+## Decision 028: Provisional logos extracted from the user's screenshot
+
+Data: 2026-10-13. Status: aceita (provisória).
+O usuário enviou os logos das divisões feitos no ChatGPT, mas como print de tela. Usamos só a marca "CS" de cada divisão, recortada e sem fundo, e deixamos os nomes como texto real para ficarem nítidos e legíveis pelo Google. Quando chegarem os arquivos originais (ou um logo refeito), basta substituir os arquivos em `src/assets/brand/` mantendo os mesmos nomes. O logo da empresa-mãe continua TBD; por enquanto o Header usa a marca de Flooring em branco.
+
+## Decision 027: Estimate form via Web3Forms, no backend
+
+Data: 2026-10-12. Status: aceita.
+O usuário pediu um formulário de orçamento. Como o projeto não usa backend nem PHP, o formulário em `/contact` envia para o Web3Forms, um serviço gratuito que encaminha cada pedido para o e-mail da empresa. A chave pública da empresa fica como padrão em `EstimateForm.tsx` (pode ser sobrescrita por `VITE_WEB3FORMS_ACCESS_KEY`) e a lista de serviços vem só de BUSINESS_RULES.md. Sem a chave, o envio abre um e-mail pré-preenchido para o endereço publicado, então o formulário nunca perde um pedido em silêncio. Envio de fotos não foi incluído porque exige plano pago; fica TBD.
+
+## Decision 026: Keep internal placeholder notes out of the public UI
+
+Data: 2026-10-12. Status: aceita.
+Pending items (official logo, hero photography) stay tracked in /docs as TBD, not as visible text on the website. Visitors see the neutral current treatment without labels such as "logo pending" or "placeholder". Default SEO metadata and LocalBusiness structured data live in `index.html` and may only contain confirmed business data from BUSINESS_RULES.md.
+
 ## Decision 025: Implement Projects as a local filtered real-photo portfolio
 
 Data: 2026-09-27. Status: aceita.

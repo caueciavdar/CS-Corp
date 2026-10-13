@@ -1,5 +1,10 @@
 # Site structure
 
+## Implemented Contact / free estimate page — 2026-10-12
+
+- `/contact` hosts the estimate request form and the phone, email and service-area details. It is the destination of every `Get a Free Estimate` CTA and of the `Contact` navigation item.
+- Form fields: name*, phone*, email, city/ZIP*, service* (the confirmed flooring and cleaning services, plus "Other / Not sure yet"), project details, and preferred contact method (Call, Text or Email). Photo upload is TBD.
+
 ## Implemented Projects portfolio page — 2026-09-27
 
 - `/projects` is implemented as a real-work portfolio page using the supplied flooring and interior-remodeling photos from `src/assets/projects/`.
@@ -27,7 +32,7 @@
 ## Implemented Home status — 2026-09-24
 
 - `/` now composes Header, Hero, two divisions, Why Choose CS, Our Work, reviews placeholder, Final CTA and Footer.
-- The reviews block intentionally contains no fabricated testimonials and currently shows `Client reviews coming soon.` over a dark architectural placeholder.
+- The reviews block follows the user's mockup: a darkened interior photo behind `WHAT OUR CLIENTS SAY`, one review at a time with stars, client name and source, and arrows when there are two or more. Reviews live in `src/content/reviews.ts`; while that list is empty it shows `Client reviews coming soon.` No fabricated testimonials.
 - Final CTA uses `Let's work together` and `Get a Free Estimate`; its destination/flow remains TBD and currently uses the temporary published email as a mailto destination.
 - Footer includes the approved phone, temporary email, social URLs, service area, navigation anchors and a discreet pending-logo placeholder. The official logo and permanent email remain TBD.
 - Navigation uses responsive anchor links; secondary page routes remain TBD.
@@ -107,7 +112,7 @@ Cada página deve usar um único `main`, título principal claro, `Container` pa
 | Why Choose Us | Approved structure; not implemented | Diferenciais reais ainda precisam ser recebidos. |
 | Featured Projects | Approved structure; not implemented | Exige fotos, descrições e autorização de uso. |
 | Our Process | Approved structure; not implemented | Etapas reais do atendimento ainda são TBD. |
-| Reviews / Testimonials | Implemented placeholder | Só incluir avaliações reais, com autorização; dados futuros: customerName, reviewText, rating, source e date. |
+| Reviews / Testimonials | Implemented, waiting for real reviews | Só incluir avaliações reais, com autorização; dados futuros: customerName, reviewText, rating, source e date. |
 | Final CTA | Implemented | Usa `Let's work together` e `Get a Free Estimate`; destino definitivo permanece TBD. |
 | Footer | Implemented | Logo oficial e email permanente permanecem TBD; contatos, redes, área e links aprovados foram incluídos. |
 
