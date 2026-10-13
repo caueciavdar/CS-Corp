@@ -1,5 +1,10 @@
 # Architecture Decision Log
 
+## Decision 030: Reviews section ready, fed only by real reviews
+
+Data: 2026-10-13. Status: aceita.
+O usuário pediu o visual da seção de avaliações do modelo pronto, porque a primeira avaliação real chega em breve. A seção usa uma foto de fundo gerada por IA (permitida pela Decision 029) escurecida, mostra uma avaliação por vez com estrelas, nome e origem, e setas quando houver mais de uma. As avaliações ficam numa lista em `src/content/reviews.ts`, separada do componente; enquanto a lista estiver vazia aparece `Client reviews coming soon.` A avaliação de teste do modelo ("Sarah M.") é inventada e nunca entra no site.
+
 ## Decision 029: AI-generated photos as ambient backgrounds only
 
 Data: 2026-10-13. Status: aceita.

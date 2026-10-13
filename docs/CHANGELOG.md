@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-13 — Reviews section ready for real Google reviews
+
+- Following the user's mockup, `WHAT OUR CLIENTS SAY` now sits over a darkened interior photo and shows one review at a time with gold stars, the client's name and the source (e.g. "Google review"). Two or more reviews get round prev/next arrows that loop.
+- Reviews moved to `src/content/reviews.ts`, separate from the component (`ReviewsPlaceholder` was renamed `ReviewsSection`). The list ships empty, so the site still shows `Client reviews coming soon.` until a real review is added.
+- Removed the unused `.reviews__backdrop` and `.reviews__list` styles.
+
+### Validação desta etapa
+
+- `npm run lint`, `npm run typecheck`, `npm run build`: aprovados. With two temporary example reviews (not committed), the section was checked at 1440px and 390px: the arrow moved to the second review and the page did not scroll sideways. The example screenshots are in `/mnt/project-files/site/screenshots/avaliacoes-exemplo-*.png`. Servidor encerrado após a validação.
+
 ## 2026-10-13 — Home Our Work becomes a carousel
 
 - Following the user's mockup, the Home `OUR WORK` section is now a horizontal carousel of nine real project photos, with arrow buttons that loop at the ends, swipe or scroll on touch, and scroll-snap. It shows 4 cards on desktop, 3 on tablet and about 1¼ on mobile. The Hallway LVP before/after photos are side by side with `Before` and `After` tags, and the other photos carry service labels.
