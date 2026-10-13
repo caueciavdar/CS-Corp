@@ -1,5 +1,10 @@
 # Architecture Decision Log
 
+## Decision 029: AI-generated photos as ambient backgrounds only
+
+Data: 2026-10-13. Status: aceita.
+O usuário aprovou fotos geradas por IA para o fundo do hero e dos cards das divisões, seguindo o modelo visual que ele enviou. Elas nunca aparecem como trabalho da empresa: Our Work, Projects e os antes/depois continuam só com fotos reais. As fotos ficam como `<img>` decorativas (`alt=""`) atrás de gradientes que garantem o contraste do texto.
+
 ## Decision 028: Provisional logos extracted from the user's screenshot
 
 Data: 2026-10-13. Status: aceita (provisória).

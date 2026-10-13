@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-13 — Photo backgrounds for the Home hero and division cards
+
+- The Home hero now shows a Florida living-room photo behind a dark gradient, so the text stays readable. The Flooring card shows a bright room, and the Cleaning card shows a clean interior with cleaning supplies. Each card photo fades into the card color.
+- The photos were generated with AI by the user (approved for backgrounds only, see BUSINESS_RULES.md) and stored in `src/assets/backgrounds/` as WebP. Portfolio sections still use only real project photos.
+
+### Validação desta etapa
+
+- `npm run lint`, `npm run typecheck`, `npm run build`: aprovados. Hero e cards conferidos em 1440px e 390px via preview; servidor encerrado após a validação.
+
 ## 2026-10-13 — Baseboards & Trim and Interior Painting
 
 - Added the two services the user confirmed to `/flooring-interiors` (now seven service cards, laid out 4 + 3 on desktop), the Home Flooring division card, the estimate form service list, the meta description and the structured data.

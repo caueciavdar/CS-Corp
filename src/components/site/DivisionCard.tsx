@@ -1,5 +1,7 @@
 import flooringMark from '../../assets/brand/flooring-mark.webp'
 import cleaningMark from '../../assets/brand/cleaning-mark.webp'
+import flooringPhoto from '../../assets/backgrounds/flooring-room.webp'
+import cleaningPhoto from '../../assets/backgrounds/cleaning-room.webp'
 
 type DivisionCardProps = {
   number: string
@@ -26,6 +28,7 @@ function ServiceIcon({ index }: { index: number }) {
 export default function DivisionCard({ number, title, tagline, description, services, tone, cta }: DivisionCardProps) {
   return (
     <article className={`division-card division-card--${tone}`}>
+      <img className="division-card__photo" src={tone === 'flooring' ? flooringPhoto : cleaningPhoto} alt="" loading="lazy" decoding="async" />
       <div className="division-card__top"><span>{number}</span><span className="division-card__line" aria-hidden="true" /></div>
       <div className="division-card__brand"><img src={tone === 'flooring' ? flooringMark : cleaningMark} alt="" width="160" height="75" /></div>
       <div className="division-card__intro">

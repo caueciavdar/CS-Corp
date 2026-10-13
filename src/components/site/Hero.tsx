@@ -1,4 +1,5 @@
 import Container from '../layout/Container'
+import heroPhoto from '../../assets/backgrounds/hero-living-room.webp'
 
 const valueItems = [
   { label: 'Quality Work', icon: 'quality' },
@@ -21,6 +22,7 @@ function ValueIcon({ type }: { type: (typeof valueItems)[number]['icon'] }) {
 export default function Hero() {
   return (
     <section className="hero" id="home" aria-labelledby="hero-title">
+      <img className="hero__photo" src={heroPhoto} alt="" fetchPriority="high" decoding="async" />
       <Container className="hero__inner">
         <div className="hero__content">
           <p className="eyebrow">Professional property services</p>
