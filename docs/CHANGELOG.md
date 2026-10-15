@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-14 — First real Google review on the Home
+
+- Added the company's first Google review (5 stars, Jazmine V., 2026-10-14) to `src/content/reviews.ts`, copied word for word from the user's screenshot of the Google Business Profile. The reviews section now shows it instead of `Client reviews coming soon.`; arrows stay hidden until there are two or more reviews.
+- The name is shown as first name plus last initial, the default for public testimonials (BUSINESS_RULES.md).
+- Real-world check from the Hostinger temporary domain (2026-10-13): the user confirmed all pages open and a real estimate request reached the business email through Web3Forms.
+
 ## 2026-10-13 — Ready for Hostinger
 
 - Added `public/.htaccess` (HTTPS redirect, route fallback so `/contact` and the other pages survive a refresh, no folder listing, long cache only for hashed files), `public/robots.txt` and `public/sitemap.xml`.

@@ -19,4 +19,12 @@ export type Review = {
   date: string
 }
 
-export const reviews: Review[] = []
+export const reviews: Review[] = [
+  {
+    customerName: 'Jazmine V.',
+    reviewText: 'The team was very professional and timely. They were thorough getting everything done with detail. I loved working with them, especially how clean everything looked afterwards. Great team!',
+    rating: 5,
+    source: 'Google',
+    date: '2026-10-14',
+  },
+]
