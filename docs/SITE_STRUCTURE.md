@@ -112,7 +112,7 @@ Cada página deve usar um único `main`, título principal claro, `Container` pa
 | Why Choose Us | Approved structure; not implemented | Diferenciais reais ainda precisam ser recebidos. |
 | Featured Projects | Approved structure; not implemented | Exige fotos, descrições e autorização de uso. |
 | Our Process | Approved structure; not implemented | Etapas reais do atendimento ainda são TBD. |
-| Reviews / Testimonials | Implemented, waiting for real reviews | Só incluir avaliações reais, com autorização; dados futuros: customerName, reviewText, rating, source e date. |
+| Reviews / Testimonials | Implemented, 1 real Google review (2026-10-14) | Só incluir avaliações reais, com autorização; dados futuros: customerName, reviewText, rating, source e date. |
 | Final CTA | Implemented | Usa `Let's work together` e `Get a Free Estimate`; destino definitivo permanece TBD. |
 | Footer | Implemented | Logo oficial e email permanente permanecem TBD; contatos, redes, área e links aprovados foram incluídos. |
 

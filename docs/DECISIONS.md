@@ -1,5 +1,10 @@
 # Architecture Decision Log
 
+## Decision 031: Launch plan on Hostinger, manual upload
+
+Data: 2026-10-13. Status: aceita.
+O domínio está na Hostinger. A publicação é um envio manual do conteúdo de `dist/` para `public_html`, sem deploy automático (regra do AGENTS.md). O build leva `.htaccess` (HTTPS, fallback das rotas para `index.html`, cache), `robots.txt` e `sitemap.xml`. O usuário confirmou que ainda não há fotos reais de limpeza (divisão nova) nem avaliações publicadas, então o lançamento mantém as ilustrações da página de limpeza e `Client reviews coming soon.`; ambos são trocados quando o conteúdo real chegar. Publicar continua dependendo do OK explícito do usuário.
+
 ## Decision 030: Reviews section ready, fed only by real reviews
 
 Data: 2026-10-13. Status: aceita.

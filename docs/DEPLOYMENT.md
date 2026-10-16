@@ -43,9 +43,22 @@ Git e GitHub. Repositório Git original preservado; não inicializar Git aninhad
 
 ## Production
 
-Hostinger é o destino previsto. Processo definitivo de deploy: TBD; será definido e documentado posteriormente. Nenhuma integração automática de deploy criada.
+Hostinger (2026-10-13: o usuário confirmou que o domínio conexionservicesfl.com está na Hostinger). Deploy manual, sem integração automática (ver Decision 031).
 
-Confirmar plano, diretório público, domínio, HTTPS, base URL e eventual fallback de rotas antes da publicação. Essas decisões não estão aprovadas nesta etapa.
+O que já está no build (`public/` é copiado para `dist/`):
+
+- `.htaccess`: força HTTPS, entrega `index.html` para rotas do app (`/contact`, `/projects`, etc.) que não são arquivos reais, desliga listagem de pastas e deixa os arquivos com hash em cache por um ano, enquanto `index.html` é sempre revalidado.
+- `robots.txt` e `sitemap.xml` com as cinco páginas em `https://www.conexionservicesfl.com/`.
+
+Passo a passo:
+
+1. `npm ci` e `npm run build`.
+2. Compactar o **conteúdo** de `dist/` (incluindo o arquivo oculto `.htaccess`) num zip.
+3. Na Hostinger: hPanel → Websites → conexionservicesfl.com → File Manager → `public_html`.
+4. Fazer backup do que já estiver em `public_html` (o site antigo), apagar o conteúdo e enviar o zip; extrair ali, de modo que `index.html` fique direto em `public_html`.
+5. Conferir HTTPS (SSL ativo no hPanel), as cinco páginas, um refresh em `/contact` e um envio real do formulário.
+
+Pendências TBD: se o site antigo está nesta mesma conta Hostinger (e quem tem o acesso), versão preferida do domínio (com ou sem `www`; o JSON-LD e o sitemap usam `www`), e cadastro no Google Search Console.
 
 ## Primeira execução — 2026-09-21
 

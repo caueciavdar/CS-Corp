@@ -1,5 +1,20 @@
 # Changelog
 
+## 2026-10-14 — First real Google review on the Home
+
+- Added the company's first Google review (5 stars, Jazmine V., 2026-10-14) to `src/content/reviews.ts`, copied word for word from the user's screenshot of the Google Business Profile. The reviews section now shows it instead of `Client reviews coming soon.`; arrows stay hidden until there are two or more reviews.
+- The name is shown as first name plus last initial, the default for public testimonials (BUSINESS_RULES.md).
+- Real-world check from the Hostinger temporary domain (2026-10-13): the user confirmed all pages open and a real estimate request reached the business email through Web3Forms.
+
+## 2026-10-13 — Ready for Hostinger
+
+- Added `public/.htaccess` (HTTPS redirect, route fallback so `/contact` and the other pages survive a refresh, no folder listing, long cache only for hashed files), `public/robots.txt` and `public/sitemap.xml`.
+- DEPLOYMENT.md now has the manual Hostinger upload steps. Decision 031 records the launch plan: cleaning keeps its illustrations and the reviews block keeps `Client reviews coming soon.` until real content exists.
+
+### Validação desta etapa
+
+- `npm run lint`, `npm run typecheck`, `npm run build`: aprovados; `dist/` contém `.htaccess`, `robots.txt` e `sitemap.xml`. As regras do `.htaccess` não foram testadas num Apache real; serão conferidas na Hostinger ao publicar.
+
 ## 2026-10-13 — Reviews section ready for real Google reviews
 
 - Following the user's mockup, `WHAT OUR CLIENTS SAY` now sits over a darkened interior photo and shows one review at a time with gold stars, the client's name and the source (e.g. "Google review"). Two or more reviews get round prev/next arrows that loop.
