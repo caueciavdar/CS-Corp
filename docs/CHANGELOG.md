@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-21 — New vector logos and "Insured"
+
+- The header, footer and Home division cards now use the redrawn vector marks (SVG) instead of the cropped screenshot logos, so they stay sharp at any size (Decision 032). The old `.webp` marks were removed.
+- The Flooring & Interiors hero shows `Insured · Serving Greater Tampa Bay`, backed by the user's general liability certificate (Hiscox, valid until 2027-10-03). Cleaning does not show it yet.
+- The business email is now recorded as official (confirmed by the user on 2026-10-18).
+
+### Validação desta etapa
+
+- `npm run lint`, `npm run typecheck`, `npm run build`: aprovados. Home and Flooring checked in `vite preview` at 1440px and 390px (header, division cards, footer, hero trust line). Servidor encerrado após a validação.
+
 ## 2026-10-14 — First real Google review on the Home
 
 - Added the company's first Google review (5 stars, Jazmine V., 2026-10-14) to `src/content/reviews.ts`, copied word for word from the user's screenshot of the Google Business Profile. The reviews section now shows it instead of `Client reviews coming soon.`; arrows stay hidden until there are two or more reviews.

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import csMarkWhite from '../../assets/brand/cs-mark-white.webp'
+import csMarkWhite from '../../assets/brand/cs-mark-white.svg'
 
 const navigation = [
   ['Home', '#home'],
@@ -18,7 +18,7 @@ export default function Header({ currentPath = '/' }: { currentPath?: string }) 
     <header className={`site-header${currentPath === '/flooring-interiors' ? ' site-header--flooring' : ''}${currentPath === '/cleaning-services' ? ' site-header--cleaning' : ''}`}>
       <div className="container site-header__inner">
         <a className="site-logo" href="/" aria-label="CS Conexion Services Corp home">
-          <img className="site-logo__mark" src={csMarkWhite} alt="" width="86" height="40" />
+          <img className="site-logo__mark" src={csMarkWhite} alt="" width="92" height="40" />
           <span className="site-logo__name">Conexion<br />Services Corp.<small>Better spaces. Brighter lives.</small></span>
         </a>
         <button

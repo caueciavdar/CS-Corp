@@ -18,7 +18,7 @@
 - The page includes a cleaning hero, the four confirmed cleaning services, four factual differentiators, a simple three-step process, an abstract future-work teaser, the confirmed service area and a final estimate CTA.
 - No cleaning photography, stock imagery, reviews or invented commercial claims were added. The work section is prepared for future real photography categories: Residential, Commercial, Post-Construction and Move-In / Move-Out.
 - The lower sections use a clear four-column differentiator layout, a horizontal-to-vertical process flow, compact service-area treatment and a dark closing CTA with the temporary published email.
-- Navigation marks `Cleaning Services` with `aria-current="page"`; the official Cleaning logo, real Cleaning photography, permanent email and definitive CTA destination remain TBD.
+- Navigation marks `Cleaning Services` with `aria-current="page"`; real Cleaning photography and the definitive CTA destination remain TBD (vector Cleaning mark and official email confirmed 2026-10-21).
 
 ## Implemented Flooring & Interiors page — 2026-09-27
 
@@ -27,14 +27,14 @@
 - The `RECENT WORK` gallery uses only real supplied photos with factual category labels; the `VIEW MORE PROJECTS` prompt remains non-navigational while the Projects route is TBD.
 - Navigation marks `Flooring & Interiors` with `aria-current="page"` on the internal page; the Home remains at `/`.
 - Project labels and exact metadata remain TBD. The hero uses a refined architectural CSS composition because a definitive horizontal hero photograph is not confirmed.
-- The final CTA currently uses the temporary published email as a mailto destination; the official logo and permanent email remain TBD.
+- The final CTA uses the official email as a mailto destination; the vector logos are in use (Decision 032).
 
 ## Implemented Home status — 2026-09-24
 
 - `/` now composes Header, Hero, two divisions, Why Choose CS, Our Work, reviews placeholder, Final CTA and Footer.
 - The reviews block follows the user's mockup: a darkened interior photo behind `WHAT OUR CLIENTS SAY`, one review at a time with stars, client name and source, and arrows when there are two or more. Reviews live in `src/content/reviews.ts`; while that list is empty it shows `Client reviews coming soon.` No fabricated testimonials.
 - Final CTA uses `Let's work together` and `Get a Free Estimate`; its destination/flow remains TBD and currently uses the temporary published email as a mailto destination.
-- Footer includes the approved phone, temporary email, social URLs, service area, navigation anchors and a discreet pending-logo placeholder. The official logo and permanent email remain TBD.
+- Footer includes the approved phone, official email, social URLs, service area, navigation anchors and the white vector CS mark.
 - Navigation uses responsive anchor links; secondary page routes remain TBD.
 - Our Work includes the real Hallway LVP before/after comparison and a compact gallery using real hardwood, kitchen backsplash and light LVP project photos. The Bedroom LVP, Stairs Restoration, Kitchen Backsplash and Shower Remodel pairs remain available in `src/assets/projects/` for a future Projects page; exact project metadata remains TBD.
 - The comparison accepts optional Before/After image sources, supports mouse, touch and keyboard adjustment, and currently uses the approved Hallway LVP photo pair. Gallery images use consistent crops, factual alt text and lazy loading; project metadata and the future Projects route remain TBD.

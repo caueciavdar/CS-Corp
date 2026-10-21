@@ -1,4 +1,4 @@
-import csMarkWhite from '../../assets/brand/cs-mark-white.webp'
+import csMarkWhite from '../../assets/brand/cs-mark-white.svg'
 import Container from '../layout/Container'
 
 const footerNavigation = [
@@ -24,7 +24,7 @@ export default function Footer({ currentPath = '/' }: { currentPath?: string }) 
       <Container>
         <div className="site-footer__top">
           <div className="site-footer__brand">
-            <a className="site-footer__brand-name" href="/"><img src={csMarkWhite} alt="" width="86" height="40" />CS Conexion Services Corp.</a>
+            <a className="site-footer__brand-name" href="/"><img src={csMarkWhite} alt="" width="92" height="40" />CS Conexion Services Corp.</a>
             <p className="site-footer__tagline">Better spaces. Brighter lives.</p>
           </div>
           <nav className="footer-navigation" aria-label="Footer navigation">

@@ -1,5 +1,5 @@
-import flooringMark from '../../assets/brand/flooring-mark.webp'
-import cleaningMark from '../../assets/brand/cleaning-mark.webp'
+import flooringMark from '../../assets/brand/flooring-mark.svg'
+import cleaningMark from '../../assets/brand/cleaning-mark.svg'
 import flooringPhoto from '../../assets/backgrounds/flooring-room.webp'
 import cleaningPhoto from '../../assets/backgrounds/cleaning-room.webp'
 
@@ -30,7 +30,7 @@ export default function DivisionCard({ number, title, tagline, description, serv
     <article className={`division-card division-card--${tone}`}>
       <img className="division-card__photo" src={tone === 'flooring' ? flooringPhoto : cleaningPhoto} alt="" loading="lazy" decoding="async" />
       <div className="division-card__top"><span>{number}</span><span className="division-card__line" aria-hidden="true" /></div>
-      <div className="division-card__brand"><img src={tone === 'flooring' ? flooringMark : cleaningMark} alt="" width="160" height="75" /></div>
+      <div className="division-card__brand"><img src={tone === 'flooring' ? flooringMark : cleaningMark} alt="" width="172" height="75" /></div>
       <div className="division-card__intro">
         <p className="division-card__tagline">{tagline}</p>
         <h3>{title}</h3>
