@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-21 — Favicon from the new vector logo
+
+- `favicon.png` (now 96×96, a multiple of 48 as Google asks for search results) and `apple-touch-icon.png` are redrawn from the white vector CS mark on navy, replacing the icons cut from the old screenshot logo.
+- Google still showed the old site's icon and description after the go-live; it updates them on its next crawl (faster after a reindex request in Google Search Console).
+
+### Validação desta etapa
+
+- `npm run lint`, `npm run typecheck`, `npm run build`: aprovados. Ícones conferidos em imagem renderizada.
+
 ## 2026-10-21 — Site live on conexionservicesfl.com
 
 - The user uploaded the build from PR #3 to Hostinger and connected the domain. conexionservicesfl.com now opens the new site instead of the old one on Vercel; the Zoho email records were kept. Steps and the final DNS records are in DEPLOYMENT.md.
