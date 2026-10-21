@@ -1,5 +1,12 @@
 # Architecture Decision Log
 
+## Decision 032: Vector logos and "Insured" on the flooring page
+
+Data: 2026-10-21. Status: aceita.
+O usuário aprovou o redesenho vetorial das marcas (CS com telhado para Flooring e empresa-mãe; CS dourado com gota para Cleaning) e pediu para usá-las no site. Elas substituem os recortes provisórios da Decision 028 como SVG em `src/assets/brand/` (`cs-mark-white.svg`, `flooring-mark.svg`, `cleaning-mark.svg`). Os arquivos de trabalho (cores, PNGs, versão para o Google) ficam fora do repositório, na pasta compartilhada do projeto.
+
+O usuário enviou o certificado de seguro: General Liability da Hiscox em nome de Conexion Services Corp, válido de 2026-10-03 a 2027-10-03. O site passa a mostrar só a palavra "Insured" no hero de Flooring & Interiors, sem número de apólice, valores ou endereço. Cleaning fica sem "Insured" até o usuário confirmar com a Hiscox que a limpeza está coberta. Se a apólice não for renovada até 2027-10-03, o "Insured" tem que sair.
+
 ## Decision 031: Launch plan on Hostinger, manual upload
 
 Data: 2026-10-13. Status: aceita.

@@ -5,7 +5,7 @@
 - **Confirmed for `/cleaning-services`:** black/near-black and charcoal surfaces, warm white text, restrained gold/bronze accents and small premium-blue accents express the Cleaning division while remaining related to the approved site direction.
 - CSS/SVG abstract compositions are temporary scaffolding for the hero and future-work section. No stock or Flooring photography is used as Cleaning imagery.
 - Cleaning service cards use a 2×2 desktop/tablet grid and one column on mobile, with subtle warm borders, inline SVG icons, restrained motion and visible keyboard focus.
-- **TBD:** official Cleaning logo, real Cleaning photography, permanent email and final CTA destination.
+- **Confirmed (2026-10-21):** vector Cleaning mark (gold CS with blue drop) and official email. **TBD:** real Cleaning photography and final CTA destination.
 
 ## Home reference and implementation — 2026-09-24
 
@@ -24,7 +24,8 @@ Os termos abaixo têm significado específico:
 
 - **Confirmed:** a experiência deve ser clean, profissional, moderna e premium, com bastante espaço em branco, textos escuros sobre fundos claros, sombras sutis, cantos levemente arredondados, animação mínima e intencional, acessibilidade e legibilidade como prioridades.
 - **Confirmed:** fotografias reais da empresa/projetos devem ser preferidas a stock photography genérica quando estiverem disponíveis e autorizadas.
-- **TBD:** nome comercial definitivo; logotipo oficial, versões, área de proteção e arquivos; tagline; manual de marca; aplicações da identidade em fundos claros e escuros.
+- **Confirmed (2026-10-21):** marcas vetoriais aprovadas em `src/assets/brand/` (`cs-mark-white.svg`, `flooring-mark.svg`, `cleaning-mark.svg`; Decision 032).
+- **TBD:** nome comercial definitivo; versões adicionais do logotipo, área de proteção e arquivos; tagline; manual de marca; aplicações da identidade em fundos claros e escuros.
 
 ## Color palette
 

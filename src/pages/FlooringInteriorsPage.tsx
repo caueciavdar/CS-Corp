@@ -77,6 +77,7 @@ export default function FlooringInteriorsPage() {
               <a className="button button--primary" href="/contact">Get a Free Estimate</a>
               <a className="button button--secondary button--on-dark" href="#recent-work">View Our Work</a>
             </div>
+            <p className="flooring-hero__trust"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 7 3v5c0 4.6-2.9 8-7 10-4.1-2-7-5.4-7-10V6l7-3Z" /><path d="m9 12 2 2 4-4" /></svg>Insured · Serving Greater Tampa Bay</p>
           </div>
           <div className="flooring-hero__visual" aria-hidden="true" />
           <div className="flooring-hero__mark" aria-hidden="true"><span>01</span><i /></div>
