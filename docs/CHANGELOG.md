@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-21 — Site live on conexionservicesfl.com
+
+- The user uploaded the build from PR #3 to Hostinger and connected the domain. conexionservicesfl.com now opens the new site instead of the old one on Vercel; the Zoho email records were kept. Steps and the final DNS records are in DEPLOYMENT.md.
+
+### Validação desta etapa
+
+- O usuário abriu conexionservicesfl.com numa aba anônima e viu o site novo com o logo novo. Daqui não é possível acessar o domínio; teste de recebimento de e-mail pendente com o usuário.
+
 ## 2026-10-21 — New vector logos and "Insured"
 
 - The header, footer and Home division cards now use the redrawn vector marks (SVG) instead of the cropped screenshot logos, so they stay sharp at any size (Decision 032). The old `.webp` marks were removed.

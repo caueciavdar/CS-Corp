@@ -43,7 +43,7 @@ Git e GitHub. Repositório Git original preservado; não inicializar Git aninhad
 
 ## Production
 
-Hostinger (2026-10-13: o usuário confirmou que o domínio conexionservicesfl.com está na Hostinger). Deploy manual, sem integração automática (ver Decision 031).
+Hostinger (2026-10-13: o usuário confirmou que o domínio conexionservicesfl.com está na Hostinger). Deploy manual, sem integração automática (ver Decision 031). No ar em conexionservicesfl.com desde 2026-10-21.
 
 O que já está no build (`public/` é copiado para `dist/`):
 
@@ -54,11 +54,18 @@ Passo a passo:
 
 1. `npm ci` e `npm run build`.
 2. Compactar o **conteúdo** de `dist/` (incluindo o arquivo oculto `.htaccess`) num zip.
-3. Na Hostinger: hPanel → Websites → conexionservicesfl.com → File Manager → `public_html`.
-4. Fazer backup do que já estiver em `public_html` (o site antigo), apagar o conteúdo e enviar o zip; extrair ali, de modo que `index.html` fique direto em `public_html`.
-5. Conferir HTTPS (SSL ativo no hPanel), as cinco páginas, um refresh em `/contact` e um envio real do formulário.
+3. Na Hostinger: Sites → conexionservicesfl.com → Painel de controle → Arquivos → Gerenciador de arquivos → `public_html`.
+4. Apagar o conteúdo de `public_html` e enviar os arquivos novos. O gerenciador de arquivos atual (File Browser) aceita arrastar arquivos: extrair o zip no computador e arrastar o **conteúdo** da pasta, de modo que `index.html` fique direto em `public_html`. Os arquivos novos aparecem como "in a few seconds".
+5. Conferir numa aba anônima (o navegador guarda a versão anterior): HTTPS, as cinco páginas, um refresh em `/contact` e um envio real do formulário.
 
-Pendências TBD: se o site antigo está nesta mesma conta Hostinger (e quem tem o acesso), versão preferida do domínio (com ou sem `www`; o JSON-LD e o sitemap usam `www`), e cadastro no Google Search Console.
+### Go-live — 2026-10-21
+
+- O site antes era o de "sienna-hyena-320928.hostingersite.com" (domínio temporário). Em Sites → Conectar domínio, ele passou a se chamar conexionservicesfl.com (o aviso sobre banco de dados não se aplica: o site é estático).
+- A Hostinger trocou sozinha os registros do site: `ALIAS @` → `conexionservicesfl.com.cdn.hstgr.net` e `CNAME www` → `www.conexionservicesfl.com.cdn.hstgr.net`. Os registros antigos da Vercel sumiram. Nameservers continuam `ns1/ns2.dns-parking.com`.
+- Os registros do e-mail Zoho (3 MX, SPF, `zoho-verification` e DKIM `zmail._domainkey`) continuaram intactos. Nunca apagar nem alterar esses registros, e nunca usar "Alterar nameservers".
+- O usuário abriu conexionservicesfl.com numa aba anônima e viu o site novo minutos depois.
+
+Pendências TBD: versão preferida do domínio (com ou sem `www`; o JSON-LD e o sitemap usam `www`) e cadastro no Google Search Console.
 
 ## Primeira execução — 2026-09-21
 
