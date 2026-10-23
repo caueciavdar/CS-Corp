@@ -8,7 +8,7 @@ import EstimateForm from '../components/site/EstimateForm'
 export default function ContactPage() {
   useEffect(() => {
     document.title = 'Get a Free Estimate | CS Conexion Services Corp.'
-    const description = 'Request a free estimate for flooring, remodeling or cleaning services in Greater Tampa Bay, Sarasota and Jacksonville. Call (904) 955-5850 or send us your project details.'
+    const description = 'Request a free estimate for flooring, remodeling or cleaning services in Jacksonville, Greater Tampa Bay and Sarasota. Call (904) 955-5850 or send us your project details.'
     let meta = document.querySelector('meta[name="description"]')
     if (!meta) { meta = document.createElement('meta'); meta.setAttribute('name', 'description'); document.head.appendChild(meta) }
     meta.setAttribute('content', description)
@@ -26,7 +26,7 @@ export default function ContactPage() {
           <aside className="contact-page__aside" aria-label="Other ways to reach us">
             <div><p className="eyebrow">Prefer to talk?</p><a className="contact-page__phone" href="tel:+19049555850">(904) 955-5850</a><p>Call us directly.</p></div>
             <div><p className="eyebrow">Email</p><a href="mailto:caue@conexionservicesfl.com">caue@conexionservicesfl.com</a></div>
-            <div><p className="eyebrow">Service area</p><p>Serving Greater Tampa Bay, Sarasota, Jacksonville and surrounding communities.</p></div>
+            <div><p className="eyebrow">Service area</p><p>Serving Jacksonville, Greater Tampa Bay, Sarasota and surrounding communities.</p></div>
           </aside>
         </Container>
       </Section>

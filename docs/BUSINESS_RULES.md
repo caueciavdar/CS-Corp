@@ -11,7 +11,7 @@
 - Divisões: CS Flooring & Interiors e CS Home & Commercial Cleaning.
 - Telefone: (904) 955-5850.
 - Email oficial: caue@conexionservicesfl.com (confirmado pelo usuário em 2026-10-18).
-- Área de atendimento: Greater Tampa Bay, Sarasota, Jacksonville e comunidades próximas.
+- Área de atendimento: Jacksonville, Greater Tampa Bay, Sarasota e comunidades próximas. A empresa fica em Jacksonville e tem equipes em Jacksonville e em Tampa (confirmado pelo usuário em 2026-10-23); o site cita "Jacksonville & Tampa Bay" em destaque, igual às redes sociais.
 - Serviços confirmados de flooring: Vinyl Plank Flooring, Laminate Flooring, Hardwood Flooring, Bathroom Remodeling, Kitchen Remodeling, Baseboards & Trim e Interior Painting (os dois últimos confirmados pelo usuário em 2026-10-13).
 - Fotos geradas por IA são aprovadas pelo usuário (2026-10-13) somente como fundo/ambiente (hero e cards). Portfólio, Our Work e antes/depois continuam usando apenas fotos reais.
 - Licença: o usuário informou que o ramo dele não exige licença; não exibir "licensed" no site. Seguro: General Liability (Hiscox) em nome de Conexion Services Corp, válido de 2026-10-03 a 2027-10-03; o site mostra só "Insured" na página de Flooring & Interiors. Cleaning: TBD até o usuário confirmar a cobertura da limpeza. Remover "Insured" se a apólice não for renovada.
