@@ -53,7 +53,7 @@ function ServiceIcon({ type }: { type: (typeof services)[number]['icon'] }) {
 export default function FlooringInteriorsPage() {
   useEffect(() => {
     document.title = 'Flooring & Interiors | CS Conexion Services Corp.'
-    const description = 'Flooring and interior remodeling solutions serving Greater Tampa Bay and surrounding communities.'
+    const description = 'Flooring and interior remodeling solutions serving Jacksonville, Greater Tampa Bay and surrounding communities.'
     let meta = document.querySelector('meta[name="description"]')
     if (!meta) {
       meta = document.createElement('meta')
@@ -77,7 +77,7 @@ export default function FlooringInteriorsPage() {
               <a className="button button--primary" href="/contact">Get a Free Estimate</a>
               <a className="button button--secondary button--on-dark" href="#recent-work">View Our Work</a>
             </div>
-            <p className="flooring-hero__trust"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 7 3v5c0 4.6-2.9 8-7 10-4.1-2-7-5.4-7-10V6l7-3Z" /><path d="m9 12 2 2 4-4" /></svg>Insured · Serving Greater Tampa Bay</p>
+            <p className="flooring-hero__trust"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 7 3v5c0 4.6-2.9 8-7 10-4.1-2-7-5.4-7-10V6l7-3Z" /><path d="m9 12 2 2 4-4" /></svg>Insured · Serving Jacksonville &amp; Tampa Bay</p>
           </div>
           <div className="flooring-hero__visual" aria-hidden="true" />
           <div className="flooring-hero__mark" aria-hidden="true"><span>01</span><i /></div>
@@ -129,7 +129,7 @@ export default function FlooringInteriorsPage() {
         </Container>
       </Section>
 
-      <section className="flooring-service-area" aria-labelledby="service-area-title"><Container><p className="eyebrow">WHERE WE WORK</p><h2 id="service-area-title">SERVICE AREA</h2><p>Serving Greater Tampa Bay, Sarasota, Jacksonville and surrounding communities.</p></Container></section>
+      <section className="flooring-service-area" aria-labelledby="service-area-title"><Container><p className="eyebrow">WHERE WE WORK</p><h2 id="service-area-title">SERVICE AREA</h2><p>Serving Jacksonville, Greater Tampa Bay, Sarasota and surrounding communities.</p></Container></section>
 
       <section className="flooring-contact" id="contact" aria-labelledby="flooring-contact-title"><Container><p className="eyebrow">Start your project</p><h2 id="flooring-contact-title">READY TO TRANSFORM<br />YOUR SPACE?</h2><p>Tell us about your flooring or remodeling project and request a free estimate.</p><div><a className="button button--primary" href="/contact">GET A FREE ESTIMATE</a><a className="flooring-contact__phone" href="tel:+19049555850">(904) 955-5850</a></div></Container></section>
     </main>

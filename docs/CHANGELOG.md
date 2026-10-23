@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-23 — Jacksonville & Tampa Bay
+
+- The company is based in Jacksonville with crews in Jacksonville and Tampa. The Google title, meta descriptions, structured data and every service-area line now name Jacksonville first, and the Flooring hero reads `Insured · Serving Jacksonville & Tampa Bay`, matching the social media bios. Sarasota stays in the service area.
+
+### Validação desta etapa
+
+- `npm run lint`, `npm run typecheck`, `npm run build`: aprovados. Flooring hero conferido em `vite preview` a 390px. Servidor encerrado após a validação.
+
 ## 2026-10-21 — Favicon from the new vector logo
 
 - `favicon.png` (now 96×96, a multiple of 48 as Google asks for search results) and `apple-touch-icon.png` are redrawn from the white vector CS mark on navy, replacing the icons cut from the old screenshot logo.

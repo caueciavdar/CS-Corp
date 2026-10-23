@@ -43,7 +43,7 @@ function Meta({ description }: { description: string }) {
 
 export default function CleaningServicesPage() {
   return <>
-    <Meta description="Residential and commercial cleaning services serving Greater Tampa Bay and surrounding communities." />
+    <Meta description="Residential and commercial cleaning services serving Jacksonville, Greater Tampa Bay and surrounding communities." />
     <Header currentPath="/cleaning-services" />
     <main className="cleaning-page">
       <section className="cleaning-hero" aria-labelledby="cleaning-title">
@@ -58,7 +58,7 @@ export default function CleaningServicesPage() {
 
       <section className="cleaning-work" aria-labelledby="cleaning-work-title"><Container><div className="cleaning-work__visual" aria-hidden="true"><span /><span /><span /><div className="cleaning-work__categories"><span>Residential</span><span>Commercial</span><span>Post-Construction</span><span>Move-In / Move-Out</span></div></div><div><p className="eyebrow">A cleaner perspective</p><h2 id="cleaning-work-title">Our cleaning<br /><span>work.</span></h2><p>A growing collection of residential and commercial cleaning work.</p></div></Container></section>
 
-      <section className="cleaning-area" aria-labelledby="cleaning-area-title"><Container><p className="eyebrow">Where we work</p><h2 id="cleaning-area-title">Service area</h2><p>Serving Greater Tampa Bay, Sarasota, Jacksonville and surrounding communities.</p></Container></section>
+      <section className="cleaning-area" aria-labelledby="cleaning-area-title"><Container><p className="eyebrow">Where we work</p><h2 id="cleaning-area-title">Service area</h2><p>Serving Jacksonville, Greater Tampa Bay, Sarasota and surrounding communities.</p></Container></section>
       <section className="cleaning-contact" id="contact" aria-labelledby="cleaning-contact-title"><Container><p className="eyebrow">Start fresh</p><h2 id="cleaning-contact-title">Ready for a cleaner space?</h2><p>Tell us what you need and request a free estimate for your cleaning service.</p><div><a className="button button--primary cleaning-button" href="/contact">GET A FREE ESTIMATE</a><a className="cleaning-contact__phone" href="tel:+19049555850">(904) 955-5850</a></div></Container></section>
     </main>
     <Footer currentPath="/cleaning-services" />

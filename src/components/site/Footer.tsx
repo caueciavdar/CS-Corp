@@ -46,7 +46,7 @@ export default function Footer({ currentPath = '/' }: { currentPath?: string }) 
           </div>
           <div className="site-footer__area">
             <h2>Service area</h2>
-            <p>Serving Greater Tampa Bay, Sarasota, Jacksonville and surrounding communities.</p>
+            <p>Serving Jacksonville, Greater Tampa Bay, Sarasota and surrounding communities.</p>
           </div>
         </div>
         <div className="site-footer__bottom">
