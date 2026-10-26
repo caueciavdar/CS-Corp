@@ -21,6 +21,13 @@ export type Review = {
 
 export const reviews: Review[] = [
   {
+    customerName: 'Moses N.',
+    reviewText: 'I had the LVP flooring replaced in my home, and I’m very happy with the results! Affordable pricing, fast service, and great quality work. The team was professional, reliable, and easy to work with.',
+    rating: 5,
+    source: 'Google',
+    date: '2026-10-23',
+  },
+  {
     customerName: 'Jazmine V.',
     reviewText: 'The team was very professional and timely. They were thorough getting everything done with detail. I loved working with them, especially how clean everything looked afterwards. Great team!',
     rating: 5,
