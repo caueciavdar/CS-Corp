@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-26 — Second Google review on the Home
+
+- Added Moses N. (5 stars, Google, about 2026-10-23), so the reviews section now has two reviews and shows its arrows. The user confirmed Moses is a real client.
+- His review's last sentence names another company ("Reliable Floors"), apparently by mistake. With the user's agreement, the site shows the review's first three sentences word for word and leaves that sentence out. The user may ask Moses to correct the name on Google; if he does, the full text can replace the excerpt.
+- Peter Martin's 4-star Google review has no written text, so it is not shown on the site.
+
+### Validação desta etapa
+
+- `npm run lint`, `npm run typecheck`, `npm run build`: aprovados. Carrossel de avaliações conferido em `vite preview` (seta para a segunda avaliação). Servidor encerrado após a validação.
+
 ## 2026-10-23 — Jacksonville & Tampa Bay
 
 - The company is based in Jacksonville with crews in Jacksonville and Tampa. The Google title, meta descriptions, structured data and every service-area line now name Jacksonville first, and the Flooring hero reads `Insured · Serving Jacksonville & Tampa Bay`, matching the social media bios. Sarasota stays in the service area.
