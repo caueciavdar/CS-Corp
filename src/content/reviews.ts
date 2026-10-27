@@ -29,7 +29,7 @@ export const reviews: Review[] = [
   },
   {
     customerName: 'Moses N.',
-    reviewText: 'I had the LVP flooring replaced in my home, and I’m very happy with the results! Affordable pricing, fast service, and great quality work. The team was professional, reliable, and easy to work with.',
+    reviewText: 'I had the LVP flooring replaced in my home, and I’m very happy with the results! Affordable pricing, fast service, and great quality work. The team was professional, reliable, and easy to work with. I highly recommend Conexion Services to anyone looking for quality flooring services at a fair price!',
     rating: 5,
     source: 'Google',
     date: '2026-10-23',

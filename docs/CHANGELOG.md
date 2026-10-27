@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-27 — Moses N.'s full review
+
+- Moses corrected the company name in his Google review, so the site now shows his full text word for word instead of the three-sentence excerpt.
+
+### Validação desta etapa
+
+- `npm run lint`, `npm run typecheck`, `npm run build`: aprovados.
+
 ## 2026-10-27 — Third Google review on the Home
 
 - Added Aariana H. (5 stars, Google, 2026-10-27), copied word for word from the user's screenshot. The reviews carousel now has three reviews, newest first.
