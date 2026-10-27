@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-27 — "Leave us a Google review" button
+
+- The reviews section on the Home now ends with a `Leave us a Google review` button (Google logo, opens in a new tab) that goes straight to the review box of the company's Google Business Profile. The link lives in `src/content/reviews.ts` as `googleReviewUrl`.
+
+### Validação desta etapa
+
+- `npm run lint`, `npm run typecheck`, `npm run build`: aprovados. Seção conferida em `vite preview` a 1440px e 390px, sem rolagem lateral. Servidor encerrado após a validação.
+
 ## 2026-10-27 — Moses N.'s full review
 
 - Moses corrected the company name in his Google review, so the site now shows his full text word for word instead of the three-sentence excerpt.

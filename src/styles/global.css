@@ -271,6 +271,8 @@ textarea {
 .reviews__arrow svg { width: 1.2rem; height: 1.2rem; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2; }
 .reviews__arrow:hover { border-color: var(--color-neutral-0); background: rgb(255 255 255 / 16%); }
 .reviews__arrow:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+.reviews__cta { display: inline-flex; align-items: center; gap: .6rem; margin-top: var(--space-xl); text-decoration: none; }
+.reviews__cta-icon { flex: none; width: 1.15rem; height: 1.15rem; border-radius: 50%; background: #fff; padding: .12rem; }
 .final-cta { padding-block: clamp(3.5rem, 7vw, 5.5rem); background: var(--color-surface); color: var(--color-brand-dark); }
 .final-cta__inner { display: flex; align-items: center; justify-content: space-between; gap: var(--space-2xl); }
 .final-cta .eyebrow { margin-bottom: var(--space-md); color: var(--color-text-muted); }
