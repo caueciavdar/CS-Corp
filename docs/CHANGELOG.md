@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-27 — Third Google review on the Home
+
+- Added Aariana H. (5 stars, Google, 2026-10-27), copied word for word from the user's screenshot. The reviews carousel now has three reviews, newest first.
+
+### Validação desta etapa
+
+- `npm run lint`, `npm run typecheck`, `npm run build`: aprovados.
+
 ## 2026-10-26 — Second Google review on the Home
 
 - Added Moses N. (5 stars, Google, about 2026-10-23), so the reviews section now has two reviews and shows its arrows. The user confirmed Moses is a real client.
