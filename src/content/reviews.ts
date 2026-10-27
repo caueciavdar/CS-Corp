@@ -11,6 +11,9 @@
 //   date: '2026-10-14',
 // },
 
+// Opens the "write a review" box on the company's Google Business Profile (link from the user, 2026-10-21).
+export const googleReviewUrl = 'https://g.page/r/CZUmislvpbIwEBM/review'
+
 export type Review = {
   customerName: string
   reviewText: string
