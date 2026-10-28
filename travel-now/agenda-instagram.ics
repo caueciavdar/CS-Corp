@@ -1,0 +1,170 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Travel Now//Agenda Instagram//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Travel Now Posts
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:post01@travelnow
+DTSTAMP:20261028T014500Z
+DTSTART:20261104T220000Z
+DTEND:20261104T221500Z
+SUMMARY:IG Travel Now: Transfer em Orlando: do MCO aos parques
+DESCRIPTION:Mostrar o transfer: aeroporto, hotel/casa, Disney, Universal e todos os parques.\nSai às 19h de Brasília (já agendado no Instagram no domingo).
+END:VEVENT
+BEGIN:VEVENT
+UID:post02@travelnow
+DTSTAMP:20261028T014500Z
+DTSTART:20261106T220000Z
+DTEND:20261106T221500Z
+SUMMARY:IG Travel Now: Dica: quando comprar passagem para os EUA
+DESCRIPTION:Com quanta antecedência pesquisar e por que a data muda o valor. Sem prometer preço.\nSai às 19h de Brasília (já agendado no Instagram no domingo).
+END:VEVENT
+BEGIN:VEVENT
+UID:post03@travelnow
+DTSTAMP:20261028T014500Z
+DTSTART:20261108T220000Z
+DTEND:20261108T221500Z
+SUMMARY:IG Travel Now: Destino: Lisboa
+DESCRIPTION:Destino Europa (Portugal) + chamada para cotação.\nSai às 19h de Brasília (já agendado no Instagram no domingo).
+END:VEVENT
+BEGIN:VEVENT
+UID:post04@travelnow
+DTSTAMP:20261028T014500Z
+DTSTART:20261111T220000Z
+DTEND:20261111T221500Z
+SUMMARY:IG Travel Now: Vai morar fora? A gente ajuda
+DESCRIPTION:Para quem está de mudança para os EUA ou Europa: passagem só de ida, bagagem extra.\nSai às 19h de Brasília (já agendado no Instagram no domingo).
+END:VEVENT
+BEGIN:VEVENT
+UID:post05@travelnow
+DTSTAMP:20261028T014500Z
+DTSTART:20261113T220000Z
+DTEND:20261113T221500Z
+SUMMARY:IG Travel Now: Dica: bagagem em voo internacional
+DESCRIPTION:O que conferir: franquia de bagagem, mala de mão, item pessoal.\nSai às 19h de Brasília (já agendado no Instagram no domingo).
+END:VEVENT
+BEGIN:VEVENT
+UID:post06@travelnow
+DTSTAMP:20261028T014500Z
+DTSTART:20261115T220000Z
+DTEND:20261115T221500Z
+SUMMARY:IG Travel Now: Destino: Nova York
+DESCRIPTION:Destino EUA + chamada para cotação.\nSai às 19h de Brasília (já agendado no Instagram no domingo).
+END:VEVENT
+BEGIN:VEVENT
+UID:post07@travelnow
+DTSTAMP:20261028T014500Z
+DTSTART:20261118T220000Z
+DTEND:20261118T221500Z
+SUMMARY:IG Travel Now: Dica: documentos para viajar
+DESCRIPTION:Passaporte válido, visto (EUA) e o que conferir antes do embarque.\nSai às 19h de Brasília (já agendado no Instagram no domingo).
+END:VEVENT
+BEGIN:VEVENT
+UID:post08@travelnow
+DTSTAMP:20261028T014500Z
+DTSTART:20261120T220000Z
+DTEND:20261120T221500Z
+SUMMARY:IG Travel Now: Destino: Orlando e os parques
+DESCRIPTION:Destino Orlando + lembrar do transfer.\nSai às 19h de Brasília (já agendado no Instagram no domingo).
+END:VEVENT
+BEGIN:VEVENT
+UID:post09@travelnow
+DTSTAMP:20261028T014500Z
+DTSTART:20261122T220000Z
+DTEND:20261122T221500Z
+SUMMARY:IG Travel Now: Como funciona a cotação
+DESCRIPTION:Reforçar os 3 passos pelo WhatsApp.\nSai às 19h de Brasília (já agendado no Instagram no domingo).
+END:VEVENT
+BEGIN:VEVENT
+UID:post10@travelnow
+DTSTAMP:20261028T014500Z
+DTSTART:20261125T220000Z
+DTEND:20261125T221500Z
+SUMMARY:IG Travel Now: Dica: voo direto ou com escala?
+DESCRIPTION:Prós e contras de cada um, sem citar preço.\nSai às 19h de Brasília (já agendado no Instagram no domingo).
+END:VEVENT
+BEGIN:VEVENT
+UID:post11@travelnow
+DTSTAMP:20261028T014500Z
+DTSTART:20261127T220000Z
+DTEND:20261127T221500Z
+SUMMARY:IG Travel Now: Destino: Porto e Madri
+DESCRIPTION:Destino Europa + chamada para cotação.\nSai às 19h de Brasília (já agendado no Instagram no domingo).
+END:VEVENT
+BEGIN:VEVENT
+UID:post12@travelnow
+DTSTAMP:20261028T014500Z
+DTSTART:20261129T220000Z
+DTEND:20261129T221500Z
+SUMMARY:IG Travel Now: Férias de fim de ano: já planejou?
+DESCRIPTION:Chamar quem vai viajar em dezembro/janeiro para pedir cotação cedo.\nSai às 19h de Brasília (já agendado no Instagram no domingo).
+END:VEVENT
+BEGIN:VEVENT
+UID:agendar1@travelnow
+DTSTAMP:20261028T014500Z
+DTSTART:20261102T170000Z
+DTEND:20261102T173000Z
+SUMMARY:Agendar posts da semana (Travel Now)
+DESCRIPTION:Pegar as artes e legendas que o Claude mandou no tópico da Travel Now e programar no Instagram: Mais opções > Programar este post.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Agendar posts da semana (Travel Now)
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agendar2@travelnow
+DTSTAMP:20261028T014500Z
+DTSTART:20261109T170000Z
+DTEND:20261109T173000Z
+SUMMARY:Agendar posts da semana (Travel Now)
+DESCRIPTION:Pegar as artes e legendas que o Claude mandou no tópico da Travel Now e programar no Instagram: Mais opções > Programar este post.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Agendar posts da semana (Travel Now)
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agendar3@travelnow
+DTSTAMP:20261028T014500Z
+DTSTART:20261116T170000Z
+DTEND:20261116T173000Z
+SUMMARY:Agendar posts da semana (Travel Now)
+DESCRIPTION:Pegar as artes e legendas que o Claude mandou no tópico da Travel Now e programar no Instagram: Mais opções > Programar este post.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Agendar posts da semana (Travel Now)
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:agendar4@travelnow
+DTSTAMP:20261028T014500Z
+DTSTART:20261123T170000Z
+DTEND:20261123T173000Z
+SUMMARY:Agendar posts da semana (Travel Now)
+DESCRIPTION:Pegar as artes e legendas que o Claude mandou no tópico da Travel Now e programar no Instagram: Mais opções > Programar este post.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Agendar posts da semana (Travel Now)
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:insights1@travelnow
+DTSTAMP:20261028T014500Z
+DTSTART:20261130T170000Z
+DTEND:20261130T171500Z
+SUMMARY:Mandar print do Insights (Travel Now)
+DESCRIPTION:Instagram > Painel profissional > Insights: mandar print para o Claude analisar.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Mandar print do Insights (Travel Now)
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+END:VCALENDAR
