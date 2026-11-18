@@ -3,7 +3,7 @@
 ## Confirmado
 
 - O projeto é o novo website da empresa.
-- Website atual: https://www.conexionservicesfl.com/
+- Website atual: https://conexionservicesfl.com/
 - O site atual será substituído por uma experiência mais completa.
 - O site deve ser simples de navegar e transmitir profissionalismo.
 - A estrutura deve permitir crescimento futuro.
