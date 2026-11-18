@@ -1,5 +1,10 @@
 # Architecture Decision Log
 
+## Decision 033: Canonical domain without www, Google Search Console by DNS
+
+Data: 2026-11-18. Status: aceita.
+Since 2026-10-27 `www` redirects to `conexionservicesfl.com`, so the sitemap, robots.txt and the JSON-LD `url` use `https://conexionservicesfl.com/` (no `www`); a sitemap listing URLs that redirect makes Google report them as "Page with redirect". Search Console uses a **Domain** property verified by a DNS TXT record at Hostinger, which covers http, https and www at once. The TXT record must stay in the DNS.
+
 ## Decision 032: Vector logos and "Insured" on the flooring page
 
 Data: 2026-10-21. Status: aceita.

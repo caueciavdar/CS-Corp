@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-11-18 — Google Search Console and domain without www
+
+- The site is now in Google Search Console as a Domain property (`conexionservicesfl.com`), verified with a TXT record added at Hostinger. Zoho records untouched.
+- `sitemap.xml`, `robots.txt` and the JSON-LD `url` now point to `https://conexionservicesfl.com/` instead of `www`, because `www` redirects to the root domain.
+
+### Validação desta etapa
+
+- Verificação da propriedade confirmada pelo usuário no Search Console ("Propriedade verificada").
+
 ## 2026-10-27 — "Leave us a Google review" button
 
 - The reviews section on the Home now ends with a `Leave us a Google review` button (Google logo, opens in a new tab) that goes straight to the review box of the company's Google Business Profile. The link lives in `src/content/reviews.ts` as `googleReviewUrl`.

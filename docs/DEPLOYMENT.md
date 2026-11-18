@@ -48,7 +48,7 @@ Hostinger (2026-10-13: o usuário confirmou que o domínio conexionservicesfl.co
 O que já está no build (`public/` é copiado para `dist/`):
 
 - `.htaccess`: força HTTPS, entrega `index.html` para rotas do app (`/contact`, `/projects`, etc.) que não são arquivos reais, desliga listagem de pastas e deixa os arquivos com hash em cache por um ano, enquanto `index.html` é sempre revalidado.
-- `robots.txt` e `sitemap.xml` com as cinco páginas em `https://www.conexionservicesfl.com/`.
+- `robots.txt` e `sitemap.xml` com as cinco páginas em `https://conexionservicesfl.com/` (sem `www`, porque o `www` redireciona para o domínio raiz).
 
 Passo a passo:
 
@@ -65,7 +65,9 @@ Passo a passo:
 - Os registros do e-mail Zoho (3 MX, SPF, `zoho-verification` e DKIM `zmail._domainkey`) continuaram intactos. Nunca apagar nem alterar esses registros, e nunca usar "Alterar nameservers".
 - O usuário abriu conexionservicesfl.com numa aba anônima e viu o site novo minutos depois.
 
-Pendências TBD: versão preferida do domínio (com ou sem `www`; o JSON-LD e o sitemap usam `www`) e cadastro no Google Search Console.
+Versão preferida do domínio: sem `www` (o `www` redireciona para `conexionservicesfl.com`). O sitemap, o robots.txt e o JSON-LD usam essa versão.
+
+
 
 ## Primeira execução — 2026-09-21
 

@@ -2,7 +2,7 @@
 
 - Nome do repositório: CS Corp (CS-Corp); nome comercial público oficial: TBD.
 - Objetivo: estabelecer o novo website da empresa.
-- Website atual: https://www.conexionservicesfl.com/
+- Website atual: https://conexionservicesfl.com/
 - Contexto informado pelo usuário: site atual basicamente composto por uma landing page.
 - Novo website: experiência completa, profissional, moderna, limpa, fácil de usar e navegar, preparada para crescimento e múltiplas páginas.
 - Stack: React, TypeScript, HTML5, CSS, Vite e npm. Sem PHP.
